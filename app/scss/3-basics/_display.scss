@@ -1,0 +1,26 @@
+//Display
+.d-block{
+    display: block;
+}
+.d-inline{
+    display: inline;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.d-flex{
+    display: flex;
+}
+.d-inline-flex{
+    display: inline-flex;
+}
+.d-none,
+.d-hide{
+    display: none !important;
+}
+.d-visible{
+    visibility: visible;
+}
+.d-invsible{
+    visibility: hidden;
+}

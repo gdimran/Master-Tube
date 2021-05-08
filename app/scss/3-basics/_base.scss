@@ -1,0 +1,127 @@
+//import google fonts
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+//Main Style
+body{
+    // font-family:$body-font-family, sans-serif;
+    background-color: $light-color;
+    color:$primary-color;
+    line-height: 1.5;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+img {
+    border-style: none;
+}
+
+code,
+kbd,
+pre,
+samp {
+    // font-family: $body-font-family, monospace;
+    font-size: 1em;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+a {
+    color: $primary-color;
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+    font: inherit;
+    margin: 0;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+button,
+input {
+    overflow: visible;
+}
+// Heading styles
+h1,h2,h3,h4,h5,h6{
+    // font-family: $title-font-family, sans-serif;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-weight: 400;
+}
+p{
+
+    margin-top: 5px;
+    margin-bottom:7px;
+}

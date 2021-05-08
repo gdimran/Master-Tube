@@ -1,0 +1,78 @@
+// Core features
+$rtl: false !default;
+
+$fa-font-path:        "../2-tools/icon-fonts/webfonts";
+
+//measuring unit sizes
+$mUnit-s: .05rem !default; //starting unit
+$mUnit-b: .1rem !default; //base unit
+$mUnit-1: .2rem !default;
+$mUnit-2: .4rem !default;
+$mUnit-3: .6rem !default;
+$mUnit-4: .8rem !default;
+$mUnit-5: 1rem !default;
+$mUnit-6: 1.2rem !default;
+$mUnit-7: 1.4rem !default;
+$mUnit-8: 1.6rem !default;
+$mUnit-9: 1.8rem !default;
+$mUnit-10: 2rem !default;
+$mUnit-11: 2.2rem !default;
+$mUnit-12: 2.4rem !default;
+$mUnit-13: 3.2rem !default;
+
+
+//Font sizes
+$html-root-font-size:20px !default;
+$html-root-line-height: 1.5 !default;
+$font-size: .8rem !default;
+$font-size-small: .7rem !default;
+$font-size-large: .9rem !default;
+$line-height: 1.2rem !default;
+
+//@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//Font family
+$body-font-family:"Lato" !default;
+$title-font-family: "Poppins" !default;
+// Sizes
+$layout-spacing: $mUnit-2 !default;
+$layout-spacing-sm: $mUnit-1 !default;
+$layout-spacing-lg: $mUnit-4 !default;
+$border-radius: $mUnit-b !default;
+$border-width: $mUnit-s !default;
+$border-width-lg: $mUnit-b !default;
+$control-size: $mUnit-9 !default;
+$control-size-sm: $mUnit-7 !default;
+$control-size-lg: $mUnit-10 !default;
+$control-padding-x: $mUnit-2 !default;
+$control-padding-x-sm: $mUnit-2 * .75 !default;
+$control-padding-x-lg: $mUnit-2 * 1.5 !default;
+$control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
+$control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
+$control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
+$control-icon-size: .8rem !default;
+/*
+$control-width-xs: 180px !default;
+$control-width-sm: 320px !default;
+$control-width-md: 640px !default;
+$control-width-lg: 960px !default;
+$control-width-xl: 1280px !default; */
+
+// Responsive breakpoints
+/*
+$size-xs: 480px !default;
+$size-sm: 600px !default;
+$size-md: 840px !default;
+$size-lg: 960px !default;
+$size-xl: 1280px !default;
+$size-2x: 1440px !default;
+
+$responsive-breakpoint: $size-xs !default;
+*/
+
+// Z-index
+$zindex-0: 1 !default;
+$zindex-1: 100 !default;
+$zindex-2: 200 !default;
+$zindex-3: 300 !default;
+$zindex-4: 400 !default;
