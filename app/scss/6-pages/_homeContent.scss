@@ -1,0 +1,24 @@
+#content {
+	position: absolute;
+	left: 75px;
+	width: calc(100% - 75px);
+	padding: 30px;
+	top: 70px;
+    .hero-section{
+        margin-bottom: 1rem;
+        .hero-bg-image {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            height: 420px;
+            .hero-content{
+                .hero-title-text{
+                    font-size: 5rem;
+                    font-family: $hero-title-font-family;
+                    font-weight: $hero-title-font-weight;
+                    line-height: 1.1;
+                }
+            }
+        }
+    }
+}

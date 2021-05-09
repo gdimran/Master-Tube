@@ -8,11 +8,13 @@
 
 // 2-tools
 @import '2-tools/icons';
+@import '2-tools/slick';
 
 // 3-basics
 @import '3-basics/base';
 @import '3-basics/buttons';
 @import '3-basics/display';
+@import '3-basics/utilities';
 
 // 4-layout
 @import '4-layout/layout';
@@ -20,3 +22,8 @@
 
 //5-modules
 @import '5-modules/header';
+@import '5-modules/side-bar';
+
+
+//6-pages
+@import '6-pages/homeContent';

@@ -18,7 +18,9 @@
     display: table;
     clear: both
 }
-
+.mab-col{
+    padding: 0 8px;
+}
 .mab-col,
 .mab-half,
 .mab-third,
@@ -26,7 +28,7 @@
 .mab-threequarter,
 .mab-quarter {
     float: left;
-    width: 100%
+    width: 100%;
 }
 
 .mab-col.s1 {

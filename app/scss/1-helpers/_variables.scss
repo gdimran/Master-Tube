@@ -30,10 +30,15 @@ $font-size-large: .9rem !default;
 $line-height: 1.2rem !default;
 
 //@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 //Font family
-$body-font-family:"Lato" !default;
-$title-font-family: "Poppins" !default;
+$body-font-family:"Poppins" !default;
+$body-font-weight:300;
+$title-font-family: "Roboto" !default;
+$title-font-weight:600;
+$content-title-font-weight:400;
+$hero-title-font-family: "Playfair+Display" !default;
+$hero-title-font-weight:700;
 // Sizes
 $layout-spacing: $mUnit-2 !default;
 $layout-spacing-sm: $mUnit-1 !default;

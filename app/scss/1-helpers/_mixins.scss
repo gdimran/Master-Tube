@@ -63,3 +63,22 @@
         }
     }
 }
+
+
+//useing function to set text color based on backgorund
+@function set-text-color($color){
+    @if(lightness($color)>70){
+        @return $primary-color;
+    }@else{
+        @return $light-color;
+        
+    }
+}
+
+// set background and text using mixing in one code
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+    
+}
+
