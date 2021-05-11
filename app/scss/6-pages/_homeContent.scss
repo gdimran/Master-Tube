@@ -13,7 +13,7 @@
             height: 420px;
             .hero-content{
                 .hero-title-text{
-                    font-size: 5rem;
+                    font-size: 2.5rem;
                     font-family: $hero-title-font-family;
                     font-weight: $hero-title-font-weight;
                     line-height: 1.1;
@@ -21,4 +21,83 @@
             }
         }
     }
+    // .swiper-container {
+    //     width: 100%;
+    //     height: 100%;
+    //   }
+
+    //   .swiper-slide {
+    //     text-align: center;
+    //     font-size: 18px;
+    //     background: #fff;
+
+    //     /* Center slide text vertically */
+    //     display: -webkit-box;
+    //     display: -ms-flexbox;
+    //     display: -webkit-flex;
+    //     display: flex;
+    //     -webkit-box-pack: center;
+    //     -ms-flex-pack: center;
+    //     -webkit-justify-content: center;
+    //     justify-content: center;
+    //     -webkit-box-align: center;
+    //     -ms-flex-align: center;
+    //     -webkit-align-items: center;
+    //     align-items: center;
+    //   }
+
+    //   .swiper-slide img {
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //   }
+
+
+    #live-streaming{
+        .section-title {
+            font-family: $title-font-family;
+            font-size: $font-size-title;
+            font-weight: $title-font-weight;
+        }
+        .live-streaming-video{
+            .live-video{
+                display: flex;
+                flex-flow: column;
+                width: 100%;
+                height: 75vh;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 3px;
+                box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+                overflow: hidden;
+
+                // .video-thumbnail{
+                //     border-radius: 3px;
+                //     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+                //     img {
+                //         width: 100%;
+                //     }
+                // } 
+            }
+
+        }
+        #videosList {
+            max-width: 600px; 
+             overflow: hidden;
+           }
+           
+           .video {
+             background-image: url('https://img.youtube.com/vi/nZcejtAwxz4/maxresdefault.jpg');
+             height: 330px;
+             width: 600px;
+             margin-bottom: 50px;
+           }
+           
+           /* Hide Play button + controls on iOS */
+           video::-webkit-media-controls {
+               display:none !important;
+           }
+    }
 }
+

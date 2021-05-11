@@ -1,6 +1,7 @@
 .sidebar-small{
     width: 75px;
     height: 100vh;
+    overflow-y: scroll;
     background: $light-color;
     -webkit-box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);

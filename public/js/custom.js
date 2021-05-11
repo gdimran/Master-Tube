@@ -34,3 +34,30 @@ $('.responsive').slick({
         // instead of a settings object
     ]
 });
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  $(document).ready(function() {
+    $(".myvideos").on("mouseover", function(event) {
+      this.play();
+  
+    }).on('mouseout', function(event) {
+      this.pause();
+  
+    });
+  })
+  var cip = $(".video").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+}

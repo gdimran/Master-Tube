@@ -22,8 +22,8 @@
                     display: inline-flex;
                     text-decoration: none;
                     img{
-                        width: 40px;
-                        height: auto;
+                        width: auto;
+                        height: 40px;
                         margin-right: 10px;
                     }
                     .logo-text{
@@ -41,12 +41,19 @@
         .search-section{
             display: inline-flex;
             .explor{
+                display: inline-flex;
+                justify-content: center;
+                line-height: 25px;
                 margin-right: 10px;
+                i {
+                    margin-left: 5px;
+                    line-height: 25px;
+                }
             }
             #search-form{
                 display: inline-flex;
                 input#search{
-                    width: 45vw;
+                    width: 35vw;
                     height: 40px;
                     border: 1px solid $gray-color;
                     background: transparent;

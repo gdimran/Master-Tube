@@ -17,12 +17,15 @@
 @import '3-basics/utilities';
 
 // 4-layout
-@import '4-layout/layout';
+//@import '4-layout/layout';
+@import '4-layout/flexboxgrid';
+@import '4-layout/responsive';
 
 
 //5-modules
 @import '5-modules/header';
 @import '5-modules/side-bar';
+@import '5-modules/categoryTag';
 
 
 //6-pages
