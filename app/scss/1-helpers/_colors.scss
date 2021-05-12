@@ -29,6 +29,10 @@ $bg-color-dark: darken($bg-color, 3%) !default;
 $bg-color-light: $light-color !default;
 
 // Control colors
+$higlighted-link:$secondary-color;
+.higlighted-link{
+    color: $higlighted-link !important;
+}
 $success-color: #32b643 !default;
 $warning-color: #ffb700 !default;
 $error-color: #e85600 !default;

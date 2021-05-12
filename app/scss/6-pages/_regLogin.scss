@@ -1,0 +1,41 @@
+.login-content{
+    min-height: 100vh;
+}
+.user-login-section {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+.form-title{
+    font-size: 1.2rem;
+    font-family: $title-font-family;
+    font-weight: $title-font-weight;
+}
+.form-area{
+    font-size: 0.8rem;
+}
+//form styling
+input{
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid $color_light-grey;
+    min-height: 50px;
+}
+input[type=password]{
+    position: relative;
+}
+a.forgot-pass {
+    position: absolute;
+    right: 11%;
+    bottom: 44%;
+}
+button.logn-btn.btn-action {
+    width: 100%;
+}
+p.signup-redirect {
+    font-size: 0.8rem;
+}

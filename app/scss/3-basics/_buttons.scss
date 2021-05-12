@@ -31,6 +31,11 @@
   background: transparent;
   border: none;
 }
+.btn-action{
+  @extend %btn;
+  border: none;
+  @include set-background($secondary-color);
+}
 
 // .btn{
 //     appearance: none;

@@ -205,82 +205,297 @@
             </div>
             <div class="container-full">
                 <div class="row">
-                    <div class="live-streaming-video col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                        <div class="live-video" style="background-image:
-                        url(images/hqdefault.webp);">
-                            <div class="video-play-overlay">
-                                <i class="fas fa-play-circle"></i>
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <div class="video-feature-image">
+                            <img src="images/pic1.png" alt="" width="100%">
+                            <img src="images/play-btn.png" alt="" class="play-btn"
+                                onclick="playVideo('videos/video.mp4')">
+                            <div class="vide-share-options">
+                                <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
                             </div>
-                            <!-- <div class="video-thumbnail">
-                               
-                            </div> -->
-                            <div class="video-share-options">
-                                <ul>
-                                    <li><a href=""><i class="far fa-heart"></i></a></li>
-                                    <li><a href=""><i class="fas fa-share-alt"></i></a></li>
-                                    <li><a href=""><i class="fas fa-plus"></i></a></li>
-                                </ul>
+                            <div class="video-player" id="videoPlayer">
+                                <video width="100%" controls autoplay id="singleVideo">
+                                    <source src="videos/video.mp4" type="video/mp4">
+                                </video>
+                                <span class="close-btn" onclick="stopVideo()"><i class="fas fa-times"></i></span>
+                                <!-- <img src="images/close.png" alt="" class="close-btn" onclick="stopVideo()"> -->
                             </div>
                         </div>
                         <div class="video-details">
-
+                            <div class="video-title">
+                                <h3 class="title-text">Master-Academy Live</h3>
+                                <span class="option-icon"><i class="fas fa-ellipsis-h"></i></span>
+                            </div>
+                            <div class="video-attributes">
+                                <div class="channel-name">Master-Academy</div>
+                                <div class="video-watch-info">
+                                    <span class="waching-now mx-1"><i class="fas fa-eye"></i> 3,265 watching now</span>
+                                    <span class="started-on"><i class="fas fa-history"></i> Started 24 min ago</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="live-play-list col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <div id="videosList">           
-
-                            <div class="video">
-                                <video class="thevideo" loop preload="none">
-                                  <source src="https://giant.gfycat.com/VerifiableTerrificHind.mp4" type="video/mp4">
-                                  <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm">
-                                Your browser does not support the video tag.
-                                </video>
-                              </div>
-                              Hover mouse over video. Desktop only [ Obviously! ;) ]
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="video-thub-img-row">
+                            <div class="video-thub-img">
+                                <img src="images/pic2.png" alt="">
+                                <img src="images/play-btn.png" alt="" class="play-btn"
+                                    onclick="playVideo('videos/vid2.mp4')">
+                                <div class="vide-share-options">
+                                    <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                    <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                    <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                </div>
                             </div>
-                        <video class="myvideos" controls="" loop="" src="http://vjs.zencdn.net/v/oceans.mp4"
-                            width="auto" height="auto" alt=""></video>
-                        <video class="myvideos" controls="" loop="" src="http://vjs.zencdn.net/v/oceans.mp4"
-                            width="auto" height="auto" alt=""></video>
-                        <video class="myvideos" controls="" loop="" src="http://vjs.zencdn.net/v/oceans.mp4"
-                            width="auto" height="auto" alt=""></video>
-                        <video class="myvideos" controls="" loop="" src="http://vjs.zencdn.net/v/oceans.mp4"
-                            width="auto" height="auto" alt=""></video>
-                    </div>
-                    <div class="video-title">
-                        <div class="video-title-text"></div>
-                        <div class="video-option-icon"></div>
+                            <div class="small-video-details">
+                                <div class="video-title">
+                                    <h3 class="title-text">Master-Academy Live</h3>
+                                    <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                </div>
+                                <div class="video-attributes">
+                                    <div class="channel-name">Master-Academy</div>
+                                    <div class="video-watch-info">
+                                        <span class="waching-now">5,248,704 views   |   </span>
+                                        <span class="started-on">Feb 21, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="video-thub-img-row">
+                            <div class="video-thub-img">
+                                <img src="images/pic3.png" alt="">
+                                <img src="images/play-btn.png" alt="" class="play-btn"
+                                    onclick="playVideo('videos/vid3.mp4')">
+                                    <div class="vide-share-options">
+                                        <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                        <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                        <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                    </div>
+                                </div>
+                                <div class="small-video-details">
+                                    <div class="video-title">
+                                        <h3 class="title-text">Master-Academy Live</h3>
+                                        <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                    </div>
+                                    <div class="video-attributes">
+                                        <div class="channel-name">Master-Academy</div>
+                                        <div class="video-watch-info">
+                                            <span class="waching-now">5,248,704 views   |   </span>
+                                            <span class="started-on">Feb 21, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="video-thub-img-row">
+                            <div class="video-thub-img">
+                                <img src="images/pic4.png" alt="">
+                                <img src="images/play-btn.png" alt="" class="play-btn"
+                                    onclick="playVideo('videos/vid4.mp4')">
+                                    <div class="vide-share-options">
+                                        <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                        <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                        <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                    </div>
+                                </div>
+                                <div class="small-video-details">
+                                    <div class="video-title">
+                                        <h3 class="title-text">Master-Academy Live</h3>
+                                        <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                    </div>
+                                    <div class="video-attributes">
+                                        <div class="channel-name">Master-Academy</div>
+                                        <div class="video-watch-info">
+                                            <span class="waching-now">5,248,704 views   |   </span>
+                                            <span class="started-on">Feb 21, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="video-thub-img-row">
+                            <div class="video-thub-img">
+                                <img src="images/pic1.png" alt="">
+                                <img src="images/play-btn.png" alt="" class="play-btn"
+                                    onclick="playVideo('videos/video.mp4')">
+                                    <div class="vide-share-options">
+                                        <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                        <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                        <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                    </div>
+                                </div>
+                                <div class="small-video-details">
+                                    <div class="video-title">
+                                        <h3 class="title-text">Master-Academy Live</h3>
+                                        <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                    </div>
+                                    <div class="video-attributes">
+                                        <div class="channel-name">Master-Academy</div>
+                                        <div class="video-watch-info">
+                                            <span class="waching-now">5,248,704 views   |   </span>
+                                            <span class="started-on">Feb 21, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-    </div>
-    </section>
 
-    <div class="container-full">
-        <div class="row">
-            <div class="signle-content col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                thlthlkslkflsdldjfldjfldjflsdjkflksdjfldsjflkdsf
             </div>
-            <div class="signle-content col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                thlthlkslkflsdldjfldjfldjflsdjkflksdjfldsjflkdsf
+        </section>
+
+        <section id="most-popular">
+            <div class="section-title my-2">
+                Most Popular
             </div>
-            <div class="signle-content col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                thlthlkslkflsdldjfldjfldjflsdjkflksdjfldsjflkdsf
+            <div class="container-full">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <div class="single-video-content">
+                            <div class="video-feature-image">
+                                <img src="images/pic1.png" alt="" width="100%">
+                                <img src="images/play-btn.png" alt="" class="play-btn"
+                                    onclick="playVideo('videos/video.mp4')">
+                                <div class="vide-share-options">
+                                    <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                    <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                    <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                </div>
+                                <div class="video-player" id="videoPlayer">
+                                    <video width="100%" controls autoplay id="singleVideo">
+                                        <source src="videos/video.mp4" type="video/mp4">
+                                    </video>
+                                    <span class="close-btn" onclick="stopVideo()"><i class="fas fa-times"></i></span>
+                                    <!-- <img src="images/close.png" alt="" class="close-btn" onclick="stopVideo()"> -->
+                                </div>
+                            </div>
+                            <div class="video-details">
+                                <div class="video-title">
+                                    <h3 class="title-text">Master-Academy Live</h3>
+                                    <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                </div>
+                                <div class="video-attributes">
+                                    <div class="channel-name">Master-Academy</div>
+                                    <div class="video-watch-info">
+                                        <span class="waching-now">3,265 views</span>
+                                        <span class="started-on">03 Mar, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <div class="single-video-content">
+                            <div class="video-feature-image">
+                                <img src="images/pic1.png" alt="" width="100%">
+                                <img src="images/play-btn.png" alt="" class="play-btn"
+                                    onclick="playVideo('videos/video.mp4')">
+                                <div class="vide-share-options">
+                                    <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                    <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                    <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                </div>
+                                <div class="video-player" id="videoPlayer">
+                                    <video width="100%" controls autoplay id="singleVideo">
+                                        <source src="videos/video.mp4" type="video/mp4">
+                                    </video>
+                                    <span class="close-btn" onclick="stopVideo()"><i class="fas fa-times"></i></span>
+                                    <!-- <img src="images/close.png" alt="" class="close-btn" onclick="stopVideo()"> -->
+                                </div>
+                            </div>
+                            <div class="video-details">
+                                <div class="video-title">
+                                    <h3 class="title-text">Master-Academy Live</h3>
+                                    <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                </div>
+                                <div class="video-attributes">
+                                    <div class="channel-name">Master-Academy</div>
+                                    <div class="video-watch-info">
+                                        <span class="waching-now">3,265 views</span>
+                                        <span class="started-on">03 Mar, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <div class="single-video-content">
+                            <div class="video-feature-image">
+                                <img src="images/pic1.png" alt="" width="100%">
+                                <img src="images/play-btn.png" alt="" class="play-btn"
+                                    onclick="playVideo('videos/video.mp4')">
+                                <div class="vide-share-options">
+                                    <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                    <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                    <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                </div>
+                                <div class="video-player" id="videoPlayer">
+                                    <video width="100%" controls autoplay id="singleVideo">
+                                        <source src="videos/video.mp4" type="video/mp4">
+                                    </video>
+                                    <span class="close-btn" onclick="stopVideo()"><i class="fas fa-times"></i></span>
+                                    <!-- <img src="images/close.png" alt="" class="close-btn" onclick="stopVideo()"> -->
+                                </div>
+                            </div>
+                            <div class="video-details">
+                                <div class="video-title">
+                                    <h3 class="title-text">Master-Academy Live</h3>
+                                    <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                </div>
+                                <div class="video-attributes">
+                                    <div class="channel-name">Master-Academy</div>
+                                    <div class="video-watch-info">
+                                        <span class="waching-now">3,265 views</span>
+                                        <span class="started-on">03 Mar, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <div class="single-video-content">
+                            <div class="video-feature-image">
+                                <img src="images/pic1.png" alt="" width="100%">
+                                <img src="images/play-btn.png" alt="" class="play-btn"
+                                    onclick="playVideo('videos/video.mp4')">
+                                <div class="vide-share-options">
+                                    <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                    <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                    <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                </div>
+                                <div class="video-player" id="videoPlayer">
+                                    <video width="100%" controls autoplay id="singleVideo">
+                                        <source src="videos/video.mp4" type="video/mp4">
+                                    </video>
+                                    <span class="close-btn" onclick="stopVideo()"><i class="fas fa-times"></i></span>
+                                    <!-- <img src="images/close.png" alt="" class="close-btn" onclick="stopVideo()"> -->
+                                </div>
+                            </div>
+                            <div class="video-details">
+                                <div class="video-title">
+                                    <h3 class="title-text">Master-Academy Live</h3>
+                                    <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                </div>
+                                <div class="video-attributes">
+                                    <div class="channel-name">Master-Academy</div>
+                                    <div class="video-watch-info">
+                                        <span class="waching-now">3,265 views</span>
+                                        <span class="started-on">03 Mar, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
             </div>
-            <div class="signle-content col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                thlthlkslkflsdldjfldjfldjflsdjkflksdjfldsjflkdsf
-            </div>
-            <div class="signle-content col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                thlthlkslkflsdldjfldjfldjflsdjkflksdjfldsjflkdsf
-            </div>
-            <div class="signle-content col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                thlthlkslkflsdldjfldjfldjflsdjkflksdjfldsjflkdsf
-            </div>
-            <div class="signle-content col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                thlthlkslkflsdldjfldjfldjflsdjkflksdjfldsjflkdsf
-            </div>
-        </div>
-    </div>
+        </section>
+
 
 
 
@@ -289,8 +504,7 @@
 
 
     <!-- all js files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
