@@ -23,3 +23,36 @@
     }
    
 }
+.small-cat-style{
+    display: flex;
+    gap: 1rem;
+    border-bottom:1px solid $color_dark-gray;
+}
+.signle-small-cat{
+    a{
+        width: auto;
+        display: flex;
+        color: $primary-color;
+        flex-flow: row;
+        border: 1px solid $color_dark-gray;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 3px;
+        line-height: 1.2;
+        min-height: 50px;
+        padding: 8px 15px;
+        cursor: pointer;
+        span.icons-cat {
+            font-size: 25px;
+            margin-right:15px;
+        }
+        span.cat-name {
+            font-size:$font-size-small;
+            text-transform: uppercase;
+        }
+        &:hover{
+            @include set-background($secondary-color);
+        }
+    }
+}

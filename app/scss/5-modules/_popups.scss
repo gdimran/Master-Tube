@@ -1,0 +1,131 @@
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  
+/*----mainpopup class---*/
+  .popup .notification-content{
+    visibility: hidden;
+    min-width: 350px;
+    position: absolute;
+    z-index: 10;
+    top: 48px;
+    margin-left: -24vw;
+    padding: 10px;
+    .video-thub-img-row{
+        display: flex;
+        margin: 20px 0;
+        font-size: 0.7rem;
+        align-items: center;
+        .video-thub-img{
+            position: relative;
+            border-radius: 6px;
+            flex-basis: 50%;
+            margin-right: 15px;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+            .play-btn{
+             width: 25%;
+             position: absolute;
+             left: 38%;
+             top: 25%;
+         }
+         .vide-share-options {
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+            a{
+                color: $primary-color;
+                &:hover{
+                    color: $secondary-color; 
+                }
+            }
+        }
+        }
+        .small-video-details {
+            width: 100%;
+        }
+        .small-video-details{
+         .video-title {
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             font-size: 0.65rem;
+             
+             .title-text{
+                margin: 0;
+             }
+         }
+            .video-attributes{
+                font-size: 0.6rem;
+                flex-flow: column;
+            }
+        }
+    }
+    .header-with-right-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $color_dark-grey;
+        padding-bottom:10px;
+    }
+  }
+  /*----mainpopup class---*/
+  .popup .create-option-content {
+    visibility: hidden;
+    width: 160px;
+    position: absolute;
+    z-index: 10;
+    top: 48px;
+    margin-left: -140px;
+    padding: 10px;
+  }
+  a.option-link {
+    color: $primary-color;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    &:hover{
+        color: $secondary-color;
+    }
+}
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

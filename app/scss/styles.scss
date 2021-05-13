@@ -26,8 +26,12 @@
 @import '5-modules/header';
 @import '5-modules/side-bar';
 @import '5-modules/categoryTag';
+@import '5-modules/card';
+@import '5-modules/popups';
 
 
 //6-pages
 @import '6-pages/homeContent';
 @import '6-pages/regLogin';
+@import '6-pages/single-content';
+@import '6-pages/readBook';

@@ -29,13 +29,19 @@ $bg-color-dark: darken($bg-color, 3%) !default;
 $bg-color-light: $light-color !default;
 
 // Control colors
+
+$color-blue: #2196F3;
+$success-color: #32b643 !default;
+$warning-color: #ffb700 !default;
+$error-color: #e85600 !default;
 $higlighted-link:$secondary-color;
 .higlighted-link{
     color: $higlighted-link !important;
 }
-$success-color: #32b643 !default;
-$warning-color: #ffb700 !default;
-$error-color: #e85600 !default;
+$special-link:$color-blue;
+.special-link{
+    color: $special-link !important;
+}
 
 // Other colors
 $code-color: #d73e48 !default;
@@ -50,7 +56,7 @@ $link-color-light: lighten($link-color, 10%) !default;
 
 $color_amber:#ffc107;
 $color_aqua: #00ffff;
-$color_blue: #2196F3;
+
 $color_light-blue: #87CEEB;
 $color_brown: #795548;
 $color_cyan: #00bcd4;

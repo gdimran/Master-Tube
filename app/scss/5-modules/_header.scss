@@ -75,3 +75,17 @@
         }
     
 }
+
+//logedin-user-header
+.user-access-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .user-profile-pic{
+        width: 40px;
+        height: 40px;
+        img{
+            width: 40px;
+        }
+    }
+}

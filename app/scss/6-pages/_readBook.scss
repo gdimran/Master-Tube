@@ -1,0 +1,12 @@
+.publishing {
+    display: flex;
+    flex-flow: column;
+}
+.view-download {
+    display: flex;
+    gap: 10px;
+}
+span.publishing-on {
+    font-size: 0.6rem;
+    font-style: italic;
+}

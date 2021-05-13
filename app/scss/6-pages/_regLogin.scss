@@ -1,7 +1,29 @@
 .login-content{
     min-height: 100vh;
+    input{
+        border-radius: 3px;
+        width: 100%;
+        padding: 5px 10px;
+        margin: 10px 0;
+        border: 1px solid $color_light-grey;
+        min-height: 50px;
+    }
+    input[type=password]{
+        position: relative;
+    }
+    a.forgot-pass {
+        position: absolute;
+        right: 11%;
+        bottom: 44%;
+    }
+   .btn-action {
+        width: 100%;
+    }
+    p.signup-redirect {
+        font-size: 0.8rem;
+    }
 }
-.user-login-section {
+.user-login-content {
     background: white;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -17,25 +39,3 @@
     font-size: 0.8rem;
 }
 //form styling
-input{
-    border-radius: 3px;
-    width: 100%;
-    padding: 5px 10px;
-    margin: 10px 0;
-    border: 1px solid $color_light-grey;
-    min-height: 50px;
-}
-input[type=password]{
-    position: relative;
-}
-a.forgot-pass {
-    position: absolute;
-    right: 11%;
-    bottom: 44%;
-}
-button.logn-btn.btn-action {
-    width: 100%;
-}
-p.signup-redirect {
-    font-size: 0.8rem;
-}
