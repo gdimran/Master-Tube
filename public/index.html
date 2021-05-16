@@ -13,8 +13,33 @@
     <!-- <link rel="stylesheet" type="text/css"
             href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
             /> -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <style>
+        .swiper-container {
+        width: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    </style>
 </head>
 
 <body>
@@ -38,7 +63,7 @@
                 <form action="" id="search-form">
                     <input id="search" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query"
                         tabindex="0" type="text" spellcheck="false" placeholder="Search" aria-label="Search"
-                        aria-haspopup="false" role="combobox" aria-autocomplete="list" dir="ltr" style="outline: none;">
+                        aria-haspopup="false"  role="combobox" aria-autocomplete="list" dir="ltr" style="outline: none;">
                     <button id="search-icon-legacy" class="searchbox btn" aria-label="Search">
                         <i class="fas fa-search"></i>
                     </button>
@@ -136,68 +161,216 @@
         <!-- category section -->
         <div class="all-category container-full">
             <div class="row">
-                <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
-                    <a href="">
-                        <span class="icons-cat">
-                            <i class="fas fa-graduation-cap"></i>
-                        </span>
-                        <span class="cat-name">Education</span>
-                    </a>
+                <div class="swiper-container homeCatSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </span>
+                                    <span class="cat-name">Education</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-briefcase"></i>
+                                    </span>
+                                    <span class="cat-name">Professional
+                                        skills</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-flask"></i>
+                                    </span>
+                                    <span class="cat-name">Science</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-mosque"></i>
+                                    </span>
+                                    <span class="cat-name">Religious</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-film"></i>
+                                    </span>
+                                    <span class="cat-name">Entertainment</span>
+                            </div>
+                        </div>
+                        <div  class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-palette"></i>
+                                    </span>
+                                    <span class="cat-name">Arts & Culture</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-handshake"></i>
+                                    </span>
+                                    <span class="cat-name">Business</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </span>
+                                    <span class="cat-name">Education</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-briefcase"></i>
+                                    </span>
+                                    <span class="cat-name">Professional
+                                        skills</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-flask"></i>
+                                    </span>
+                                    <span class="cat-name">Science</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-mosque"></i>
+                                    </span>
+                                    <span class="cat-name">Religious</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-film"></i>
+                                    </span>
+                                    <span class="cat-name">Entertainment</span>
+                            </div>
+                        </div>
+                        <div  class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-palette"></i>
+                                    </span>
+                                    <span class="cat-name">Arts & Culture</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-handshake"></i>
+                                    </span>
+                                    <span class="cat-name">Business</span>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
-                    <a href="">
-                        <span class="icons-cat">
-                            <i class="fas fa-briefcase"></i>
-                        </span>
-                        <span class="cat-name">Professional
-                            skills</span>
-                    </a>
-                </div>
-                <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
-                    <a href="">
-                        <span class="icons-cat">
-                            <i class="fas fa-flask"></i>
-                        </span>
-                        <span class="cat-name">Science</span>
-                    </a>
-                </div>
-                <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
-                    <a href="">
-                        <span class="icons-cat">
-                            <i class="fas fa-mosque"></i>
-                        </span>
-                        <span class="cat-name">Religious</span>
-                    </a>
-                </div>
-                <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
-                    <a href="">
-                        <span class="icons-cat">
-                            <i class="fas fa-film"></i>
-                        </span>
-                        <span class="cat-name">Entertainment</span>
-                    </a>
-                </div>
-                <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
-                    <a href="">
-                        <span class="icons-cat">
-                            <i class="fas fa-palette"></i>
-                        </span>
-                        <span class="cat-name">Arts & Culture</span>
-                    </a>
 
-                </div>
-                <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
-                    <a href="">
-                        <span class="icons-cat">
-                            <i class="fas fa-handshake"></i>
-                        </span>
-                        <span class="cat-name">Business</span>
-                    </a>
-
-                </div>
             </div>
         </div>
+
+        <!-- <div class="all-category container-full">
+            <div class="row">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat">
+                                <a href="">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </span>
+                                    <span class="cat-name">Education</span>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
+                                <a href="">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-briefcase"></i>
+                                    </span>
+                                    <span class="cat-name">Professional
+                                        skills</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
+                                <a href="">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-flask"></i>
+                                    </span>
+                                    <span class="cat-name">Science</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
+                                <a href="">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-mosque"></i>
+                                    </span>
+                                    <span class="cat-name">Religious</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
+                                <a href="">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-film"></i>
+                                    </span>
+                                    <span class="cat-name">Entertainment</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div  class="swiper-slide">
+                            <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
+                                <a href="">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-palette"></i>
+                                    </span>
+                                    <span class="cat-name">Arts & Culture</span>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="signle-big-cat col-xs-4 col-sm-3 col-md-2 col-lg-2">
+                                <a href="">
+                                    <span class="icons-cat">
+                                        <i class="fas fa-handshake"></i>
+                                    </span>
+                                    <span class="cat-name">Business</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </div>
+        </div> -->
 
         <section id="live-streaming">
             <div class="section-title my-2">
@@ -257,87 +430,87 @@
                                 <div class="video-attributes">
                                     <div class="channel-name">Master-Academy</div>
                                     <div class="video-watch-info">
-                                        <span class="waching-now">5,248,704 views   |   </span>
+                                        <span class="waching-now">5,248,704 views | </span>
                                         <span class="started-on">Feb 21, 2021</span>
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div>
                         <div class="video-thub-img-row">
                             <div class="video-thub-img">
                                 <img src="images/pic3.png" alt="">
                                 <img src="images/play-btn.png" alt="" class="play-btn"
                                     onclick="playVideo('videos/vid3.mp4')">
-                                    <div class="vide-share-options">
-                                        <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
-                                        <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
-                                        <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                <div class="vide-share-options">
+                                    <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                    <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                    <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                </div>
+                            </div>
+                            <div class="small-video-details">
+                                <div class="video-title">
+                                    <h3 class="title-text">Master-Academy Live</h3>
+                                    <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                </div>
+                                <div class="video-attributes">
+                                    <div class="channel-name">Master-Academy</div>
+                                    <div class="video-watch-info">
+                                        <span class="waching-now">5,248,704 views | </span>
+                                        <span class="started-on">Feb 21, 2021</span>
                                     </div>
                                 </div>
-                                <div class="small-video-details">
-                                    <div class="video-title">
-                                        <h3 class="title-text">Master-Academy Live</h3>
-                                        <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
-                                    </div>
-                                    <div class="video-attributes">
-                                        <div class="channel-name">Master-Academy</div>
-                                        <div class="video-watch-info">
-                                            <span class="waching-now">5,248,704 views   |   </span>
-                                            <span class="started-on">Feb 21, 2021</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
                         </div>
                         <div class="video-thub-img-row">
                             <div class="video-thub-img">
                                 <img src="images/pic4.png" alt="">
                                 <img src="images/play-btn.png" alt="" class="play-btn"
                                     onclick="playVideo('videos/vid4.mp4')">
-                                    <div class="vide-share-options">
-                                        <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
-                                        <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
-                                        <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                <div class="vide-share-options">
+                                    <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                    <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                    <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                </div>
+                            </div>
+                            <div class="small-video-details">
+                                <div class="video-title">
+                                    <h3 class="title-text">Master-Academy Live</h3>
+                                    <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                </div>
+                                <div class="video-attributes">
+                                    <div class="channel-name">Master-Academy</div>
+                                    <div class="video-watch-info">
+                                        <span class="waching-now">5,248,704 views | </span>
+                                        <span class="started-on">Feb 21, 2021</span>
                                     </div>
                                 </div>
-                                <div class="small-video-details">
-                                    <div class="video-title">
-                                        <h3 class="title-text">Master-Academy Live</h3>
-                                        <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
-                                    </div>
-                                    <div class="video-attributes">
-                                        <div class="channel-name">Master-Academy</div>
-                                        <div class="video-watch-info">
-                                            <span class="waching-now">5,248,704 views   |   </span>
-                                            <span class="started-on">Feb 21, 2021</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
                         </div>
                         <div class="video-thub-img-row">
                             <div class="video-thub-img">
                                 <img src="images/pic1.png" alt="">
                                 <img src="images/play-btn.png" alt="" class="play-btn"
                                     onclick="playVideo('videos/video.mp4')">
-                                    <div class="vide-share-options">
-                                        <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
-                                        <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
-                                        <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                <div class="vide-share-options">
+                                    <span class="love"><a href=""><i class="far fa-heart"></i></a></span>
+                                    <span class="share"><a href=""><i class="fas fa-share-alt"></i></a></span>
+                                    <span class="add"><a href=""><i class="fas fa-plus"></i></a></span>
+                                </div>
+                            </div>
+                            <div class="small-video-details">
+                                <div class="video-title">
+                                    <h3 class="title-text">Master-Academy Live</h3>
+                                    <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
+                                </div>
+                                <div class="video-attributes">
+                                    <div class="channel-name">Master-Academy</div>
+                                    <div class="video-watch-info">
+                                        <span class="waching-now">5,248,704 views | </span>
+                                        <span class="started-on">Feb 21, 2021</span>
                                     </div>
                                 </div>
-                                <div class="small-video-details">
-                                    <div class="video-title">
-                                        <h3 class="title-text">Master-Academy Live</h3>
-                                        <span class="option-icon"><i class="fas fa-ellipsis-v"></i></span>
-                                    </div>
-                                    <div class="video-attributes">
-                                        <div class="channel-name">Master-Academy</div>
-                                        <div class="video-watch-info">
-                                            <span class="waching-now">5,248,704 views   |   </span>
-                                            <span class="started-on">Feb 21, 2021</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -384,7 +557,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                         <div class="single-video-content">
@@ -419,7 +592,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                         <div class="single-video-content">
@@ -454,7 +627,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                         <div class="single-video-content">
@@ -489,7 +662,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -500,7 +673,30 @@
 
 
     </div>
-
+<!-- modal for search start -->
+<!-- The Modal -->
+<div id="search-modal" class="modal">
+    <div class="modal-header search-modal-header">
+        <div class="backto-home"><a href="index.html"><i class="fas fa-long-arrow-alt-left"></i></a></div>
+        <div class="search-input">
+            <form action="" id="search-form">
+                <input id="search-main" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query"
+                    tabindex="0" type="text" spellcheck="false" placeholder="Search" aria-label="Search"
+                    aria-haspopup="false"  role="combobox" aria-autocomplete="list" dir="ltr" style="outline: none;">
+                <button id="main-search-icon-legacy" class="searchbox btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <span class="modal-close-btn">&times;</span>
+    </div>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <p>Some text in the Modal..</p>
+    </div>
+  
+  </div>
+<!-- modal for search end -->
 
 
     <!-- all js files -->
@@ -508,6 +704,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/sliders.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
 </body>
 
 </html>
