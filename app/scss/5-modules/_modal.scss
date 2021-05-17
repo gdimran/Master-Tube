@@ -12,18 +12,37 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
+  /*modal header */
+  .modal-header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+    background: $light-color;
+  }
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 30px;
-    border: 1px solid #888;
     width: 100%;
   }
   
   /* The Close Button */
   span.modal-close-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+    text-align: center;
+    line-height: 27px;
+    font-size: 20px;
+    font-weight: 400;
+    color: $primary-color;
+}
+  #search-modal span.modal-close-btn {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -34,7 +53,8 @@
     font-weight: 400;
     color: $light-color;
 }
-  
+#search-modal span.modal-close-btn:hover,
+#search-modal span.modal-close-btn:focus, 
   .modal-close-btn:hover,
   .modal-close-btn:focus {
     color: $secondary-color;
@@ -63,6 +83,10 @@ input#search-main {
     width: 50vw;
     color: $light-color;
 }
+.backto-home-defaluta {
+  color: $primary-color;
+  font-size: 20px;
+}
 .backto-home a {
     color: $light-color;
     font-size: 20px;
@@ -73,4 +97,50 @@ button#main-search-icon-legacy {
     color: $light-color;
     position: relative;
     left: -23px;
+}
+.cat-heading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-bottom: 1px solid $primary-color;
+  padding-bottom: 10px;
+}
+
+  .cat-heading i {
+    font-size: 25px;
+}
+.cat-content ul li a {
+  color: $primary-color;
+  list-style: none;
+  line-height: 2;
+  &:hover{
+    color: $secondary-color;
+  }
+}
+
+//search result modal
+#search-result-modal.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 12; /* Sit on top */
+  padding-top: 0; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: none; /* Fallback color */
+}
+#search-result-modal.modal {
+  width: 51vw;
+  height: auto;
+  top: 71px;
+  left: 22vw;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  
+  background-color: transparent; /* Fallback color */
+  background-color: transparent; /* Black w/ opacity */
+
 }
