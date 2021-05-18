@@ -28,6 +28,7 @@
     margin: auto;
     padding: 30px;
     width: 100%;
+    height: 100vh;
   }
   
   /* The Close Button */
@@ -143,4 +144,7 @@ button#main-search-icon-legacy {
   background-color: transparent; /* Fallback color */
   background-color: transparent; /* Black w/ opacity */
 
+}
+#search-result-modal div.modal-content{
+  height: auto !important;
 }

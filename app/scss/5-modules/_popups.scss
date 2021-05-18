@@ -11,14 +11,14 @@
   
   /* The actual popup */
   
-/*----mainpopup class---*/
+/*----mainpopup for notification class---*/
   .popup .notification-content{
     visibility: hidden;
     min-width: 350px;
     position: absolute;
     z-index: 10;
     top: 48px;
-    margin-left: -24vw;
+    margin-left: -325px;
     padding: 10px;
     .video-thub-img-row{
         display: flex;
@@ -92,7 +92,7 @@
   }
   a.option-link {
     color: $primary-color;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     display: flex;
     align-items: center;
     margin: 5px 0;
@@ -100,6 +100,64 @@
         color: $secondary-color;
     }
 }
+
+/*user-account options-----------*/
+.user-option {
+	position: relative;
+}
+.popup .userSetting-content {
+  visibility: hidden;
+  width:280px;
+  position: absolute;
+  z-index: 10;
+  top: 56px;
+  right: 0;
+  padding: 10px;
+  .card-header {
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .fas.fa-chevron-right.icon-right {
+    text-align: right;
+    margin-right: 0;
+    font-size: 0.9rem !important;
+    position: absolute;
+    right: 20px;
+  }
+  a.option-link img {
+    width: 20px;
+    margin-right: 20px;
+  }
+  a.option-link i {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  a.option-link {
+    color: $primary-color;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    &:hover{
+        color: $secondary-color;
+    }
+  }
+}
+.user-name {
+	font-size: 1.2rem;
+	line-height: 1.1;
+  font-weight: 600;
+}
+.user-email {
+	margin-bottom: 15px;
+}
+.header-with-left-pic {
+	display: flex;
+	gap: 15px;
+}
+
+
   /* Popup arrow */
   .popup .popuptext::after {
     content: "";
