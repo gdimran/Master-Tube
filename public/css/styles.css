@@ -1612,6 +1612,47 @@ hr.horizontal-line {
   color: #fff;
 }
 
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 13;
+  height: 100%;
+  top: 70px;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  display: flex;
+  flex-flow: row;
+  text-align: center;
+  color: #616161;
+  transition: 0.3s;
+}
+
+.sidepanel a .menu-text-small {
+  font-size: 0.6rem;
+}
+
+.sidepanel a:hover {
+  background-color: #ff7c38;
+  color: #fff;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
 .signle-big-cat {
   width: 100%;
   display: flex;

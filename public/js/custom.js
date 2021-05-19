@@ -1,4 +1,33 @@
+//=============expandable side bar=============================
+function showExpandsideBar() {
+  var x = document.getElementById("exSidepanel");
+  if (x.style.width = "0") {
+    x.style.width = "250px";
+    document.getElementById("side-bar").style.display = "none";
+    document.getElementById("content").style.marginLeft = "185px";
+  } else {
+    x.style.width = "0";
+    document.getElementById("side-bar").style.display = "block";
+    document.getElementById("content").style.marginLeft = "0";
+  }
+}
+// var expandBar = document.getElementById("exSidepanel");
+// function openNav() {
+//   document.getElementById("exSidepanel").style.width = "250px";
+//   document.getElementById("side-bar").style.display = "none";
+//   document.getElementById("content").style.marginLeft = "185px";
+// }
 
+// function closeNav() {
+//   document.getElementById("exSidepanel").style.width = "0";
+//   document.getElementById("side-bar").style.display = "block";
+//   document.getElementById("content").style.marginLeft = "0";
+// }
+// window.onclick = function (event) {
+//   if (event.target == document.getElementById("exSidepanel")) {
+//     expandBar.style.width = "0";
+//   }
+// }
 
 //video open-close 
 var videoPlayer = document.getElementById("videoPlayer");
@@ -47,3 +76,4 @@ function videoOption() {
   var popup = document.getElementById("videoOptionPopup");
   popup.classList.toggle("show");
 }
+

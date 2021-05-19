@@ -29,3 +29,40 @@
     }
     
 }
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 13;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    background-color: $light-color;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    color: $color_dark-gray;
+    .menu-text-small{
+        font-size: 0.6rem;
+    }
+    &:hover{
+        @include set-background($secondary-color);
+    }
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }

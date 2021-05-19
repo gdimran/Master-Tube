@@ -23,10 +23,133 @@
     </head>
 
     <body>
+        <div id="exSidepanel" class="sidepanel">
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
+            <div class="sidebar-expand">
+                <ul class="my-1">
+                    <li>
+                        <a class="py-1" href="">
+                            <span class="menu-icon small-side-bar"><span
+                                    class="material-icons">
+                                    home
+                                </span></span>
+                            <span class="menu-text-small">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="py-1" href="">
+                            <span class="menu-icon small-side-bar"><span
+                                    class="material-icons">
+                                    explore
+                                </span></span>
+                            <span class="menu-text-small">Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="py-1" href="">
+                            <span class="menu-icon small-side-bar"><span
+                                    class="material-icons">
+                                    menu_book
+                                </span>
+                            </span>
+                            <span class="menu-text-small">Read Book</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="py-1" href="">
+                            <span class="menu-icon small-side-bar"><span
+                                    class="material-icons">
+                                    subscriptions
+                                </span>
+                            </span>
+                            <span class="menu-text-small">Subscriptions</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="py-1" href="">
+                            <span class="menu-icon small-side-bar"><span
+                                    class="material-icons">
+                                    video_library
+                                </span>
+                            </span>
+                            <span class="menu-text-small">Library</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="py-1" href="">
+                            <span class="menu-icon small-side-bar"><span
+                                    class="material-icons">
+                                    history
+                                </span></span>
+                            <span class="menu-text-small">History</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="sidebar-login">
+                    <span class="sec-desc">Sign in to like videos,
+                        comment, and subscribe.</span>
+                    <a href="login.html" class="login btn-outline"> <i
+                            class="fas fa-user"></i> Log in</a>
+                </div>
+
+                <div class="sidebar-live">
+                    <span class="sec-desc">Live streaming on</span>
+                    <a href="" class="live"> <img src="images/live.png" alt="">
+                        Log in</a>
+                </div>
+                <ul class="my-1">
+                    <li>
+                        <a class="py-1" href="">
+                            <span class="menu-icon small-side-bar"><span
+                                    class="material-icons">
+                                    settings
+                                </span></span>
+                            <span class="menu-text-small">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="py-1" href="">
+                            <span class="menu-icon small-side-bar"><span
+                                    class="material-icons">
+                                    flag
+                                </span></span>
+                            <span class="menu-text-small">Report history</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="py-1" href="">
+                            <span class="menu-icon small-side-bar"><span
+                                    class="material-icons">
+                                    help
+                                </span></span>
+                            <span class="menu-text-small">Help</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="py-1" href="">
+                            <span class="menu-icon small-side-bar"><span
+                                    class="material-icons">
+                                    feedback
+                                </span></span>
+                            <span class="menu-text-small">Send feedback</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="terms">
+                    Terms Privacy Policy & Safety
+                    How Master-Academy works
+                    Test new features
+
+                    © 2021 Master-Academy
+                </div>
+            </div>
+        </div>
         <!-- Header section start -->
         <section id="header">
             <div class="header-content-left">
-                <span class="menu-icon"><i class="fas fa-bars"></i></span>
+                <!-- <span class="menu-icon openbtn" onclick="openNav()"> -->
+                <span class="menu-icon openbtn" onclick="showExpandsideBar()">
+                    <i class="fas fa-bars"></i></span>
                 <div class="logo">
                     <a href="">
                         <img src="images/logo.png">
