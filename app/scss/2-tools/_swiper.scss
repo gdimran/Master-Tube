@@ -34,6 +34,36 @@
         }
     }
 }
+.logedinCatSwiper {
+    border-bottom:1px solid $color_dark-gray;
+    .swiper-slide{
+        width: auto!important;
+    }
+    .swiper-button-prev:after, .swiper-button-next:after {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        position: absolute;
+        border-radius: 50%;
+        background: #fff !important;
+        width: 40px !important;
+        height: 40px!important;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+        top: 35%;
+        margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:$primary-color;
+        &:hover{
+            color:$light-color;
+            background: $secondary-color !important;
+        }
+    }
+}
 
 .mostPopulerSwiper{
         overflow: initial;

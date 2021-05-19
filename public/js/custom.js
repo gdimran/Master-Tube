@@ -43,3 +43,7 @@ function userAccountFunc() {
   var popup = document.getElementById("userSettingsPopup");
   popup.classList.toggle("show");
 }
+function videoOption() {
+  var popup = document.getElementById("videoOptionPopup");
+  popup.classList.toggle("show");
+}

@@ -101,6 +101,15 @@
     }
 }
 
+.popup.single-video-option-content {
+  visibility: hidden;
+  width: 160px;
+  position: absolute;
+  z-index: 10;
+  top: 48px;
+  margin-left: -140px;
+  padding: 10px;
+}
 /*user-account options-----------*/
 .user-option {
 	position: relative;

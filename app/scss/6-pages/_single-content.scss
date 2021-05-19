@@ -91,6 +91,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.old-comments.reply{
+    margin-left: 2rem !important;
+}
 .comments-content,
 .comment-input {
     width: calc(100% - 70px);
