@@ -19,6 +19,9 @@
                 .menu-text-small{
                     font-size: 0.6rem;
                 }
+                .active{
+                    @include set-background($secondary-color);
+                }
                 &:hover{
                     @include set-background($secondary-color);
                 }
@@ -30,32 +33,69 @@
     
 }
 .sidepanel  {
-    width: 0;
+    width: 250px;
     position: fixed;
-    z-index: 13;
+    z-index: 3;
     height: 100%;
-    top: 70px;
     left: 0;
+    overflow-y: scroll;
     background-color: $light-color;
-    overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 70px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+    .material-icons {
+        margin: 5px 0;
+    }
   }
   
   .sidepanel a {
     display: flex;
     flex-flow: row;
+    padding: 0 24px;
+    min-height: 40px;
+    gap: 15px;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 15px;
     text-align: center;
     color: $color_dark-gray;
-    .menu-text-small{
-        font-size: 0.6rem;
+    .menu-text-expand{
+        font-size: 1rem;
+    }
+    
+    &:active{
+        @include set-background($secondary-color);
     }
     &:hover{
         @include set-background($secondary-color);
     }
     transition: 0.3s;
   }
-  
+  .sidebar-live{
+      padding: 15px 0;
+	border-bottom: 1px solid darkgray;
+    .sec-desc{
+        padding: 15px 24px;
+        display: block;
+    }
+  }
+  .terms {
+	padding: 15px 24px;
+}
+  .sidebar-login {
+	padding: 15px 24px;
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+}
+.login.btn-outline {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15px;
+}
   .sidepanel a:hover {
     color: #f1f1f1;
   }

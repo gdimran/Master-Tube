@@ -3,7 +3,6 @@
 
 
 
-
 html {
     box-sizing: border-box;
     overflow-x: hidden;
@@ -20,7 +19,29 @@ html {
     padding: 0;
 }
 
-
+div{
+    &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        box-shadow: none; 
+    }
+      &::-webkit-scrollbar-thumb {
+        visibility: hidden;
+      }
+    &:hover {
+        &::-webkit-scrollbar {
+            display: block;
+          }
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            visibility: visible;
+        }
+    }
+}
 //Main Style
 body{
     font-size:0.8rem;
@@ -63,6 +84,7 @@ menu,
 nav,
 section {
     display: block;
+    overflow: hidden;
 }
 
 summary {
@@ -102,11 +124,13 @@ hr {
     overflow: visible
 }
 a {
-    
     background-color: transparent;
     text-decoration: none;
 }
-
+.active{
+    background: $secondary-color;
+    color: $light-color !important;
+}
 a:active,
 a:hover {
     outline-width: 0;

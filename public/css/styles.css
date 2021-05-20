@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css");
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -311,6 +310,7 @@ $responsive-breakpoint: $size-xs !default;
 
 .mostPopulerSwiper div.swiper-slide {
   height: auto;
+  width: 19.5vw !important;
 }
 
 html {
@@ -328,6 +328,31 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+div::-webkit-scrollbar {
+  width: 5px;
+}
+
+div::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+div::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+
+div:hover::-webkit-scrollbar {
+  display: block;
+}
+
+div:hover::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+div:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
 }
 
 body {
@@ -376,6 +401,7 @@ menu,
 nav,
 section {
   display: block;
+  overflow: hidden;
 }
 
 summary {
@@ -418,6 +444,11 @@ hr {
 a {
   background-color: transparent;
   text-decoration: none;
+}
+
+.active {
+  background: #ff7c38;
+  color: #fff !important;
 }
 
 a:active,
@@ -1569,6 +1600,10 @@ hr.horizontal-line {
   border-radius: 0 5px 5px 0;
 }
 
+.menu-icon.openbtn {
+  font-size: 20px;
+}
+
 .user-access-section {
   display: flex;
   align-items: center;
@@ -1607,39 +1642,88 @@ hr.horizontal-line {
   font-size: 0.6rem;
 }
 
+.sidebar-small ul li a .active {
+  background-color: #ff7c38;
+  color: #fff;
+}
+
 .sidebar-small ul li a:hover {
   background-color: #ff7c38;
   color: #fff;
 }
 
 .sidepanel {
-  width: 0;
+  width: 250px;
   position: fixed;
-  z-index: 13;
+  z-index: 3;
   height: 100%;
-  top: 70px;
   left: 0;
+  overflow-y: scroll;
   background-color: #fff;
-  overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 70px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sidepanel .material-icons {
+  margin: 5px 0;
 }
 
 .sidepanel a {
   display: flex;
   flex-flow: row;
+  padding: 0 24px;
+  min-height: 40px;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 15px;
   text-align: center;
   color: #616161;
   transition: 0.3s;
 }
 
-.sidepanel a .menu-text-small {
-  font-size: 0.6rem;
+.sidepanel a .menu-text-expand {
+  font-size: 1rem;
+}
+
+.sidepanel a:active {
+  background-color: #ff7c38;
+  color: #fff;
 }
 
 .sidepanel a:hover {
   background-color: #ff7c38;
   color: #fff;
+}
+
+.sidebar-live {
+  padding: 15px 0;
+  border-bottom: 1px solid darkgray;
+}
+
+.sidebar-live .sec-desc {
+  padding: 15px 24px;
+  display: block;
+}
+
+.terms {
+  padding: 15px 24px;
+}
+
+.sidebar-login {
+  padding: 15px 24px;
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+}
+
+.login.btn-outline {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .sidepanel a:hover {
@@ -1662,6 +1746,7 @@ hr.horizontal-line {
   justify-content: center;
   text-align: center;
   border-radius: 3px;
+  margin: 10px 0;
   padding: 20px 0;
   cursor: pointer;
 }
@@ -2144,7 +2229,6 @@ button#main-search-icon-legacy {
 #content {
   position: absolute;
   left: 75px;
-  width: calc(100% - 75px);
   padding: 30px;
   top: 70px;
 }
@@ -2289,7 +2373,7 @@ button#main-search-icon-legacy {
   display: flex;
   flex-flow: column;
   width: 100%;
-  height: 75vh;
+  height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 3px;

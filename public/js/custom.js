@@ -1,33 +1,29 @@
 //=============expandable side bar=============================
-function showExpandsideBar() {
-  var x = document.getElementById("exSidepanel");
-  if (x.style.width = "0") {
-    x.style.width = "250px";
-    document.getElementById("side-bar").style.display = "none";
-    document.getElementById("content").style.marginLeft = "185px";
+window.onload = function () {
+
+  if (document.getElementById("exSidepanel") === "none") {
+    document.getElementById("content").style.width = "calc(100% - 75px)";
   } else {
-    x.style.width = "0";
-    document.getElementById("side-bar").style.display = "block";
-    document.getElementById("content").style.marginLeft = "0";
+    document.getElementById("content").style.width = "calc(100% - 260px)";
+    document.getElementById("content").style.marginLeft = "185px";
   }
 }
-// var expandBar = document.getElementById("exSidepanel");
-// function openNav() {
-//   document.getElementById("exSidepanel").style.width = "250px";
-//   document.getElementById("side-bar").style.display = "none";
-//   document.getElementById("content").style.marginLeft = "185px";
-// }
 
-// function closeNav() {
-//   document.getElementById("exSidepanel").style.width = "0";
-//   document.getElementById("side-bar").style.display = "block";
-//   document.getElementById("content").style.marginLeft = "0";
-// }
-// window.onclick = function (event) {
-//   if (event.target == document.getElementById("exSidepanel")) {
-//     expandBar.style.width = "0";
-//   }
-// }
+function showExpandsideBar() {
+  var x = document.getElementById("exSidepanel");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementById("side-bar").style.display = "none";
+    document.getElementById("content").style.marginLeft = "185px";
+    document.getElementById("content").style.width = "calc(100% - 260px)";
+  } else {
+    x.style.display = "none";
+    document.getElementById("side-bar").style.display = "block";
+    document.getElementById("content").style.marginLeft = "0";
+    document.getElementById("content").style.width = "calc(100% - 75px)";
+  }
+
+}
 
 //video open-close 
 var videoPlayer = document.getElementById("videoPlayer");
