@@ -100,15 +100,20 @@
         color: $secondary-color;
     }
 }
-
-.popup.single-video-option-content {
+/*video options-----------*/
+a.option-link .material-icons {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.popup .single-video-option-content {
   visibility: hidden;
-  width: 160px;
+  width: 200px;
   position: absolute;
   z-index: 10;
-  top: 48px;
-  margin-left: -140px;
+  top: -180px;
+  margin-left: -185px;
   padding: 10px;
+  
 }
 /*user-account options-----------*/
 .user-option {
@@ -123,9 +128,8 @@
   right: 0;
   padding: 10px;
   .card-header {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid $color_light-gray;
     padding-bottom: 15px;
-    margin-bottom: 15px;
   }
   .fas.fa-chevron-right.icon-right {
     text-align: right;
@@ -152,6 +156,9 @@
         color: $secondary-color;
     }
   }
+}
+.basic-user-settings {
+  border-bottom: 1px solid $color_light-gray;
 }
 .user-name {
 	font-size: 1.2rem;

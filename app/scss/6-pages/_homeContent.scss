@@ -1,7 +1,6 @@
 #content {
 	position: absolute;
 	left: 75px;
-	// width: calc(100% - 75px);
 	padding: 30px;
 	top: 70px;
     .hero-section{
@@ -46,7 +45,7 @@
       }
   }
     .video-title {
-        font-size: 0.8rem;
+        font-size: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -54,7 +53,7 @@
     .video-attributes {
         display: flex;
         justify-content: space-between;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         color: $color_dark-grey;
         text-align: initial;
     }
@@ -68,7 +67,7 @@
    }
    .video-thub-img-row{
        display: flex;
-       margin: 20px 0;
+       margin-bottom: 20px;
        font-size: 0.7rem;
        align-items: center;
        .video-thub-img{
@@ -87,7 +86,7 @@
        }
        .small-video-details{
         .video-title {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
         }
            .video-attributes{
                flex-flow: column;
@@ -143,7 +142,7 @@
     }
     .single-video-content{
         .video-title {
-            font-size: 0.7rem !important;
+            font-size: 0.9rem !important;
         }
         .video-attributes{
             flex-flow: column;

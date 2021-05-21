@@ -127,14 +127,13 @@ a {
     background-color: transparent;
     text-decoration: none;
 }
-.active{
+a.active{
     background: $secondary-color;
     color: $light-color !important;
 }
 a:active,
 a:hover {
     outline-width: 0;
-    // color: $secondary-color !important;
 }
 
 abbr[title] {

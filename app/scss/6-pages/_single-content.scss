@@ -1,10 +1,24 @@
+.small-video-details {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+}
+.single-content-play div.video-title{
+    font-size: 1rem !important;
+}
 .single-content-att{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+.video-watch-info {
+    display: flex;
+    align-items: center;
+}
 .like-share-opt {
     display: flex;
+    align-items: center;
+    font-size: 1rem !important;
     a{
         display: inline-flex;
         align-items: center;
@@ -68,12 +82,17 @@
 .desc-tab {
     border-bottom: 1px solid  $color_light-grey;
 }
+.tablinks.active {
+	border-bottom: 2px solid  $secondary-color !important;
+        color: $secondary-color !important;
+}
 .tablinks {
     border: none;
     background: transparent;
     font-size: 0.9rem;
     color: $color_dark-gray;
     padding: 5px 15px;
+    
     &:hover{
         border-bottom: 2px solid  $secondary-color;
         color: $secondary-color;
@@ -84,6 +103,18 @@
 }
 
 //Comments section
+.comment-submit {
+    display: none;
+	margin: 10px 0;
+}
+.terms-con {
+	width: 70%;
+	float: left;
+	line-height: 33px;
+}
+.buttons-com {
+	float: right;
+}
 .old-comments,
 .new-comment {
     display: flex;

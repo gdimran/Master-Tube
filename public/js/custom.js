@@ -1,3 +1,26 @@
+//jQuery.noConflict();
+
+//================popups=====================
+function createOption() {
+  var popup = document.getElementById("createOptionPopup");
+  popup.classList.toggle("show");
+}
+
+function notificationFunc() {
+  var popup = document.getElementById("notificationPopup");
+  popup.classList.toggle("show");
+}
+
+function userAccountFunc() {
+  var popup = document.getElementById("userSettingsPopup");
+  popup.classList.toggle("show");
+}
+function videoOption() {
+  var popup = document.getElementById("videoOptionPopup");
+  popup.classList.toggle("show");
+}
+
+
 //=============expandable side bar=============================
 window.onload = function () {
 
@@ -53,23 +76,13 @@ function openDesc(evt, tabName) {
 }
 
 
-//================popups=====================
-function createOption() {
-  var popup = document.getElementById("createOptionPopup");
-  popup.classList.toggle("show");
+//============comment div show============
+var commentInput = document.getElementById("comment-input-field");
+var commentSubmit = document.getElementById("commentSubmit");
+commentInput.onkeyup = function () {
+  commentSubmit.style.display = "block";
 }
 
-function notificationFunc() {
-  var popup = document.getElementById("notificationPopup");
-  popup.classList.toggle("show");
+function closeComment() {
+  commentSubmit.style.display = "none";
 }
-
-function userAccountFunc() {
-  var popup = document.getElementById("userSettingsPopup");
-  popup.classList.toggle("show");
-}
-function videoOption() {
-  var popup = document.getElementById("videoOptionPopup");
-  popup.classList.toggle("show");
-}
-
