@@ -11,9 +11,12 @@ var span = document.getElementsByClassName("modal-close-btn")[0];
 // btn.onclick = function() {
 //   modal.style.display = "block";
 // }
-inputSearch.onkeyup = function () {
+inputSearch.onfocus = function () {
   modal.style.display = "block";
 }
+// inputSearch.onkeyup = function () {
+//   modal.style.display = "block";
+// }
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = "none";
@@ -35,8 +38,17 @@ var modal2 = document.getElementById("search-result-modal");
 var inputSearch2 = document.getElementById("search-main");
 
 inputSearch2.onkeyup = function () {
-  modal2.style.display = "block";
+  if (inputSearch2.value === "") {
+    modal2.style.display = "none";
+  } else {
+    modal2.style.display = "block";
+  }
 }
+
+
+// inputSearch2.onkeyup = function () {
+//   modal2.style.display = "block";
+// }
 
 window.onclick = function (event) {
   if (event.target.id != modal2) {

@@ -156,6 +156,7 @@
     cursor: text;
     transition: all 200ms ease-out;
     z-index: 10;
+    pointer-events: none;
 }
 .comment-input .inputbox-content input:focus ~ label, .comment-input .inputbox-content input:valid ~ label {
     color: $secondary-color;

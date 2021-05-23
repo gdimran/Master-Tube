@@ -46,6 +46,7 @@
                 justify-content: center;
                 line-height: 25px;
                 margin-right: 10px;
+                cursor: pointer;
                 i {
                     margin-left: 5px;
                     line-height: 25px;
@@ -58,9 +59,9 @@
                     height: 40px;
                     border: 1px solid $gray-color;
                     background: transparent;
-                    box-shadow: 0px 3px 11px -4px rgba(0,0,0,0.5) inset;
-                    -webkit-box-shadow: 0px 3px 6px -4px rgba(0,0,0,0.5) inset;
-                    -moz-box-shadow: 0px 3px 11px -4px rgba(0,0,0,0.5) inset;
+                    // box-shadow: 0px 3px 11px -4px rgba(0,0,0,0.5) inset;
+                    // -webkit-box-shadow: 0px 3px 6px -4px rgba(0,0,0,0.5) inset;
+                    // -moz-box-shadow: 0px 3px 11px -4px rgba(0,0,0,0.5) inset;
                     padding: 10px;
                     border-radius: 5px 0 0 5px;
                 }
@@ -70,6 +71,7 @@
                     color:$gray-color;
                     border: 1px solid $gray-color;
                     border-radius: 0 5px 5px 0;
+                    cursor: pointer;
                 }
             }
             

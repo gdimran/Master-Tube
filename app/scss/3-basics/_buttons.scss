@@ -1,17 +1,19 @@
 //Buttons
 %btn{
-  display: inline-block;
+  display: inline-flex;
   border-radius: 4px;
   padding: 6px 15px;
   font-weight:500;
-  vertical-align: middle;
+  min-height: 40px;
+  align-items: center;
   //line-height: 1.3;
   &:focus,
   &:hover{
     // background: $secondary-color;
     // color: $light-color;
     @include set-background($secondary-color);
-    border: 1px solid $secondary-color;;
+    border: 1px solid $secondary-color;
+    
   }
 }
 .btn-primary{
@@ -29,7 +31,7 @@
   @extend %btn;
   color: $primary-color;
   background: transparent;
-  border: none;
+  border: 1px solid transparent;
 }
 .btn-action{
   @extend %btn;

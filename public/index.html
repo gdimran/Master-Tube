@@ -139,18 +139,21 @@
                 <!-- <span class="menu-icon openbtn" onclick="openNav()"> -->
                 <span class="menu-icon openbtn" onclick="showExpandsideBar()">
                     <i class="fas fa-bars"></i></span>
-                <div class="logo">
+                <div class="logo tooltip-container">
                     <a href="">
                         <img src="images/logo.png">
                         <!-- <span class="logo-text">Master-Academy</span> -->
                     </a>
+                    <div class="tooltip">Master Home</div>
                 </div>
             </div>
 
             <div class="search-section">
-                <div id="explore-opener" class="explor btn-outline">Explore <i
+                <div id="explore-opener" class="explor btn-outline
+                    tooltip-container">Explore <i
                         class="fas
                         fa-chevron-down"></i>
+                    <div class="tooltip">Explore what you want</div>
                 </div>
                 <div class="search-field">
                     <form action="" id="search-form">
@@ -162,9 +165,11 @@
                             aria-haspopup="false" role="combobox"
                             aria-autocomplete="list" dir="ltr" style="outline:
                             none;">
-                        <button id="search-icon-legacy" class="searchbox btn"
+                        <button id="search-icon-legacy" class="searchbox btn
+                            tooltip-container"
                             aria-label="Search">
                             <i class="fas fa-search"></i>
+                            <div class="tooltip">Search</div>
                         </button>
                     </form>
                 </div>
@@ -398,7 +403,8 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                             <div class="video-feature-image">
-                                <img src="images/pic1.png" alt="" width="100%">
+                                <img class="thumbnail-image"
+                                    src="images/pic1.png" alt="">
                                 <img src="images/play-btn.png" alt=""
                                     class="play-btn"
                                     onclick="playVideo('videos/video.mp4')">

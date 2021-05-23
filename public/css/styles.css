@@ -501,11 +501,12 @@ ul li {
 }
 
 .btn-primary, .btn-outline, .btn-normal, .btn-action {
-  display: inline-block;
+  display: inline-flex;
   border-radius: 4px;
   padding: 6px 15px;
   font-weight: 500;
-  vertical-align: middle;
+  min-height: 40px;
+  align-items: center;
 }
 
 .btn-primary:focus, .btn-outline:focus, .btn-normal:focus, .btn-action:focus, .btn-primary:hover, .btn-outline:hover, .btn-normal:hover, .btn-action:hover {
@@ -529,7 +530,7 @@ ul li {
 .btn-normal {
   color: #1d1d1d;
   background: transparent;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .btn-action {
@@ -1570,6 +1571,7 @@ hr.horizontal-line {
   justify-content: center;
   line-height: 25px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 #header .search-section .explor i {
@@ -1586,9 +1588,6 @@ hr.horizontal-line {
   height: 40px;
   border: 1px solid #bcc3ce;
   background: transparent;
-  box-shadow: 0px 3px 11px -4px rgba(0, 0, 0, 0.5) inset;
-  -webkit-box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 0px 3px 11px -4px rgba(0, 0, 0, 0.5) inset;
   padding: 10px;
   border-radius: 5px 0 0 5px;
 }
@@ -1599,6 +1598,7 @@ hr.horizontal-line {
   color: #bcc3ce;
   border: 1px solid #bcc3ce;
   border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 .menu-icon.openbtn {
@@ -1831,6 +1831,30 @@ hr.horizontal-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/*----tooltip-------------*/
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-container:hover .tooltip {
+  display: block;
+}
+
+.tooltip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  display: none;
+  background: #1d1d1d;
+  color: #fff;
+  padding: 15px 10px;
+  text-align: center;
+  line-height: 1;
+  border-radius: 5px;
+  width: max-content;
 }
 
 /* Popup container - can be anything you want */
@@ -2221,10 +2245,10 @@ button#main-search-icon-legacy {
 }
 
 #search-result-modal.modal {
-  width: 51vw;
+  width: 50vw;
   height: auto;
   top: 71px;
-  left: 22vw;
+  left: 24vw;
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
   background-color: transparent;
   /* Fallback color */
@@ -2269,7 +2293,17 @@ button#main-search-icon-legacy {
   margin: auto;
   position: relative;
   overflow: hidden;
+  height: 0;
   border-radius: 6px;
+  padding-bottom: 56.25%;
+}
+
+#content .thumbnail-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #content .vide-share-options {
@@ -2637,6 +2671,7 @@ button#main-search-icon-legacy {
   cursor: text;
   transition: all 200ms ease-out;
   z-index: 10;
+  pointer-events: none;
 }
 
 .comment-input .inputbox-content input:focus ~ label, .comment-input .inputbox-content input:valid ~ label {
