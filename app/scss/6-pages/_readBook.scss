@@ -1,12 +1,31 @@
+.page-title-text {
+    font-size: $section-title-font-size;
+    font-weight: 300;
+}
+.card-sub-title.author {
+    font-size: $user-comment-font-size;
+    line-height: $user-comment-line-height;
+    font-weight: $user-comment-font-weight;
+}
 .publishing {
     display: flex;
     flex-flow: column;
 }
 .view-download {
+    font-size: $user-comment-font-size;
+    line-height: $user-comment-line-height;
+    font-weight: $user-comment-font-weight;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 span.publishing-on {
-    font-size: 0.6rem;
+    font-size:$thumbnail-attribution-font-size;
+    font-weight: $thumbnail-attribution-font-weight;
+    line-height: $thumbnail-attribution-line-height;
     font-style: italic;
+}
+span.publishing-date {
+    font-size: $user-comment-font-size;
+    line-height: $user-comment-line-height;
+    font-weight: $user-comment-font-weight;
 }

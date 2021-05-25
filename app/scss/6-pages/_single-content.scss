@@ -2,10 +2,25 @@
     display: flex;
     width: 100%;
     flex-flow: column;
+    .title-text {
+        margin-bottom:10;
+    }
+    .channel-name{
+        font-size: $user-comment-font-size;
+        font-weight: $user-comment-font-weight;
+        line-height: $user-comment-line-height;
+        color: $spec-text-secondary-color;
+    }
+    .subscribers{
+        font-size: $thumbnail-attribution-font-size;
+        font-weight: $thumbnail-attribution-font-weight;
+        line-height: $thumbnail-attribution-line-height;
+        color: $spec-text-secondary-color;
+    }
 }
-.single-content-play div.video-title{
-    font-size: 1rem !important;
-}
+// .single-content-play div.video-title{
+//     font-size: 1rem !important;
+// }
 .single-content-att{
     width: 100%;
     display: flex;
@@ -15,20 +30,51 @@
     display: flex;
     align-items: center;
 }
+.single-video-content{
+    .channel-name{
+        font-size: $user-comment-font-size;
+        font-weight: $user-comment-font-weight;
+        line-height: $user-comment-line-height;
+        color: $spec-text-secondary-color;
+    }
+}
+.channel-name{
+    font-size: $subheadline-font-size;
+    font-weight: $subheadline-font-weight;
+    line-height: $subheadline-line-height;
+}
+.subscribers{
+    font-size: $thumbnail-attribution-font-size;
+    font-weight: $thumbnail-attribution-font-weight;
+    line-height: $thumbnail-attribution-line-height;
+    color: $spec-text-secondary-color;
+}
 .like-share-opt {
     display: flex;
     align-items: center;
-    font-size: 1rem !important;
+    .material-icons{
+        font-size: 24px;
+        color: $icon-font-color !important;
+    }
+    i{
+        font-size: 22px;
+        color: $icon-font-color !important;
+    }
     a{
+        font-size: $link-font-size;
+        font-weight: $link-font-weight;
+        line-height: $link-line-height;
+        text-transform: uppercase;
         display: inline-flex;
         align-items: center;
-         color: $color_dark-grey;
+        color: $spec-text-secondary-color;
+       
         :hover{
             color: $secondary-color;
         }
     }
     .count{
-        margin-left: 5px;
+        margin-left: 10px;
     }
    
 }
@@ -50,6 +96,7 @@
     display: flex;
     align-items: center;
 }
+
 .user-profile-pic,
 .channerl-thub {
     width: 70px;
@@ -89,8 +136,9 @@
 .tablinks {
     border: none;
     background: transparent;
-    font-size: 0.9rem;
-    color: $color_dark-gray;
+    font-size:$subheadline-link-font-size;
+    font-weight: $subheadline-link-font-weight;
+    color: $spec-secondary-color;
     padding: 5px 15px;
     
     &:hover{
@@ -100,6 +148,12 @@
 }
 .tablinks:nth-child(1){
     padding-left: 0;
+}
+.desc-tabContent {
+    font-size: $user-comment-font-size;
+    font-weight: $user-comment-font-weight;
+    line-height: $user-comment-line-height;
+    letter-spacing: $user-comment-letter-spacing;
 }
 
 //Comments section
@@ -114,6 +168,9 @@
 }
 .buttons-com {
 	float: right;
+}
+.comment-section-title{
+    font-size: $subheadline-font-size;
 }
 .old-comments,
 .new-comment {
@@ -148,6 +205,7 @@
 }
 .comment-input .inputbox-content label {
     position: absolute;
+    font-size: $user-comment-font-size;
     top: 0;
     left: 0;
     height: 30px;
@@ -161,7 +219,7 @@
 .comment-input .inputbox-content input:focus ~ label, .comment-input .inputbox-content input:valid ~ label {
     color: $secondary-color;
     transform: translateY(-20px);
-    font-size: 0.825em;
+    font-size: $user-comment-font-size;
     cursor: default;
 }
 .comment-input .inputbox-content input:focus ~ .underline {
@@ -180,17 +238,34 @@
     transition: all 200ms ease-out;
 }
 span.comment-time {
-    color: $color_dark-gray;
-    font-size: 0.7rem;
+    color: $spec-text-secondary-color;
+    font-size: $thumbnail-attribution-font-size;
+        font-weight: $thumbnail-attribution-font-weight;
+        line-height: $thumbnail-attribution-line-height;
 }
 
 .comments-att {
     display: flex;
     a{
-        color: $color_dark-gray;
-        font-size: 0.7rem;
+        color:$icon-font-color;
+        font-size: $thumbnail-attribution-font-size;
+        font-weight: $thumbnail-attribution-font-weight;
+        line-height: $thumbnail-attribution-line-height;
         &:hover{
             color: $secondary-color;
         }
     }
+}
+
+.comment-user-name{
+    font-size: $user-comment-font-size;
+    font-weight: 500;
+    line-height: $user-comment-line-height;
+    letter-spacing: $user-comment-letter-spacing;
+}
+.comment-message {
+    font-size: $user-comment-font-size;
+    font-weight: $user-comment-font-weight;
+    line-height: $user-comment-line-height;
+    letter-spacing: $user-comment-letter-spacing;
 }

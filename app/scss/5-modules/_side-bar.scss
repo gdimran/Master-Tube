@@ -17,7 +17,7 @@
                 text-align: center;
                 color: $color_dark-gray;
                 .menu-text-small{
-                    font-size: 0.6rem;
+                    font-size: 1.2rem;
                 }
                 .active{
                     @include set-background($secondary-color);
@@ -32,13 +32,78 @@
     }
     
 }
+#overSidepanel{
+    display: none;
+    width: 250px;
+    position: fixed;
+    z-index: 15;
+    overflow: hidden;
+    left: 0;
+    background-color: $light-color;
+    transition: 0.5s;
+    padding-top: 0;
+    -webkit-box-shadow: none;
+        box-shadow: none;
+    
+    .material-icons {
+        margin: 5px 0;
+    }
+    .sideBar-header-content {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        height: 70px;
+        border-bottom: 1px solid darkgray;
+    }
+    .logo img {
+        width: 125px;
+    }
+    .sidepanel:hover{
+        scrollbar-color:initial;
+    }
+    .sidepanel{
+        height: 100vh;
+        overflow-y: auto;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+        transition: 0.5s;
+        padding-top: 10px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    
+}
+.page-overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 12;
+}
+.sidepanel:hover{
+    scrollbar-color:initial;
+}
+#exSidepanel{
+    display: block;
+}
 .sidepanel  {
+    display: block;
     width: 250px;
     position: fixed;
     z-index: 3;
     height: 100%;
     left: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
     background-color: $light-color;
     transition: 0.5s;
     padding-top: 70px;
@@ -63,7 +128,8 @@
     text-align: center;
     color: $color_dark-gray;
     .menu-text-expand{
-        font-size: 1rem;
+        font-size: $user-comment-font-size;
+        font-weight: $user-comment-font-weight;
     }
     
     &:active{
@@ -75,20 +141,29 @@
     transition: 0.3s;
   }
   .sidebar-live{
-      padding: 15px 0;
+    padding: 15px 0;
 	border-bottom: 1px solid darkgray;
+    font-size: $user-comment-font-size;
+    font-weight: $user-comment-font-weight;
     .sec-desc{
         padding: 15px 24px;
         display: block;
     }
   }
   .terms {
+    font-size: $user-comment-font-size;
+    font-weight: $user-comment-font-weight;
+    line-height: $user-comment-line-height;
 	padding: 15px 24px;
 }
   .sidebar-login {
 	padding: 15px 24px;
 	border-top: 1px solid darkgray;
 	border-bottom: 1px solid darkgray;
+    span{
+        font-size: $user-comment-font-size;
+        font-weight: $user-comment-font-weight;
+    }
 }
 .login.btn-outline {
 	text-align: center;

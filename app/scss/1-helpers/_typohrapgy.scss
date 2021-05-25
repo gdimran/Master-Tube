@@ -1,0 +1,63 @@
+
+
+//@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+//Font family
+$body-font-family:'Roboto', sans-serif !default;
+$body-font-weight:300;
+$title-font-family: "Roboto" !default;
+$title-font-weight:600;
+$content-title-font-weight:400;
+$hero-title-font-family: 'Roboto', sans-serif !default;
+$hero-title-font-weight:700;
+
+
+//Custome fonts sizes and properties
+$section-title-font-size:3.5rem;
+$section-title-font-weight:600;
+$channel-title-font-size:2.4rem;
+$channel-title-font-weight:400;
+$channel-title-line-height:3rem;
+$navbar-title-font-size:1.8rem;
+$navbar-title-font-weight:400;
+$navbar-title-line-height:2.4rem;
+$subheadline-font-size:1.6rem;
+$subheadline-font-weight:500;
+$subheadline-line-height:2rem;
+$subheadline-link-font-size:1.6rem;
+$subheadline-link-font-weight:500;
+$subheadline-link-line-height:2rem;
+$link-font-size:1.4rem;
+$link-font-weight:500;
+$link-line-height:1.8rem;
+$user-comment-font-size:1.4rem;
+$user-comment-font-weight:400;
+$user-comment-line-height:2rem;
+$thumbnail-attribution-font-size:1.2rem;
+$thumbnail-attribution-font-weight:400;
+$thumbnail-attribution-line-height:1.8rem;
+
+
+
+//letter spacing==============
+
+$subheadline-letter-spacing: .1px;
+$subheadline-link-letter-spacing: .15px;
+$link-letter-spacing: .25px;
+$thumbnail-attribution-letter-spacing: .3px;
+$user-comment-letter-spacing: .2px;
+$guide-highlight-letter-spacing: .25px;
+$caption-letter-spacing: .35px;
+$badge-letter-spacing: .35px;
+$tab-system-letter-spacing: .5px;
+
+//Font sizes
+$html-root-font-size:16px !default;
+$html-root-line-height: 1.5 !default;
+$font-size: .8rem !default;
+$font-size-small: .7rem !default;
+$font-size-large: .9rem !default;
+$line-height: 1.2rem !default;
+$font-size-title:2rem;

@@ -7,6 +7,8 @@ html {
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: scroll;
+    font-size: 10px;
+    font-family:Roboto, Arial, sans-serif;
 }
 
 *,
@@ -44,11 +46,11 @@ div{
 }
 //Main Style
 body{
-    font-size:0.8rem;
+    // font-size:0.8rem;
     font-family:$body-font-family;
     background-color: $light-color;
     color:$primary-color;
-    line-height: 1.6;
+    // line-height: 1.6;
     position: relative;
     &::-webkit-scrollbar {
         width: 10px;

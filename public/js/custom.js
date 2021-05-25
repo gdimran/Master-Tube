@@ -19,18 +19,60 @@ function videoOption() {
   var popup = document.getElementById("videoOptionPopup");
   popup.classList.toggle("show");
 }
+//==================overlay side bar===========================
+function openOverlaySidebar() {
+  document.getElementById("overSidepanel").style.display = "block";
+  document.getElementById("pageOverlay").style.display = "block";
+}
 
+function closeOverlaySidebar() {
+  document.getElementById("overSidepanel").style.display = "none";
+  document.getElementById("pageOverlay").style.display = "none";
+}
 
 //=============expandable side bar=============================
-window.onload = function () {
 
-  if (document.getElementById("exSidepanel") === "none") {
-    document.getElementById("content").style.width = "calc(100% - 75px)";
-  } else {
+
+// window.onload = function () {
+
+//   if (document.getElementById("exSidepanel") === "none") {
+//     document.getElementById("content").style.width = "calc(100% - 75px)";
+//   } else {
+//     document.getElementById("content").style.width = "calc(100% - 260px)";
+//     document.getElementById("content").style.marginLeft = "185px";
+//   }
+// }
+
+window.onload = function setContentWidth() {
+
+  if (document.getElementById("exSidepanel").style.display === "block") {
+    document.getElementById("side-bar").style.display = "none";
     document.getElementById("content").style.width = "calc(100% - 260px)";
     document.getElementById("content").style.marginLeft = "185px";
+  } else if (document.getElementById("exSidepanel").style.display === "none" && document.getElementById("side-bar").style.display === "block") {
+    document.getElementById("exSidepanel").style.display = "none";
+    document.getElementById("content").style.width = "calc(100% - 75px)";
+  } else {
+    document.getElementById("exSidepanel").style.display = "none";
+    document.getElementById("side-bar").style.display = "none";
+    document.getElementById("content").style.width = "calc(100% - 75px)";
   }
 }
+
+
+
+// window.onload = function () {
+
+//   if (document.getElementById("exSidepanel") === "none") {
+//     document.getElementById("content").style.width = "calc(100% - 260px)";
+//     document.getElementById("content").style.marginLeft = "185px";
+//   }
+//   else {
+//     document.getElementById("content").style.width = "calc(100% - 75px)";
+//   }
+
+
+// }
 
 function showExpandsideBar() {
   var x = document.getElementById("exSidepanel");

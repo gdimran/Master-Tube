@@ -10,7 +10,7 @@
     overflow: initial;
     position: fixed;
     background-color: $light-color;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
         .header-content-left{
             display: inline-flex;
             line-height: 40px;
@@ -28,10 +28,10 @@
                         margin-right: 10px;
                     }
                     .logo-text{
-                        font-size: 1.2rem;
+                        font-size: $subheadline-font-size;
+                        font-weight: $subheadline-font-weight;
+                        line-height: $subheadline-line-height;
                         text-transform: uppercase;
-                        line-height: 40px;
-                        font-weight: 600;
                         color: $primary-color;
 
                     }
@@ -44,7 +44,9 @@
             .explor{
                 display: inline-flex;
                 justify-content: center;
-                line-height: 25px;
+                font-size: $subheadline-font-size;
+                font-weight:500;
+                line-height: $subheadline-line-height;
                 margin-right: 10px;
                 cursor: pointer;
                 i {
@@ -57,7 +59,9 @@
                 input#search{
                     width: 35vw;
                     height: 40px;
+                    font-size: $subheadline-font-size;
                     border: 1px solid $gray-color;
+                    border-right: none;
                     background: transparent;
                     // box-shadow: 0px 3px 11px -4px rgba(0,0,0,0.5) inset;
                     // -webkit-box-shadow: 0px 3px 6px -4px rgba(0,0,0,0.5) inset;
@@ -68,7 +72,8 @@
                 #search-icon-legacy {
                     width: 70px;
                     height: 40px;
-                    color:$gray-color;
+                    font-size: $subheadline-font-size;
+                    color:$spec-secondary-color;
                     border: 1px solid $gray-color;
                     border-radius: 0 5px 5px 0;
                     cursor: pointer;
@@ -78,6 +83,10 @@
         }
     
 }
+.user-login-section {
+	display: flex;
+	gap: 1.5rem;
+}
 .menu-icon.openbtn {
 	font-size: 20px;
 }
@@ -85,7 +94,11 @@
 .user-access-section{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+}
+.user-access-section i {
+	font-size: 22px;
+    color: $spec-secondary-color;
 }
 .user-profile-pic{
     width: 40px !important;

@@ -11,7 +11,8 @@
   right: 0;
   bottom: -50px;
   display: none;
-  background: $primary-color;
+  font-size: $link-font-size;
+  background: $spec-secondary-color;
   color: $light-color;
   padding: 15px 10px;
   text-align: center;
@@ -114,7 +115,7 @@
   }
   a.option-link {
     color: $primary-color;
-    font-size: 0.8rem;
+    font-size: $link-font-size;
     display: flex;
     align-items: center;
     margin: 5px 0;
@@ -129,10 +130,10 @@ a.option-link .material-icons {
 }
 .popup .single-video-option-content {
   visibility: hidden;
-  width: 200px;
+  width: 240px;
   position: absolute;
   z-index: 10;
-  top: -180px;
+  top: -210px;
   margin-left: -185px;
   padding: 10px;
   
@@ -170,7 +171,7 @@ a.option-link .material-icons {
   }
   a.option-link {
     color: $primary-color;
-    font-size: 0.8rem;
+    font-size: $link-font-size;
     display: flex;
     align-items: center;
     margin: 20px 0;
@@ -183,18 +184,23 @@ a.option-link .material-icons {
   border-bottom: 1px solid $color_light-gray;
 }
 .user-name {
-	font-size: 1.2rem;
-	line-height: 1.1;
-  font-weight: 600;
+	font-size: $navbar-title-font-size;
+  font-weight: $subheadline-font-weight;
+	line-height: $navbar-title-line-height;
 }
 .user-email {
 	margin-bottom: 15px;
+  font-size: $user-comment-font-size;
+	line-height: $subheadline-line-height;
 }
 .header-with-left-pic {
 	display: flex;
 	gap: 15px;
 }
-
+.account-detail-link{
+  font-size: $user-comment-font-size;
+	line-height: $subheadline-line-height;
+}
 
   /* Popup arrow */
   .popup .popuptext::after {

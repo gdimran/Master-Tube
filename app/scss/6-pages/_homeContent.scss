@@ -12,10 +12,14 @@
             height: 420px;
             .hero-content{
                 .hero-title-text{
-                    font-size: 2.5rem;
+                    font-size: 4.5rem;
                     font-family: $hero-title-font-family;
                     font-weight: $hero-title-font-weight;
-                    line-height: 1.1;
+                }
+                .hero-desc {
+                    font-size: $subheadline-font-size;
+                    font-weight: $subheadline-font-weight;
+                    list-style: $subheadline-line-height;
                 }
             }
         }
@@ -55,7 +59,9 @@
       }
   }
     .video-title {
-        font-size: 1rem;
+        font-size: $navbar-title-font-size;
+        font-weight: $navbar-title-font-weight;
+        line-height: $navbar-title-line-height;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -63,8 +69,10 @@
     .video-attributes {
         display: flex;
         justify-content: space-between;
-        font-size: 0.9rem;
-        color: $color_dark-grey;
+        font-size: $user-comment-font-size;
+        font-weight: $user-comment-font-weight;
+        line-height: $user-comment-line-height;
+        color: $spec-text-secondary-color;
         text-align: initial;
     }
    .play-btn{
@@ -76,14 +84,13 @@
        opacity: 0.7;
    }
    .video-thub-img-row{
+       position: relative;
        display: flex;
        margin-bottom: 20px;
-       font-size: 0.7rem;
-       align-items: center;
        .video-thub-img{
            position: relative;
            border-radius: 6px;
-           flex-basis: 40%;
+           flex-basis: 50%;
            min-width: 150px;
            margin-right: 15px;
            overflow: hidden;
@@ -91,18 +98,93 @@
                width: 100%;
            }
            .play-btn{
+               display: none;
             width: 25%;
         }
        }
        .small-video-details{
         .video-title {
-            font-size: 0.9rem;
+           
+            .title-text{
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
         }
            .video-attributes{
                flex-flow: column;
            }
+           .option-icon{
+               color: $spec-secondary-color;
+               display: none;
+           }
        }
+    
+    .option-overlay{
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .play-list-add{
+        position: relative;
+        background: $primary-color;
+        color: $light-color;
+        padding: 2px;
+        font-weight: $link-font-weight;
+        font-size: $link-font-size;
+        border-radius: 3px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .watch-later{
+        position: relative;
+        background: $primary-color;
+        color: $light-color;
+        padding: 2px;
+        font-weight: $link-font-weight;
+        font-size: $link-font-size;
+        border-radius: 3px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        cursor: pointer;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+    .play-list-add:hover .add-to-que.hover-option-text,
+    .watch-later:hover .watch-later-que.hover-option-text{
+        display: block;
+    }
+    .hover-option-text {
+        background: #030303;
+        position: absolute;
+        right: 30px;
+        top: 0;
+        min-width: max-content;
+        padding: 0 10px;
+        display: none;
+        line-height: 25px;
+        
+    }
+    .video-time {
+        position: absolute;
+        background: $primary-color;
+        bottom: 10px;
+        right: 10px;
+        color: $light-color;
+        padding: 5px;
+        font-weight: $link-font-weight;
+        font-size: $link-font-size;
+        border-radius: 3px;
+    }
    }
+   .video-thub-img-row:hover .option-icon,
+   .video-thub-img-row:hover .play-btn,
+   .video-thub-img-row:hover .option-overlay{
+    display: block;
+}
    .video-player{
        display: none;
     width: 100%;
@@ -128,9 +210,8 @@
     }
    }
    .section-title {
-    font-family: $title-font-family;
-    font-size: $font-size-title;
-    font-weight: $title-font-weight;
+    font-size: $section-title-font-size;
+    font-weight: $section-title-font-weight;
 }
     #live-streaming{
         
@@ -150,20 +231,111 @@
         }
         
     }
+    .single-play-video:hover .play-btn,
+    .single-play-video:hover .option-overlay{
+        display: block;
+    }
+
+    .single-video-content:hover .option-icon,
+    .single-video-content:hover .play-btn,
+    .single-video-content:hover .option-overlay{
+    display: block;
+}
     .single-video-content{
         .video-title {
-            font-size: 0.9rem !important;
+            font-size: $subheadline-link-font-size;
+            font-weight: $subheadline-link-font-weight;
+            line-height: $subheadline-link-line-height;
+           
         }
         .video-attributes{
-            flex-flow: column;
+            font-size: $link-font-size;
+            line-height: $link-line-height;
+            // flex-flow: column;
         }
         .video-watch-info{
             display: flex;
             justify-content: space-between;
         }
         .play-btn{
+            display: none;
             width: 25%;
+        }
+        .option-icon{
+            color: $spec-secondary-color;
+            display: none;
+        }
+        .watch-later,
+        .play-list-add{
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
         }
     }
 }
-
+.video-feature-row:hover .option-overlay{
+    display: block;
+}
+.option-overlay{
+    display: none;
+    position: absolute;
+	top: 20px;
+	right: 10px;
+}
+.play-list-add{
+    position: relative;
+	background: $primary-color;
+	color: $light-color;
+	padding: 5px;
+	font-weight: $link-font-weight;
+	font-size: $link-font-size;
+	border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.watch-later{
+    position: relative;
+	background: $primary-color;
+	color: $light-color;
+	padding: 5px;
+	font-weight: $link-font-weight;
+	font-size: $link-font-size;
+	border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.play-list-add:hover .add-to-que.hover-option-text,
+.watch-later:hover .watch-later-que.hover-option-text{
+    display: block;
+}
+.hover-option-text {
+	background: #030303;
+	position: absolute;
+	right: 40px;
+	top: 0;
+	min-width: max-content;
+	padding: 0 10px;
+	display: none;
+    line-height: 30px;
+    
+}
+.video-time {
+	position: absolute;
+	background: $primary-color;
+	bottom: 10px;
+	right: 10px;
+	color: $light-color;
+	padding: 8px;
+	font-weight: $link-font-weight;
+	font-size: $link-font-size;
+	border-radius: 3px;
+}
