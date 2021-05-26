@@ -49,3 +49,145 @@
 // @media only screen and (min-width: 62em) {
    
 // }
+
+@media (prefers-color-scheme: dark) {
+    body{
+        color: $light-color !important;
+        background-color:$dark-body-bg-color !important;
+    }
+    #header {
+        background-color:$dark-header-bg-color;
+        color: $light-color !important;
+    }
+    .video-attributes{
+        color: $dark-spec-secondary-color !important;
+        .channel-name{
+            color: $dark-spec-secondary-color;
+        }
+    }
+    .tablinks,
+    .subscribers{
+        color: $dark-spec-secondary-color;
+    }
+    .btn-outline {
+        background: transparent;
+        color: $dark-spec-secondary-color;
+        border: 1px solid $dark-spec-secondary-color;
+    }
+    #header .search-section #search-form input#search {
+        border: 1px solid #313131;
+        background: #121212;
+        color: $dark-spec-secondary-color;
+    }
+    input{
+        color: $dark-spec-secondary-color;
+    }
+    #header .search-section #search-form #search-icon-legacy {
+        color: $dark-spec-secondary-color;
+        border: 1px solid #313131;
+        background:#313131;
+    }
+    .card{
+        background-color:$dark-header-bg-color;
+    }
+    a.option-link,
+    .like-share-opt a {
+        color:$light-color;
+    }
+    .sidepanel,
+    #overSidepanel {
+        background-color:$dark-header-bg-color;
+        color: $light-color;
+    }
+    i,
+    .material-icons,
+    .menu-icon{
+        color: $dark-spec-secondary-color !important;
+    }
+    .sidepanel a{
+        color: $light-color;
+    }
+    %btn{
+        color: $light-color;
+    }
+    #logo-light{
+        display: none;
+        }
+    #logo-dark{
+        display: block;
+        }
+
+    .popup .userSetting-content a.option-link {
+        color: $light-color;
+    }
+}
+.darkmode{
+    color: $light-color !important;
+    background-color:$dark-body-bg-color !important;
+  
+    #header {
+        background-color:$dark-header-bg-color;
+        color: $light-color !important;
+    }
+    .video-attributes{
+        color: $dark-spec-secondary-color !important;
+        .channel-name{
+            color: $dark-spec-secondary-color;
+        }
+    }
+    .tablinks,
+    .subscribers{
+        color: $dark-spec-secondary-color;
+    }
+    .btn-outline {
+        background: transparent;
+        color: $dark-spec-secondary-color;
+        border: 1px solid $dark-spec-secondary-color;
+    }
+    #header .search-section #search-form input#search {
+        border: 1px solid #313131;
+        background: #121212;
+        color: $dark-spec-secondary-color;
+    }
+    input{
+        color: $dark-spec-secondary-color;
+    }
+    #header .search-section #search-form #search-icon-legacy {
+        color: $dark-spec-secondary-color;
+        border: 1px solid #313131;
+        background:#313131;
+    }
+    .card{
+        background-color:$dark-header-bg-color;
+    }
+    a.option-link,
+    .like-share-opt a {
+        color:$light-color;
+    }
+    .sidepanel,
+    #overSidepanel {
+        background-color:$dark-header-bg-color;
+        color: $light-color;
+    }
+    i,
+    .material-icons,
+    .menu-icon{
+        color: $dark-spec-secondary-color !important;
+    }
+    .sidepanel a{
+        color: $light-color;
+    }
+    %btn{
+        color: $light-color;
+    }
+    #logo-light{
+        display: none;
+        }
+    #logo-dark{
+        display: block;
+        }
+
+    .popup .userSetting-content a.option-link {
+        color: $light-color;
+    }
+}

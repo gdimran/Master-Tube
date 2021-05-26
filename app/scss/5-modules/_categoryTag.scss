@@ -60,7 +60,7 @@
         display: flex;
         color: $primary-color;
         flex-flow: row;
-        border: 1px solid $color_dark-gray;
+        border: 1px solid $spec-secondary-color;
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -72,9 +72,10 @@
         span.icons-cat {
             font-size: 25px;
             margin-right:15px;
+            color: $icon-font-color;
         }
         span.cat-name {
-            font-size:$font-size-small;
+            font-size:$link-font-size;
             text-transform: uppercase;
         }
         &:hover{

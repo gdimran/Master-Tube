@@ -38,15 +38,18 @@
   .popup .notification-content{
     visibility: hidden;
     min-width: 350px;
+    padding: 20px 15px;
     position: absolute;
     z-index: 10;
     top: 48px;
     margin-left: -325px;
-    padding: 10px;
+    .subtitle {
+      font-size: 1.9rem;
+      font-weight: 500;
+    }
     .video-thub-img-row{
         display: flex;
         margin: 20px 0;
-        font-size: 0.7rem;
         align-items: center;
         .video-thub-img{
             position: relative;
@@ -70,7 +73,7 @@
             a{
                 color: $primary-color;
                 &:hover{
-                    color: $secondary-color; 
+                    background: $option-icon-bg;
                 }
             }
         }
@@ -83,17 +86,23 @@
              display: flex;
              align-items: center;
              justify-content: space-between;
-             font-size: 0.65rem;
+             font-size: $subheadline-font-size;
              
              .title-text{
-                margin: 0;
+                margin: 0 !important;
              }
          }
             .video-attributes{
-                font-size: 0.6rem;
+              font-size: $link-font-size;
                 flex-flow: column;
+                color: $spec-secondary-color;
             }
         }
+    }
+    .video-time {
+      bottom: 6px;
+      right: 6px;
+      padding: 4px;
     }
     .header-with-right-icon {
         display: flex;
@@ -111,16 +120,15 @@
     z-index: 10;
     top: 48px;
     margin-left: -140px;
-    padding: 10px;
   }
   a.option-link {
     color: $primary-color;
     font-size: $link-font-size;
     display: flex;
     align-items: center;
-    margin: 5px 0;
+    padding: 15px 20px;
     &:hover{
-        color: $secondary-color;
+        background: $option-icon-bg;
     }
 }
 /*video options-----------*/
@@ -128,16 +136,25 @@ a.option-link .material-icons {
   font-size: 20px;
   margin-right: 20px;
 }
+.popup .addtoQuerePopup{
+  visibility: hidden;
+  width: 200px;
+  position: absolute;
+  z-index: 10;
+  top: 28px;
+  margin-left: -200px;
+}
 .popup .single-video-option-content {
   visibility: hidden;
   width: 240px;
   position: absolute;
   z-index: 10;
-  top: -210px;
-  margin-left: -185px;
-  padding: 10px;
+  top: -310px;
+  margin-left: -214px;
   
 }
+
+
 /*user-account options-----------*/
 .user-option {
 	position: relative;
@@ -149,7 +166,6 @@ a.option-link .material-icons {
   z-index: 10;
   top: 56px;
   right: 0;
-  padding: 10px;
   .card-header {
     border-bottom: 1px solid $color_light-gray;
     padding-bottom: 15px;
@@ -157,7 +173,7 @@ a.option-link .material-icons {
   .fas.fa-chevron-right.icon-right {
     text-align: right;
     margin-right: 0;
-    font-size: 0.9rem !important;
+    font-size: $link-font-size;
     position: absolute;
     right: 20px;
   }
@@ -174,9 +190,9 @@ a.option-link .material-icons {
     font-size: $link-font-size;
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    padding: 15px 20px;
     &:hover{
-        color: $secondary-color;
+        background: $option-icon-bg;
     }
   }
 }
@@ -196,6 +212,7 @@ a.option-link .material-icons {
 .header-with-left-pic {
 	display: flex;
 	gap: 15px;
+  padding: 20px;
 }
 .account-detail-link{
   font-size: $user-comment-font-size;
