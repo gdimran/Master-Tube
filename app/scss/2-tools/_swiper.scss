@@ -112,3 +112,61 @@
         width: 19.5vw !important;
     }
 } 
+
+
+.liveSwiper{
+    overflow: hidden;
+    height: 35vh;
+        
+    .swiper-button-disabled{
+        opacity:0.3 !important;
+    }
+    .swiper-button-prev:after, .swiper-button-next:after {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+    }
+    .swiper-button-prev{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        z-index: 25;
+    }
+    .swiper-button-next{
+        position: absolute;
+        top:96.2%;
+        z-index: 25;
+        left: 0;
+    }
+    .swiper-button-prev::after{
+        content: 'next';
+        rotate: -90deg;
+    }
+    .swiper-button-next::after{
+        content: 'next';
+        rotate: 90deg;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background: $light-color;
+        text-align: center;
+        justify-content: center;
+        color:$primary-color;
+        &:hover{
+            color:$secondary-color;
+           
+        }
+    }
+    .swiper-slide {
+        flex-shrink: unset;
+        width: 100%;
+        height: auto !important;
+    }
+    // div.swiper-slide {
+    //     width: auto !important;
+    //     height: auto !important;
+    // }
+} 

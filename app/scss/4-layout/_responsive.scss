@@ -9,18 +9,113 @@
 //  }
 
 // // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #header .search-section #search-form input#search {
+        width: 21vw;
+    }
+    #header .search-section #search-form #search-icon-legacy {
+        width: 45px;
+    }
+    .login.btn-normal {
+        display: none;
+    }
+    #content .hero-section .hero-bg-image .hero-content .hero-title-text {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    #content .hero-section .hero-bg-image .hero-content .hero-desc {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+    #content .hero-section .hero-bg-image {
+        background-size: 400px;
+        height: auto;
+    }
+    #content .video-thub-img-row{
+        flex-flow: column;
+    }
+    .liveSwiper {
+        overflow: hidden;
+        height: 235px;
+        margin-top: 40px;
+        .swiper-button-prev::after{
+            content: 'next';
+            rotate: 180deg;
+        }
+        .swiper-button-next::after{
+            content: 'next';
+            rotate: 0deg;
+        }
+        .swiper-button-next {
+            left: auto;
+            right: 10px;
+        }
+        .swiper-button-prev,.swiper-button-next {
+            position: absolute;
+            border-radius: 50%;
+            background: #fff !important;
+            width: 40px !important;
+            height: 40px!important;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+            top: 40%;
+            margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+            z-index: 10;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:$primary-color;
+        }
+        .swiper-slide {
+            flex-shrink: 0;
+            width: 47% !important;
+            height: auto !important;
+        }
+        
+    }
+    .mostPopulerSwiper div.swiper-slide {
+        height: auto;
+        width: 47% !important;
+    }
     
-// }
+}
 
 // // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    
     #header .search-section #search-form input#search {
         width: 30vw;
     }
-
+    #header .search-section #search-form #search-icon-legacy {
+        width: 50px;
+    }
+    #content .hero-section .hero-bg-image {
+        background-size: 416px;
+        height: 350px;
+    }
     #content .hero-section .hero-bg-image .hero-content .hero-title-text {
-        font-size: 3rem;
+        font-size: 3.5rem ;
+        line-height: 4.5rem;
+    }
+    #content .hero-section .hero-bg-image .hero-content .hero-desc {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+    #content .video-feature-image img.play-btn {
+        width: 20%;
+    }
+    #content .video-thub-img-row .video-time,
+    .video-time {
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+    #content .video-thub-img-row {
+        display: flex;
+        flex-flow: column;
+        .video-title {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
     }
     
 }
@@ -32,162 +127,20 @@
     }
 
     #content .hero-section .hero-bg-image .hero-content .hero-title-text {
-        font-size: 3rem;
+        font-size: 5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.2px;
+    }
+    .liveSwiper{
+        overflow: hidden;
+        height: 70vh;
+        .swiper-button-next{
+            position: absolute;
+            top:98%;
+            z-index: 25;
+            left: 0;
+        }
     }
 }
 
 
-// @media only screen and (min-width: 48em) {
-//     #header .search-section #search-form input#search {
-//         width: 30vw !important;
-//     }
-
-//     #content .hero-section .hero-bg-image .hero-content .hero-title-text {
-//         font-size: 3rem !important;
-//     }
-// }
-// @media only screen and (min-width: 62em) {
-   
-// }
-
-@media (prefers-color-scheme: dark) {
-    body{
-        color: $light-color !important;
-        background-color:$dark-body-bg-color !important;
-    }
-    #header {
-        background-color:$dark-header-bg-color;
-        color: $light-color !important;
-    }
-    .video-attributes{
-        color: $dark-spec-secondary-color !important;
-        .channel-name{
-            color: $dark-spec-secondary-color;
-        }
-    }
-    .tablinks,
-    .subscribers{
-        color: $dark-spec-secondary-color;
-    }
-    .btn-outline {
-        background: transparent;
-        color: $dark-spec-secondary-color;
-        border: 1px solid $dark-spec-secondary-color;
-    }
-    #header .search-section #search-form input#search {
-        border: 1px solid #313131;
-        background: #121212;
-        color: $dark-spec-secondary-color;
-    }
-    input{
-        color: $dark-spec-secondary-color;
-    }
-    #header .search-section #search-form #search-icon-legacy {
-        color: $dark-spec-secondary-color;
-        border: 1px solid #313131;
-        background:#313131;
-    }
-    .card{
-        background-color:$dark-header-bg-color;
-    }
-    a.option-link,
-    .like-share-opt a {
-        color:$light-color;
-    }
-    .sidepanel,
-    #overSidepanel {
-        background-color:$dark-header-bg-color;
-        color: $light-color;
-    }
-    i,
-    .material-icons,
-    .menu-icon{
-        color: $dark-spec-secondary-color !important;
-    }
-    .sidepanel a{
-        color: $light-color;
-    }
-    %btn{
-        color: $light-color;
-    }
-    #logo-light{
-        display: none;
-        }
-    #logo-dark{
-        display: block;
-        }
-
-    .popup .userSetting-content a.option-link {
-        color: $light-color;
-    }
-}
-.darkmode{
-    color: $light-color !important;
-    background-color:$dark-body-bg-color !important;
-  
-    #header {
-        background-color:$dark-header-bg-color;
-        color: $light-color !important;
-    }
-    .video-attributes{
-        color: $dark-spec-secondary-color !important;
-        .channel-name{
-            color: $dark-spec-secondary-color;
-        }
-    }
-    .tablinks,
-    .subscribers{
-        color: $dark-spec-secondary-color;
-    }
-    .btn-outline {
-        background: transparent;
-        color: $dark-spec-secondary-color;
-        border: 1px solid $dark-spec-secondary-color;
-    }
-    #header .search-section #search-form input#search {
-        border: 1px solid #313131;
-        background: #121212;
-        color: $dark-spec-secondary-color;
-    }
-    input{
-        color: $dark-spec-secondary-color;
-    }
-    #header .search-section #search-form #search-icon-legacy {
-        color: $dark-spec-secondary-color;
-        border: 1px solid #313131;
-        background:#313131;
-    }
-    .card{
-        background-color:$dark-header-bg-color;
-    }
-    a.option-link,
-    .like-share-opt a {
-        color:$light-color;
-    }
-    .sidepanel,
-    #overSidepanel {
-        background-color:$dark-header-bg-color;
-        color: $light-color;
-    }
-    i,
-    .material-icons,
-    .menu-icon{
-        color: $dark-spec-secondary-color !important;
-    }
-    .sidepanel a{
-        color: $light-color;
-    }
-    %btn{
-        color: $light-color;
-    }
-    #logo-light{
-        display: none;
-        }
-    #logo-dark{
-        display: block;
-        }
-
-    .popup .userSetting-content a.option-link {
-        color: $light-color;
-    }
-}

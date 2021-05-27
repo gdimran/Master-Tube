@@ -136,15 +136,19 @@
         <!-- Header section start -->
         <section id="header">
             <div class="header-content-left">
-                <!-- <span class="menu-icon openbtn" onclick="openNav()"> -->
                 <span class="menu-icon openbtn" onclick="showExpandsideBar()">
                     <i class="fas fa-bars"></i></span>
-                <div class="logo tooltip-container">
+                <div id="logo-dark" class="logo">
                     <a href="">
-                        <img src="images/logo.png">
-                        <!-- <span class="logo-text">Master-Academy</span> -->
+                        <img src="images/mLogo-W-01.svg">
                     </a>
-                    <div class="tooltip">Master Home</div>
+
+                </div>
+                <div id="logo-light" class="logo">
+                    <a href="">
+                        <img src="images/mLogo-L-01-01.svg">
+                    </a>
+
                 </div>
             </div>
 
@@ -175,6 +179,41 @@
                 </div>
             </div>
             <div class="user-login-section">
+                <div class="option tooltip-container popup">
+                    <i onclick="gustSettFunc()" class="fas fa-ellipsis-v"></i>
+                    <div class="tooltip">Settings</div>
+                    <div class="gustSett-content card"
+                        id="gustSettPopup">
+
+                        <div class="additional-settings">
+                            <a id="dark-mode-toggle" href="" class="option-link
+                                dark-mode-toggle"><i class="fas
+                                    fa-adjust"></i> Appearance: Dark Mode
+                            </a>
+                            <a href="" class="option-link"><img
+                                    src="images/language.svg" alt="">Language:
+                                English <i class="fas fa-chevron-right
+                                    icon-right"></i></a>
+                            <a href="" class="option-link"><i class="fas
+                                    fa-map-marker-alt"></i> Location:
+                                Bangladesh
+                                <i class="fas fa-chevron-right icon-right"></i></a>
+                            <a href="" class="option-link"><i class="fas
+                                    fa-cog"></i> Location:
+                                Bangladesh
+                            </a>
+                            <a href="" class="option-link"><i class="fas
+                                    fa-database"></i>Your data security
+                            </a>
+                            <a href="" class="option-link"><i class="fas
+                                    fa-question-circle"></i>Help
+                            </a>
+                            <a href="" class="option-link"><i class="fas
+                                    fa-comment-alt"></i>Send Feedback
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <a href="login.html" class="login btn-normal">Log in</a>
                 <a href="signup.html" class="signup btn-outline">Join for
                     Free</a>
@@ -260,10 +299,10 @@
                             moments that matter</h1>
                         <p class="hero-desc">Courses for every step of your
                             career.
-                            Instructors with real-world<br>
+                            Instructors with <br>real-world
                             experience. </p>
 
-                        <a class="btn-primary my-1" href="">Start Learning</a>
+                        <a class="btn-primary my-2" href="">Start Learning</a>
                     </div>
                 </div>
             </div>
@@ -401,7 +440,7 @@
                 </div>
                 <div class="container-full">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                             <div class="video-feature-row">
                                 <div class="video-feature-image">
                                     <img class="thumbnail-image"
@@ -519,257 +558,617 @@
                             </div>
 
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <div class="video-thub-img-row">
-                                <div class="video-thub-img">
-                                    <img src="images/pic2.png" alt="">
-                                    <img src="images/play-btn.png" alt=""
-                                        class="play-btn"
-                                        onclick="playVideo('videos/vid2.mp4')">
-                                    <!-- <div class="vide-share-options">
-                                        <span class="love"><a href=""><i
-                                                    class="far fa-heart"></i></a></span>
-                                        <span class="share"><a href=""><i
-                                                    class="fas fa-share-alt"></i></a></span>
-                                        <span class="add"><a href=""><i
-                                                    class="fas fa-plus"></i></a></span>
-                                    </div> -->
-                                    <div class="video-time"><span
-                                            class="video-length">10:25</span></div>
-                                    <div class="option-overlay">
-                                        <div class="watch-later"><i class="fas
-                                                fa-clock"></i>
-                                            <span class="watch-later-que
-                                                hover-option-text">Watch
-                                                later</span>
-                                        </div>
-                                        <div class="play-list-add">
-                                            <span class="material-icons">
-                                                playlist_play
-                                            </span>
-                                            <span class="add-to-que
-                                                hover-option-text">Add to
-                                                queue</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="small-video-details">
-                                    <div class="video-title">
-                                        <h3 class="title-text">Master-Academy
-                                            Live</h3>
-                                        <span class="option-icon popup"
-                                            onclick="addQueueOption()"><i
-                                                class="fas
-                                                fa-ellipsis-v"></i>
-                                            <div id="addToQue"
-                                                class="card addtoQuerePopup">
-                                                <a class="option-link"
-                                                    href="">
-                                                    <span
-                                                        class="material-icons">
-                                                        playlist_play
-                                                    </span><span
-                                                        class="add-queue">Add
-                                                        to queue</span></a>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="swiper-container liveSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="video-thub-img-row">
+                                            <div class="video-thub-img">
+                                                <img src="images/pic2.png"
+                                                    alt="">
+                                                <img src="images/play-btn.png"
+                                                    alt=""
+                                                    class="play-btn"
+                                                    onclick="playVideo('videos/vid2.mp4')">
+                                                <div class="video-time"><span
+                                                        class="video-length">10:25</span></div>
+                                                <div class="option-overlay">
+                                                    <div class="watch-later"><i
+                                                            class="fas
+                                                            fa-clock"></i>
+                                                        <span
+                                                            class="watch-later-que
+                                                            hover-option-text">Watch
+                                                            later</span>
+                                                    </div>
+                                                    <div class="play-list-add">
+                                                        <span
+                                                            class="material-icons">
+                                                            playlist_play
+                                                        </span>
+                                                        <span class="add-to-que
+                                                            hover-option-text">Add
+                                                            to
+                                                            queue</span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </span>
-                                    </div>
-                                    <div class="video-attributes">
-                                        <div class="channel-name">Master-Academy</div>
-                                        <div class="video-watch-info">
-                                            <span class="waching-now">5,248,704
-                                                views | </span>
-                                            <span class="started-on">Feb 21,
-                                                2021</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                            <div class="small-video-details">
+                                                <div class="video-title">
+                                                    <h3 class="title-text">Master-Academy
+                                                        Live</h3>
+                                                    <span class="option-icon
+                                                        popup"
+                                                        onclick="addQueueOption()"><i
+                                                            class="fas
+                                                            fa-ellipsis-v"></i>
+                                                        <div id="addToQue"
+                                                            class="card
+                                                            addtoQuerePopup">
+                                                            <a
+                                                                class="option-link"
+                                                                href="">
+                                                                <span
+                                                                    class="material-icons">
+                                                                    playlist_play
+                                                                </span><span
+                                                                    class="add-queue">Add
+                                                                    to queue</span></a>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="video-attributes">
+                                                    <div class="channel-name">Master-Academy</div>
+                                                    <div
+                                                        class="video-watch-info">
+                                                        <span
+                                                            class="waching-now">5,248,704
+                                                            views | </span>
+                                                        <span
+                                                            class="started-on">Feb
+                                                            21,
+                                                            2021</span>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                            </div>
-                            <div class="video-thub-img-row">
-                                <div class="video-thub-img">
-                                    <img src="images/pic3.png" alt="">
-                                    <img src="images/play-btn.png" alt=""
-                                        class="play-btn"
-                                        onclick="playVideo('videos/vid3.mp4')">
-                                    <div class="video-time"><span
-                                            class="video-length">10:25</span></div>
-                                    <div class="option-overlay">
-                                        <div class="watch-later"><i class="fas
-                                                fa-clock"></i>
-                                            <span class="watch-later-que
-                                                hover-option-text">Watch
-                                                later</span>
-                                        </div>
-                                        <div class="play-list-add">
-                                            <span class="material-icons">
-                                                playlist_play
-                                            </span>
-                                            <span class="add-to-que
-                                                hover-option-text">Add to
-                                                queue</span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="small-video-details">
-                                    <div class="video-title">
-                                        <h3 class="title-text">Master-Academy
-                                            Live</h3>
-                                        <span class="option-icon popup"
-                                            onclick="addQueueOption()"><i
-                                                class="fas
-                                                fa-ellipsis-v"></i>
-                                            <div id="addToQue-2"
-                                                class="card addtoQuerePopup">
-                                                <a class="option-link"
-                                                    href="">
-                                                    <span
-                                                        class="material-icons">
-                                                        playlist_play
-                                                    </span><span
-                                                        class="add-queue">Add
-                                                        to queue</span></a>
+                                    <div class="swiper-slide">
+                                        <div class="video-thub-img-row">
+                                            <div class="video-thub-img">
+                                                <img src="images/pic3.png"
+                                                    alt="">
+                                                <img src="images/play-btn.png"
+                                                    alt=""
+                                                    class="play-btn"
+                                                    onclick="playVideo('videos/vid3.mp4')">
+                                                <div class="video-time"><span
+                                                        class="video-length">10:25</span></div>
+                                                <div class="option-overlay">
+                                                    <div class="watch-later"><i
+                                                            class="fas
+                                                            fa-clock"></i>
+                                                        <span
+                                                            class="watch-later-que
+                                                            hover-option-text">Watch
+                                                            later</span>
+                                                    </div>
+                                                    <div class="play-list-add">
+                                                        <span
+                                                            class="material-icons">
+                                                            playlist_play
+                                                        </span>
+                                                        <span class="add-to-que
+                                                            hover-option-text">Add
+                                                            to
+                                                            queue</span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </span>
-                                    </div>
-                                    <div class="video-attributes">
-                                        <div class="channel-name">Master-Academy</div>
-                                        <div class="video-watch-info">
-                                            <span class="waching-now">5,248,704
-                                                views | </span>
-                                            <span class="started-on">Feb 21,
-                                                2021</span>
+                                            <div class="small-video-details">
+                                                <div class="video-title">
+                                                    <h3 class="title-text">Master-Academy
+                                                        Live</h3>
+                                                    <span class="option-icon
+                                                        popup"
+                                                        onclick="addQueueOption()"><i
+                                                            class="fas
+                                                            fa-ellipsis-v"></i>
+                                                        <div id="addToQue-2"
+                                                            class="card
+                                                            addtoQuerePopup">
+                                                            <a
+                                                                class="option-link"
+                                                                href="">
+                                                                <span
+                                                                    class="material-icons">
+                                                                    playlist_play
+                                                                </span><span
+                                                                    class="add-queue">Add
+                                                                    to queue</span></a>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="video-attributes">
+                                                    <div class="channel-name">Master-Academy</div>
+                                                    <div
+                                                        class="video-watch-info">
+                                                        <span
+                                                            class="waching-now">5,248,704
+                                                            views | </span>
+                                                        <span
+                                                            class="started-on">Feb
+                                                            21,
+                                                            2021</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="swiper-slide">
+                                        <div class="video-thub-img-row">
+                                            <div class="video-thub-img">
+                                                <img src="images/pic4.png"
+                                                    alt="">
+                                                <img src="images/play-btn.png"
+                                                    alt=""
+                                                    class="play-btn"
+                                                    onclick="playVideo('videos/vid4.mp4')">
+                                                <div class="video-time"><span
+                                                        class="video-length">10:25</span></div>
+                                                <div class="option-overlay">
+                                                    <div class="watch-later"><i
+                                                            class="fas
+                                                            fa-clock"></i>
+                                                        <span
+                                                            class="watch-later-que
+                                                            hover-option-text">Watch
+                                                            later</span>
+                                                    </div>
+                                                    <div class="play-list-add">
+                                                        <span
+                                                            class="material-icons">
+                                                            playlist_play
+                                                        </span>
+                                                        <span class="add-to-que
+                                                            hover-option-text">Add
+                                                            to
+                                                            queue</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="small-video-details">
+                                                <div class="video-title">
+                                                    <h3 class="title-text">Master-Academy
+                                                        Live</h3>
+                                                    <span class="option-icon"><i
+                                                            class="fas
+                                                            fa-ellipsis-v"></i></span>
+                                                </div>
+                                                <div class="video-attributes">
+                                                    <div class="channel-name">Master-Academy</div>
+                                                    <div
+                                                        class="video-watch-info">
+                                                        <span
+                                                            class="waching-now">5,248,704
+                                                            views | </span>
+                                                        <span
+                                                            class="started-on">Feb
+                                                            21,
+                                                            2021</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video-thub-img-row">
+                                            <div class="video-thub-img">
+                                                <img src="images/pic2.png"
+                                                    alt="">
+                                                <img src="images/play-btn.png"
+                                                    alt=""
+                                                    class="play-btn"
+                                                    onclick="playVideo('videos/vid2.mp4')">
+                                                <div class="video-time"><span
+                                                        class="video-length">10:25</span></div>
+                                                <div class="option-overlay">
+                                                    <div class="watch-later"><i
+                                                            class="fas
+                                                            fa-clock"></i>
+                                                        <span
+                                                            class="watch-later-que
+                                                            hover-option-text">Watch
+                                                            later</span>
+                                                    </div>
+                                                    <div class="play-list-add">
+                                                        <span
+                                                            class="material-icons">
+                                                            playlist_play
+                                                        </span>
+                                                        <span class="add-to-que
+                                                            hover-option-text">Add
+                                                            to
+                                                            queue</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="small-video-details">
+                                                <div class="video-title">
+                                                    <h3 class="title-text">Master-Academy
+                                                        Live</h3>
+                                                    <span class="option-icon
+                                                        popup"
+                                                        onclick="addQueueOption()"><i
+                                                            class="fas
+                                                            fa-ellipsis-v"></i>
+                                                        <div id="addToQue"
+                                                            class="card
+                                                            addtoQuerePopup">
+                                                            <a
+                                                                class="option-link"
+                                                                href="">
+                                                                <span
+                                                                    class="material-icons">
+                                                                    playlist_play
+                                                                </span><span
+                                                                    class="add-queue">Add
+                                                                    to queue</span></a>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="video-attributes">
+                                                    <div class="channel-name">Master-Academy</div>
+                                                    <div
+                                                        class="video-watch-info">
+                                                        <span
+                                                            class="waching-now">5,248,704
+                                                            views | </span>
+                                                        <span
+                                                            class="started-on">Feb
+                                                            21,
+                                                            2021</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video-thub-img-row">
+                                            <div class="video-thub-img">
+                                                <img src="images/pic3.png"
+                                                    alt="">
+                                                <img src="images/play-btn.png"
+                                                    alt=""
+                                                    class="play-btn"
+                                                    onclick="playVideo('videos/vid3.mp4')">
+                                                <div class="video-time"><span
+                                                        class="video-length">10:25</span></div>
+                                                <div class="option-overlay">
+                                                    <div class="watch-later"><i
+                                                            class="fas
+                                                            fa-clock"></i>
+                                                        <span
+                                                            class="watch-later-que
+                                                            hover-option-text">Watch
+                                                            later</span>
+                                                    </div>
+                                                    <div class="play-list-add">
+                                                        <span
+                                                            class="material-icons">
+                                                            playlist_play
+                                                        </span>
+                                                        <span class="add-to-que
+                                                            hover-option-text">Add
+                                                            to
+                                                            queue</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="small-video-details">
+                                                <div class="video-title">
+                                                    <h3 class="title-text">Master-Academy
+                                                        Live</h3>
+                                                    <span class="option-icon
+                                                        popup"
+                                                        onclick="addQueueOption()"><i
+                                                            class="fas
+                                                            fa-ellipsis-v"></i>
+                                                        <div id="addToQue-2"
+                                                            class="card
+                                                            addtoQuerePopup">
+                                                            <a
+                                                                class="option-link"
+                                                                href="">
+                                                                <span
+                                                                    class="material-icons">
+                                                                    playlist_play
+                                                                </span><span
+                                                                    class="add-queue">Add
+                                                                    to queue</span></a>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="video-attributes">
+                                                    <div class="channel-name">Master-Academy</div>
+                                                    <div
+                                                        class="video-watch-info">
+                                                        <span
+                                                            class="waching-now">5,248,704
+                                                            views | </span>
+                                                        <span
+                                                            class="started-on">Feb
+                                                            21,
+                                                            2021</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video-thub-img-row">
+                                            <div class="video-thub-img">
+                                                <img src="images/pic4.png"
+                                                    alt="">
+                                                <img src="images/play-btn.png"
+                                                    alt=""
+                                                    class="play-btn"
+                                                    onclick="playVideo('videos/vid4.mp4')">
+                                                <div class="video-time"><span
+                                                        class="video-length">10:25</span></div>
+                                                <div class="option-overlay">
+                                                    <div class="watch-later"><i
+                                                            class="fas
+                                                            fa-clock"></i>
+                                                        <span
+                                                            class="watch-later-que
+                                                            hover-option-text">Watch
+                                                            later</span>
+                                                    </div>
+                                                    <div class="play-list-add">
+                                                        <span
+                                                            class="material-icons">
+                                                            playlist_play
+                                                        </span>
+                                                        <span class="add-to-que
+                                                            hover-option-text">Add
+                                                            to
+                                                            queue</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="small-video-details">
+                                                <div class="video-title">
+                                                    <h3 class="title-text">Master-Academy
+                                                        Live</h3>
+                                                    <span class="option-icon"><i
+                                                            class="fas
+                                                            fa-ellipsis-v"></i></span>
+                                                </div>
+                                                <div class="video-attributes">
+                                                    <div class="channel-name">Master-Academy</div>
+                                                    <div
+                                                        class="video-watch-info">
+                                                        <span
+                                                            class="waching-now">5,248,704
+                                                            views | </span>
+                                                        <span
+                                                            class="started-on">Feb
+                                                            21,
+                                                            2021</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video-thub-img-row">
+                                            <div class="video-thub-img">
+                                                <img src="images/pic2.png"
+                                                    alt="">
+                                                <img src="images/play-btn.png"
+                                                    alt=""
+                                                    class="play-btn"
+                                                    onclick="playVideo('videos/vid2.mp4')">
+                                                <div class="video-time"><span
+                                                        class="video-length">10:25</span></div>
+                                                <div class="option-overlay">
+                                                    <div class="watch-later"><i
+                                                            class="fas
+                                                            fa-clock"></i>
+                                                        <span
+                                                            class="watch-later-que
+                                                            hover-option-text">Watch
+                                                            later</span>
+                                                    </div>
+                                                    <div class="play-list-add">
+                                                        <span
+                                                            class="material-icons">
+                                                            playlist_play
+                                                        </span>
+                                                        <span class="add-to-que
+                                                            hover-option-text">Add
+                                                            to
+                                                            queue</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="small-video-details">
+                                                <div class="video-title">
+                                                    <h3 class="title-text">Master-Academy
+                                                        Live</h3>
+                                                    <span class="option-icon
+                                                        popup"
+                                                        onclick="addQueueOption()"><i
+                                                            class="fas
+                                                            fa-ellipsis-v"></i>
+                                                        <div id="addToQue"
+                                                            class="card
+                                                            addtoQuerePopup">
+                                                            <a
+                                                                class="option-link"
+                                                                href="">
+                                                                <span
+                                                                    class="material-icons">
+                                                                    playlist_play
+                                                                </span><span
+                                                                    class="add-queue">Add
+                                                                    to queue</span></a>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="video-attributes">
+                                                    <div class="channel-name">Master-Academy</div>
+                                                    <div
+                                                        class="video-watch-info">
+                                                        <span
+                                                            class="waching-now">5,248,704
+                                                            views | </span>
+                                                        <span
+                                                            class="started-on">Feb
+                                                            21,
+                                                            2021</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video-thub-img-row">
+                                            <div class="video-thub-img">
+                                                <img src="images/pic3.png"
+                                                    alt="">
+                                                <img src="images/play-btn.png"
+                                                    alt=""
+                                                    class="play-btn"
+                                                    onclick="playVideo('videos/vid3.mp4')">
+                                                <div class="video-time"><span
+                                                        class="video-length">10:25</span></div>
+                                                <div class="option-overlay">
+                                                    <div class="watch-later"><i
+                                                            class="fas
+                                                            fa-clock"></i>
+                                                        <span
+                                                            class="watch-later-que
+                                                            hover-option-text">Watch
+                                                            later</span>
+                                                    </div>
+                                                    <div class="play-list-add">
+                                                        <span
+                                                            class="material-icons">
+                                                            playlist_play
+                                                        </span>
+                                                        <span class="add-to-que
+                                                            hover-option-text">Add
+                                                            to
+                                                            queue</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="small-video-details">
+                                                <div class="video-title">
+                                                    <h3 class="title-text">Master-Academy
+                                                        Live</h3>
+                                                    <span class="option-icon
+                                                        popup"
+                                                        onclick="addQueueOption()"><i
+                                                            class="fas
+                                                            fa-ellipsis-v"></i>
+                                                        <div id="addToQue-2"
+                                                            class="card
+                                                            addtoQuerePopup">
+                                                            <a
+                                                                class="option-link"
+                                                                href="">
+                                                                <span
+                                                                    class="material-icons">
+                                                                    playlist_play
+                                                                </span><span
+                                                                    class="add-queue">Add
+                                                                    to queue</span></a>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="video-attributes">
+                                                    <div class="channel-name">Master-Academy</div>
+                                                    <div
+                                                        class="video-watch-info">
+                                                        <span
+                                                            class="waching-now">5,248,704
+                                                            views | </span>
+                                                        <span
+                                                            class="started-on">Feb
+                                                            21,
+                                                            2021</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video-thub-img-row">
+                                            <div class="video-thub-img">
+                                                <img src="images/pic4.png"
+                                                    alt="">
+                                                <img src="images/play-btn.png"
+                                                    alt=""
+                                                    class="play-btn"
+                                                    onclick="playVideo('videos/vid4.mp4')">
+                                                <div class="video-time"><span
+                                                        class="video-length">10:25</span></div>
+                                                <div class="option-overlay">
+                                                    <div class="watch-later"><i
+                                                            class="fas
+                                                            fa-clock"></i>
+                                                        <span
+                                                            class="watch-later-que
+                                                            hover-option-text">Watch
+                                                            later</span>
+                                                    </div>
+                                                    <div class="play-list-add">
+                                                        <span
+                                                            class="material-icons">
+                                                            playlist_play
+                                                        </span>
+                                                        <span class="add-to-que
+                                                            hover-option-text">Add
+                                                            to
+                                                            queue</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="small-video-details">
+                                                <div class="video-title">
+                                                    <h3 class="title-text">Master-Academy
+                                                        Live</h3>
+                                                    <span class="option-icon"><i
+                                                            class="fas
+                                                            fa-ellipsis-v"></i></span>
+                                                </div>
+                                                <div class="video-attributes">
+                                                    <div class="channel-name">Master-Academy</div>
+                                                    <div
+                                                        class="video-watch-info">
+                                                        <span
+                                                            class="waching-now">5,248,704
+                                                            views | </span>
+                                                        <span
+                                                            class="started-on">Feb
+                                                            21,
+                                                            2021</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </div>
-                            <div class="video-thub-img-row">
-                                <div class="video-thub-img">
-                                    <img src="images/pic4.png" alt="">
-                                    <img src="images/play-btn.png" alt=""
-                                        class="play-btn"
-                                        onclick="playVideo('videos/vid4.mp4')">
-                                    <div class="video-time"><span
-                                            class="video-length">10:25</span></div>
-                                    <div class="option-overlay">
-                                        <div class="watch-later"><i class="fas
-                                                fa-clock"></i>
-                                            <span class="watch-later-que
-                                                hover-option-text">Watch
-                                                later</span>
-                                        </div>
-                                        <div class="play-list-add">
-                                            <span class="material-icons">
-                                                playlist_play
-                                            </span>
-                                            <span class="add-to-que
-                                                hover-option-text">Add to
-                                                queue</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="small-video-details">
-                                    <div class="video-title">
-                                        <h3 class="title-text">Master-Academy
-                                            Live</h3>
-                                        <span class="option-icon"><i class="fas
-                                                fa-ellipsis-v"></i></span>
-                                    </div>
-                                    <div class="video-attributes">
-                                        <div class="channel-name">Master-Academy</div>
-                                        <div class="video-watch-info">
-                                            <span class="waching-now">5,248,704
-                                                views | </span>
-                                            <span class="started-on">Feb 21,
-                                                2021</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-thub-img-row">
-                                <div class="video-thub-img">
-                                    <img src="images/pic1.png" alt="">
-                                    <img src="images/play-btn.png" alt=""
-                                        class="play-btn"
-                                        onclick="playVideo('videos/video.mp4')">
-                                    <div class="video-time"><span
-                                            class="video-length">10:25</span></div>
-                                    <div class="option-overlay">
-                                        <div class="watch-later"><i class="fas
-                                                fa-clock"></i>
-                                            <span class="watch-later-que
-                                                hover-option-text">Watch
-                                                later</span>
-                                        </div>
-                                        <div class="play-list-add">
-                                            <span class="material-icons">
-                                                playlist_play
-                                            </span>
-                                            <span class="add-to-que
-                                                hover-option-text">Add to
-                                                queue</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="small-video-details">
-                                    <div class="video-title">
-                                        <h3 class="title-text">Master-Academy
-                                            Live</h3>
-                                        <span class="option-icon"><i class="fas
-                                                fa-ellipsis-v"></i></span>
-                                    </div>
-                                    <div class="video-attributes">
-                                        <div class="channel-name">Master-Academy</div>
-                                        <div class="video-watch-info">
-                                            <span class="waching-now">5,248,704
-                                                views | </span>
-                                            <span class="started-on">Feb 21,
-                                                2021</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-thub-img-row">
-                                <div class="video-thub-img">
-                                    <img src="images/pic1.png" alt="">
-                                    <img src="images/play-btn.png" alt=""
-                                        class="play-btn"
-                                        onclick="playVideo('videos/video.mp4')">
-                                    <div class="video-time"><span
-                                            class="video-length">10:25</span></div>
-                                    <div class="option-overlay">
-                                        <div class="watch-later"><i class="fas
-                                                fa-clock"></i>
-                                            <span class="watch-later-que
-                                                hover-option-text">Watch
-                                                later</span>
-                                        </div>
-                                        <div class="play-list-add">
-                                            <span class="material-icons">
-                                                playlist_play
-                                            </span>
-                                            <span class="add-to-que
-                                                hover-option-text">Add to
-                                                queue</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="small-video-details">
-                                    <div class="video-title">
-                                        <h3 class="title-text">Master-Academy
-                                            Live</h3>
-                                        <span class="option-icon"><i class="fas
-                                                fa-ellipsis-v"></i></span>
-                                    </div>
-                                    <div class="video-attributes">
-                                        <div class="channel-name">Master-Academy</div>
-                                        <div class="video-watch-info">
-                                            <span class="waching-now">5,248,704
-                                                views | </span>
-                                            <span class="started-on">Feb 21,
-                                                2021</span>
-                                        </div>
-                                    </div>
+                                <div class="slider-navigator">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
                                 </div>
                             </div>
                         </div>

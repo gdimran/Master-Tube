@@ -1,6 +1,12 @@
 //jQuery.noConflict();
 
 //================popups=====================
+
+function gustSettFunc() {
+  var popup = document.getElementById("gustSettPopup");
+  popup.classList.toggle("show");
+}
+
 function createOption() {
   var popup = document.getElementById("createOptionPopup");
   popup.classList.toggle("show");

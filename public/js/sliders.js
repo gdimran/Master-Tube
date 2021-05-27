@@ -72,3 +72,40 @@ const logedinCatSwiper = new Swiper('.logedinCatSwiper', {
   debugger: true,
 });
 
+
+const liveSwiper = new Swiper('.liveSwiper', {
+  // Optional parameters
+  direction: 'vertical',
+  slidesPerView: 6,
+  //centeredSlides: true,
+  spaceBetween: 20,
+  loop: false,
+  breakpoints: {
+    320: {
+      direction: 'horizontal',
+    },
+    768: {
+      direction: 'horizontal',
+    },
+    992: {
+      direction: 'vertical',
+    },
+    1200: {
+      direction: 'vertical',
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+  // Enable debugger
+  debugger: true,
+});
+

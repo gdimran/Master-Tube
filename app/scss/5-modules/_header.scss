@@ -86,6 +86,10 @@
 .user-login-section {
 	display: flex;
 	gap: 1.5rem;
+    align-items: center;
+}
+.option {
+	font-size: 2rem;
 }
 .menu-icon.openbtn {
 	font-size: 20px;
