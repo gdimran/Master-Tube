@@ -1349,6 +1349,18 @@ hr.horizontal-line {
   display: none;
 }
 
+.mobile-header {
+  display: none;
+}
+
+.mobile-footer {
+  display: none;
+}
+
+.all-category-mobile {
+  display: none;
+}
+
 .sidebar-small {
   width: 75px;
   height: 100vh;
@@ -1823,7 +1835,50 @@ a.option-link .material-icons {
   position: relative;
 }
 
-.popup .gustSett-content,
+.popup .gustSett-content {
+  visibility: hidden;
+  width: 220px;
+  position: absolute;
+  z-index: 10;
+  top: 56px;
+  right: 0;
+}
+
+.popup .gustSett-content .card-header {
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 15px;
+}
+
+.popup .gustSett-content .fas.fa-chevron-right.icon-right {
+  text-align: right;
+  margin-right: 0;
+  font-size: 1.4rem;
+  position: absolute;
+  right: 20px;
+}
+
+.popup .gustSett-content a.option-link img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.popup .gustSett-content a.option-link i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.popup .gustSett-content a.option-link {
+  color: #030303;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.popup .gustSett-content a.option-link:hover {
+  background: #ccc;
+}
+
 .popup .userSetting-content {
   visibility: hidden;
   width: 280px;
@@ -1833,13 +1888,11 @@ a.option-link .material-icons {
   right: 0;
 }
 
-.popup .gustSett-content .card-header,
 .popup .userSetting-content .card-header {
   border-bottom: 1px solid #f1f1f1;
   padding-bottom: 15px;
 }
 
-.popup .gustSett-content .fas.fa-chevron-right.icon-right,
 .popup .userSetting-content .fas.fa-chevron-right.icon-right {
   text-align: right;
   margin-right: 0;
@@ -1848,19 +1901,16 @@ a.option-link .material-icons {
   right: 20px;
 }
 
-.popup .gustSett-content a.option-link img,
 .popup .userSetting-content a.option-link img {
   width: 20px;
   margin-right: 20px;
 }
 
-.popup .gustSett-content a.option-link i,
 .popup .userSetting-content a.option-link i {
   font-size: 20px;
   margin-right: 20px;
 }
 
-.popup .gustSett-content a.option-link,
 .popup .userSetting-content a.option-link {
   color: #030303;
   font-size: 1.4rem;
@@ -1869,7 +1919,6 @@ a.option-link .material-icons {
   padding: 15px 20px;
 }
 
-.popup .gustSett-content a.option-link:hover,
 .popup .userSetting-content a.option-link:hover {
   background: #ccc;
 }
@@ -2753,7 +2802,7 @@ button#main-search-icon-legacy {
 .old-comments,
 .new-comment {
   display: flex;
-  width: 100%;
+  width: auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -3530,6 +3579,242 @@ span.publishing-date {
   }
 }
 
+@media (max-width: 767.98px) {
+  #overSidepanel #exSidepanel,
+  .all-category,
+  #side-bar,
+  #header {
+    display: none;
+  }
+  .sidepanel {
+    display: none !important;
+  }
+  #content {
+    left: 0;
+    padding: 0;
+  }
+  .mobile-header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    border-bottom: 1px solid #aaaaaa;
+  }
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+  .header-right-sec {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .signup.btn-outline {
+    padding: 5px 10px;
+    font-size: 1.4rem;
+  }
+  .option,
+  .search-opt {
+    cursor: pointer;
+  }
+  #search-modal span.modal-close-btn {
+    line-height: 25px;
+  }
+  button#main-search-icon-legacy {
+    font-size: 1.4rem;
+  }
+  .modal-content {
+    overflow: scroll;
+  }
+  #content .hero-section .hero-bg-image {
+    background-size: 60vw;
+    background-position: bottom right;
+    height: auto;
+  }
+  .hero-content {
+    padding: 0 15px;
+  }
+  .all-category-mobile .logedinCatSwiper {
+    border-bottom: none;
+  }
+  #content .hero-section .hero-bg-image .hero-content .hero-title-text {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  #content .hero-section .hero-bg-image .hero-content .hero-desc {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  #content .section-title {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0 15px;
+  }
+  #content .video-feature-image {
+    border-radius: 0;
+  }
+  .video-details {
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  #content .video-thub-img-row {
+    flex-flow: column;
+  }
+  .liveSwiper {
+    overflow: hidden;
+    height: auto;
+    margin-top: 40px;
+  }
+  .liveSwiper .swiper-button-prev::after {
+    content: 'next';
+    rotate: 180deg;
+  }
+  .liveSwiper .swiper-button-next::after {
+    content: 'next';
+    rotate: 0deg;
+  }
+  .liveSwiper .swiper-button-next {
+    left: auto;
+    right: 10px;
+  }
+  .liveSwiper .swiper-button-prev, .liveSwiper .swiper-button-next {
+    position: absolute;
+    border-radius: 50%;
+    background: #fff !important;
+    width: 40px !important;
+    height: 40px !important;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+    top: 40%;
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #030303;
+  }
+  .liveSwiper .swiper-slide {
+    flex-shrink: 0;
+    width: 70% !important;
+    height: auto !important;
+  }
+  .mostPopulerSwiper div.swiper-slide {
+    height: auto;
+    width: 70% !important;
+  }
+  #content .video-thub-img-row .video-thub-img {
+    margin-right: 0;
+  }
+  #content .video-attributes {
+    flex-flow: column;
+  }
+  #content .single-video-content .video-watch-info,
+  .video-watch-info {
+    justify-content: flex-start;
+    margin-top: 5px;
+    gap: 15px;
+  }
+  .mostPopulerSwiper .slider-navigator {
+    right: 15px;
+    top: -56px;
+  }
+  .small-video-details {
+    padding: 0 15px;
+    width: auto;
+  }
+  .mobile-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #aaaaaa;
+    align-items: center;
+    background: white;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+  }
+  .link-icon {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    color: #030303;
+    font-size: 1.2rem;
+  }
+  .all-category-mobile {
+    display: block;
+    padding: 0 15px;
+    margin: 20px 0;
+  }
+  .modal-title-text {
+    font-size: 2rem;
+  }
+  .material-icons.uploader {
+    font-size: 40px;
+  }
+  #guestSetting-content {
+    background: #fff;
+  }
+  #guestSetting-content .modal-header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+    align-items: center;
+    background: #fff;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  #guestSetting-content .option-link img,
+  #guestSetting-content .option-link i {
+    margin-right: 20px;
+  }
+  #guestSetting-content .icon-right {
+    margin-right: 0 !important;
+    position: absolute;
+    right: 20px;
+  }
+  .like-share-opt {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  .like-share-opt img,
+  .like-share-opt .material-icons {
+    font-size: 18px;
+    color: #909090 !important;
+  }
+  .like-share-opt i {
+    font-size: 18px;
+    color: #909090 !important;
+  }
+  .channel-content {
+    padding: 0 15px;
+  }
+  .video-description {
+    width: 100%;
+    padding: 0 15px;
+    margin-left: 0;
+  }
+  .tablinks:nth-child(1) {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .tablinks {
+    font-size: 1.4rem;
+    padding: 5px 0;
+    margin: 0 7px;
+  }
+  .comments-section {
+    padding: 0 15px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   #header .search-section #search-form input#search {
     width: 21vw;
@@ -3538,6 +3823,9 @@ span.publishing-date {
     width: 45px;
   }
   .login.btn-normal {
+    display: none;
+  }
+  .allother-option {
     display: none;
   }
   #content .hero-section .hero-bg-image .hero-content .hero-title-text {
@@ -3557,7 +3845,7 @@ span.publishing-date {
   }
   .liveSwiper {
     overflow: hidden;
-    height: 235px;
+    height: auto;
     margin-top: 40px;
   }
   .liveSwiper .swiper-button-prev::after {
@@ -3596,6 +3884,9 @@ span.publishing-date {
   .mostPopulerSwiper div.swiper-slide {
     height: auto;
     width: 47% !important;
+  }
+  .user-login-content {
+    width: 60vw;
   }
 }
 
@@ -3647,7 +3938,7 @@ span.publishing-date {
   }
   .liveSwiper {
     overflow: hidden;
-    height: 70vh;
+    height: calc(33vw*1.3);
   }
   .liveSwiper .swiper-button-next {
     position: absolute;

@@ -11,6 +11,14 @@ var span = document.getElementsByClassName("modal-close-btn")[0];
 // btn.onclick = function() {
 //   modal.style.display = "block";
 // }
+
+//mobile search modal
+document.getElementById("mobileSearch").addEventListener("click", displaySearchModal);
+
+function displaySearchModal() {
+  modal.style.display = "block";
+}
+
 inputSearch.onfocus = function () {
   modal.style.display = "block";
 }
@@ -18,6 +26,7 @@ inputSearch.onfocus = function () {
 //   modal.style.display = "block";
 // }
 // When the user clicks on <span> (x), close the modal
+
 span.onclick = function () {
   modal.style.display = "none";
 }
@@ -92,3 +101,14 @@ window.onclick = function (event) {
   }
 }
 
+
+//mobile setting modal
+//mobile search modal
+document.getElementById("guestSetting").addEventListener("click", guestUmodalShow);
+var gestUserOpt = document.getElementById("guestSetting-content");
+function guestUmodalShow() {
+  gestUserOpt.style.display = "block";
+  span.onclick = function () {
+    gestUserOpt.style.display = "none";
+  }
+}

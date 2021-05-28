@@ -160,7 +160,43 @@ a.option-link .material-icons {
 .user-option {
 	position: relative;
 }
-.popup .gustSett-content,
+.popup .gustSett-content{
+  visibility: hidden;
+  width:220px;
+  position: absolute;
+  z-index: 10;
+  top: 56px;
+  right: 0;
+  .card-header {
+    border-bottom: 1px solid $color_light-gray;
+    padding-bottom: 15px;
+  }
+  .fas.fa-chevron-right.icon-right {
+    text-align: right;
+    margin-right: 0;
+    font-size: $link-font-size;
+    position: absolute;
+    right: 20px;
+  }
+  a.option-link img {
+    width: 20px;
+    margin-right: 20px;
+  }
+  a.option-link i {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  a.option-link {
+    color: $primary-color;
+    font-size: $link-font-size;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    &:hover{
+        background: $option-icon-bg;
+    }
+  }
+}
 .popup .userSetting-content {
   visibility: hidden;
   width:280px;

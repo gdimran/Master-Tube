@@ -2,6 +2,8 @@
 
 //================popups=====================
 
+
+
 function gustSettFunc() {
   var popup = document.getElementById("gustSettPopup");
   popup.classList.toggle("show");
@@ -45,35 +47,60 @@ function closeOverlaySidebar() {
 }
 
 //=============expandable side bar=============================
+function getBrowserSize() {
+  var w, h;
 
-window.onload = function setContentWidth() {
-  var element = document.getElementById('exSidepanel');
-  if (typeof (element) != 'undefined' && element != null) {
-    document.getElementById("side-bar").style.display = "none";
-    document.getElementById("content").style.width = "calc(100% - 260px)";
-    document.getElementById("content").style.marginLeft = "185px";
-  } else {
-    document.getElementById("content").style.width = "calc(100% - 75px)";
+  if (typeof window.innerWidth != 'undefined') {
+    w = window.innerWidth; //other browsers
+    h = window.innerHeight;
   }
+  else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0) {
+    w = document.documentElement.clientWidth; //IE
+    h = document.documentElement.clientHeight;
+  }
+  else {
+    w = document.body.clientWidth; //IE
+    h = document.body.clientHeight;
+  }
+  return { 'width': w, 'height': h };
 }
 
 
-
-function showExpandsideBar() {
-  var x = document.getElementById("exSidepanel");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    document.getElementById("side-bar").style.display = "none";
-    document.getElementById("content").style.marginLeft = "185px";
-    document.getElementById("content").style.width = "calc(100% - 260px)";
-  } else {
-    x.style.display = "none";
-    document.getElementById("side-bar").style.display = "block";
-    document.getElementById("content").style.marginLeft = "0";
-    document.getElementById("content").style.width = "calc(100% - 75px)";
+if (parseInt(getBrowserSize().width) > 767) {
+  window.onload = function setContentWidth() {
+    var element = document.getElementById('exSidepanel');
+    if (typeof (element) != 'undefined' && element != null) {
+      document.getElementById("side-bar").style.display = "none";
+      document.getElementById("content").style.width = "calc(100% - 260px)";
+      document.getElementById("content").style.marginLeft = "185px";
+    } else {
+      document.getElementById("content").style.width = "calc(100% - 75px)";
+    }
   }
 
+  //show expand side pannel
+  function showExpandsideBar() {
+    var x = document.getElementById("exSidepanel");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      document.getElementById("side-bar").style.display = "none";
+      document.getElementById("content").style.marginLeft = "185px";
+      document.getElementById("content").style.width = "calc(100% - 260px)";
+    } else {
+      x.style.display = "none";
+      document.getElementById("side-bar").style.display = "block";
+      document.getElementById("content").style.marginLeft = "0";
+      document.getElementById("content").style.width = "calc(100% - 75px)";
+    }
+
+  }
+} else {
+  document.getElementById("content").style.width = "calc(100%)";
+  document.getElementById("side-bar").style.display = "none";
+  document.getElementById("exSidepanel").style.display = "none";
 }
+
+
 
 //video open-close 
 var videoPlayer = document.getElementById("videoPlayer");

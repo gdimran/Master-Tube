@@ -82,7 +82,9 @@ const liveSwiper = new Swiper('.liveSwiper', {
   loop: false,
   breakpoints: {
     320: {
+      slidesPerView: 1,
       direction: 'horizontal',
+      centeredSlides: true,
     },
     768: {
       direction: 'horizontal',
