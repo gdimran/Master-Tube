@@ -274,6 +274,7 @@ a.option-link .material-icons {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
+    overflow: inherit;
   }
   
   /* Add animation (fade in the popup) */
@@ -285,4 +286,27 @@ a.option-link .material-icons {
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+  }
+
+  .tooltip::before {
+    content: "";
+    position: absolute;
+    bottom:100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:transparent transparent  $spec-secondary-color transparent;
+  }
+
+  .popup .show::before {
+    content: "";
+    position: absolute;
+    bottom:100%;
+    left: 95%;
+    z-index: 10;
+    margin-left: -15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color:transparent transparent  $light-color transparent;
   }

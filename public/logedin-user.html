@@ -8,6 +8,9 @@
         <title>Master-Academy | An educational platform in Bangladesh.</title>
         <link rel="stylesheet" href="css/swiper-bundle.css" />
         <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
     </head>
 
     <body>
@@ -134,7 +137,8 @@
         <div id="overSidepanel">
             <div class="sideBar-header-content">
                 <span class="menu-icon openbtn" onclick="closeOverlaySidebar()">
-                    <i class="fas fa-bars"></i></span>
+                    <i class="custom-icon
+                        icon-menu"></i></span>
                 <div class="logo">
                     <a href="">
                         <img src="images/logo.png">
@@ -269,7 +273,8 @@
             <div class="header-content-left">
                 <span class="menu-icon openbtn" onclick="openOverlaySidebar()">
                     <!-- <span class="menu-icon openbtn" onclick="showExpandsideBar()"> -->
-                    <i class="fas fa-bars"></i></span>
+                    <i class="custom-icon
+                        icon-menu"></i></span>
                 <div class="logo">
                     <a href="">
                         <img src="images/logo.png">
@@ -302,7 +307,7 @@
             </div>
             <div class="user-access-section">
                 <div class="create-option popup" onclick="createOption()"><i
-                        class="fas fa-video"></i>
+                        class="custom-icon icon-videocam"></i>
                     <div class="create-option-content card"
                         id="createOptionPopup">
                         <a href="" class="option-link"><img class="mr-1"
@@ -313,7 +318,8 @@
                     </div>
                 </div>
                 <div class="notification-option popup"
-                    onclick="notificationFunc()"><i class="fas fa-bell"></i>
+                    onclick="notificationFunc()"><i class="custom-icon
+                        icon-bell"></i>
                     <div class="notification-content card"
                         id="notificationPopup">
                         <div class="card-header">
@@ -578,12 +584,11 @@
                         search
                     </span>
                 </div>
-                <div id="guestSetting" class="option">
+                <div id="guestSetting" class="option" style="display: none;">
                     <i class="fas fa-ellipsis-v"></i>
-
                 </div>
                 <div class="user-option">
-                    <div class="user-profile-pic">
+                    <div id="userAccountModalShow" class="user-profile-pic">
                         <img src="images/pic1.png" alt="">
                     </div>
                 </div>
@@ -780,7 +785,8 @@
                                         <div class="watch-later"><i class="fas
                                                 fa-clock"></i>
                                             <span class="watch-later-que
-                                                hover-option-text">Watch
+                                                hover-option-text
+                                                animate__slideInRight">Watch
                                                 later</span>
                                         </div>
                                         <div class="play-list-add">
@@ -788,7 +794,8 @@
                                                 playlist_play
                                             </span>
                                             <span class="add-to-que
-                                                hover-option-text">Add to
+                                                hover-option-text
+                                                animate__slideInRight">Add to
                                                 queue</span>
                                         </div>
                                     </div>
@@ -2165,7 +2172,7 @@
                 </a>
             </div>
             <div class="upload">
-                <a href="" class="link-icon">
+                <a id="uploadOpt" href="#" class="link-icon">
                     <span class="material-icons uploader">
                         add_circle_outline
                     </span>
@@ -2195,8 +2202,6 @@
         <!-- The Modal -->
         <div id="search-modal" class="modal">
             <div class="modal-header search-modal-header">
-                <div class="backto-home"><a href="index.html"><i class="fas
-                            fa-long-arrow-alt-left"></i></a></div>
                 <div class="search-input">
                     <form action="" id="search-form-linear">
                         <input id="search-main" autocapitalize="none"
@@ -2213,7 +2218,9 @@
                         </button>
                     </form>
                 </div>
-                <span class="modal-close-btn">&times;</span>
+                <span
+                    onclick="document.getElementById('search-modal').style.display='none'"
+                    class="modal-close-btn">&times;</span>
             </div>
             <!-- Modal content -->
             <div class="modal-content search-content">
@@ -2358,9 +2365,9 @@
         <!-- The Modal -->
         <div id="explore-modal" class="modal">
             <div class="modal-header">
-                <div class="backto-home-defalut"><a href="index.html"><i
-                            class="fas fa-long-arrow-alt-left"></i></a></div>
-                <span class="modal-close-btn">&times;</span>
+                <span
+                    onclick="document.getElementById('explore-modal').style.display='none'"
+                    class="modal-close-btn">&times;</span>
             </div>
             <!-- Modal content -->
             <div class="modal-content search-content">
@@ -2482,6 +2489,104 @@
 
         </div>
         <!-- explore modal end -->
+
+        <!-- mobile-menu modals start -->
+        <div id="UploadContent" class="modalBottom">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Create</h2>
+                    <span
+                        onclick="document.getElementById('UploadContent').style.display='none'"
+                        class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <a href="" class="link-option mobile-menu">
+                        <span class="material-icons">
+                            upload
+                        </span>
+                        <div class="mobile-menu-text">Upload a video</div>
+                    </a>
+                    <a href="" class="link-option mobile-menu">
+                        <span class="material-icons">
+                            live_tv
+                        </span>
+                        <div class="mobile-menu-text">Go live</div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="useerAccount" class="modalBottom userAccountModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span
+                        onclick="document.getElementById('useerAccount').style.display='none'"
+                        class="close">&times;</span>
+                    <h2>Account</h2>
+
+                </div>
+                <div class="modal-body">
+                    <div class="header-with-left-pic">
+                        <div class="user-profile-pic"> <img
+                                src="images/pic1.png" alt=""></div>
+
+                        <div class="user-info">
+                            <div class="user-name">Imran Hossain</div>
+                            <div class="user-email">gdimran@gmail.com</div>
+                            <a href="" class="account-detail-link">Manage
+                                your Account</a>
+                        </div>
+                    </div>
+                    <div class="basic-user-settings">
+                        <a href="" class="option-link"><i class="fas
+                                fa-user-circle"></i>Your channel</a>
+                        <a href="" class="option-link"><i class="fas
+                                fa-credit-card"></i>Purchases and
+                            memberships</a>
+                        <a href="" class="option-link"><img
+                                src="images/studio.svg" alt="">Academic
+                            Studio</a>
+                        <a href="" class="option-link"><i class="fas
+                                fa-power-off"></i>Sign Out</a>
+                    </div>
+                    <div class="additional-settings">
+                        <a href="" class="option-link"><i class="fas
+                                fa-adjust"></i> Appearance: Device theme
+                            <i class="fas
+                                fa-chevron-right icon-right"></i></a>
+                        <a href="" class="option-link"><img
+                                src="images/language.svg" alt="">Language:
+                            English <i class="fas fa-chevron-right
+                                icon-right"></i></a>
+                        <a href="" class="option-link"><i class="fas
+                                fa-map-marker-alt"></i> Location:
+                            Bangladesh
+                            <i class="fas fa-chevron-right icon-right"></i></a>
+                        <a href="" class="option-link"><i class="fas
+                                fa-cog"></i> Location:
+                            Bangladesh
+                        </a>
+                        <a href="" class="option-link"><i class="fas
+                                fa-database"></i>Your data security
+                        </a>
+                        <a href="" class="option-link"><i class="fas
+                                fa-question-circle"></i>Help
+                        </a>
+                        <a href="" class="option-link"><i class="fas
+                                fa-comment-alt"></i>Send Feedback
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- mobile-menu modals end -->
+
 
 
         <!-- all js files -->

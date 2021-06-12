@@ -27,10 +27,13 @@ inputSearch.onfocus = function () {
 // }
 // When the user clicks on <span> (x), close the modal
 
+// span.onclick = function () {
+//   modal.style.display = "none";
+// }
+
 span.onclick = function () {
   modal.style.display = "none";
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
@@ -80,7 +83,7 @@ var exploreModal = document.getElementById("explore-modal");
 var exploreOpener = document.getElementById("explore-opener");
 
 // Get the <span> element that closes the modal
-var spanClose = document.getElementsByClassName("modal-close-btn")[1];
+//var spanClose = document.getElementsByClassName("modal-close-btn")[0];
 
 // When the user clicks the button, open the modal 
 // btn.onclick = function() {
@@ -90,7 +93,7 @@ exploreOpener.onclick = function () {
   exploreModal.style.display = "block";
 }
 // When the user clicks on <span> (x), close the modal
-spanClose.onclick = function () {
+span.onclick = function () {
   exploreModal.style.display = "none";
 }
 
@@ -108,7 +111,44 @@ document.getElementById("guestSetting").addEventListener("click", guestUmodalSho
 var gestUserOpt = document.getElementById("guestSetting-content");
 function guestUmodalShow() {
   gestUserOpt.style.display = "block";
-  span.onclick = function () {
-    gestUserOpt.style.display = "none";
-  }
 }
+span.onclick = function () {
+  gestUserOpt.style.display = "none";
+}
+
+//Buttom create option modal
+// Get the modal
+var UploadContent = document.getElementById("UploadContent");
+
+// Get the button that opens the modal
+var btn = document.getElementById("uploadOpt");
+
+// Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function () {
+  UploadContent.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function () {
+//   UploadContent.style.display = "none";
+// }
+
+//UserAccount modal
+// Get the modal
+var userAccountModal = document.getElementById("useerAccount");
+
+// Get the button that opens the modal
+var modalShowbtn = document.getElementById("userAccountModalShow");
+
+// When the user clicks the button, open the modal 
+modalShowbtn.onclick = function () {
+  userAccountModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function () {
+//   userAccountModal.style.display = "none";
+// }

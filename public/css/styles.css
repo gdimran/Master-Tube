@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
@@ -185,6 +186,656 @@ $responsive-breakpoint: $size-xs !default;
 
 .bg-pale-blue {
   background-color: #ddffff;
+}
+
+@font-face {
+  font-family: 'imran_iconfont';
+  src: url("font/imran_iconfont.eot?93301623");
+  src: url("font/imran_iconfont.eot?93301623#iefix") format("embedded-opentype"), url("font/imran_iconfont.woff2?93301623") format("woff2"), url("font/imran_iconfont.woff?93301623") format("woff"), url("font/imran_iconfont.ttf?93301623") format("truetype"), url("font/imran_iconfont.svg?93301623#imran_iconfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'imran_iconfont';
+      src: url('../font/imran_iconfont.svg?93301623#imran_iconfont') format('svg');
+    }
+  }
+  */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "imran_iconfont";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-clock:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-left-hand:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-right-hand:before {
+  content: '\e802';
+}
+
+/* '' */
+.icon-music:before {
+  content: '\e803';
+}
+
+/* '' */
+.icon-search:before {
+  content: '\e804';
+}
+
+/* '' */
+.icon-heart:before {
+  content: '\e805';
+}
+
+/* '' */
+.icon-star:before {
+  content: '\e806';
+}
+
+/* '' */
+.icon-lock:before {
+  content: '\e807';
+}
+
+/* '' */
+.icon-thumbs-up:before {
+  content: '\e808';
+}
+
+/* '' */
+.icon-graduation-cap:before {
+  content: '\e809';
+}
+
+/* '' */
+.icon-lightbulb:before {
+  content: '\e80a';
+}
+
+/* '' */
+.icon-params:before {
+  content: '\e80b';
+}
+
+/* '' */
+.icon-cog:before {
+  content: '\e80c';
+}
+
+/* '' */
+.icon-videocam:before {
+  content: '\e80d';
+}
+
+/* '' */
+.icon-eye:before {
+  content: '\e80e';
+}
+
+/* '' */
+.icon-pencil:before {
+  content: '\e80f';
+}
+
+/* '' */
+.icon-database:before {
+  content: '\e810';
+}
+
+/* '' */
+.icon-key:before {
+  content: '\e811';
+}
+
+/* '' */
+.icon-megaphone:before {
+  content: '\e812';
+}
+
+/* '' */
+.icon-fire:before {
+  content: '\e813';
+}
+
+/* '' */
+.icon-calendar:before {
+  content: '\e814';
+}
+
+/* '' */
+.icon-video:before {
+  content: '\e815';
+}
+
+/* '' */
+.icon-clock-1:before {
+  content: '\e816';
+}
+
+/* '' */
+.icon-block:before {
+  content: '\e817';
+}
+
+/* '' */
+.icon-clock-2:before {
+  content: '\e818';
+}
+
+/* '' */
+.icon-location-inv:before {
+  content: '\e819';
+}
+
+/* '' */
+.icon-lock-empty:before {
+  content: '\e81a';
+}
+
+/* '' */
+.icon-forward-outline:before {
+  content: '\e81b';
+}
+
+/* '' */
+.icon-left-open-big:before {
+  content: '\e81c';
+}
+
+/* '' */
+.icon-right-open-big:before {
+  content: '\e81d';
+}
+
+/* '' */
+.icon-cancel:before {
+  content: '\e81e';
+}
+
+/* '' */
+.icon-book:before {
+  content: '\e81f';
+}
+
+/* '' */
+.icon-bell:before {
+  content: '\e820';
+}
+
+/* '' */
+.icon-search-1:before {
+  content: '\e821';
+}
+
+/* '' */
+.icon-lamp:before {
+  content: '\e822';
+}
+
+/* '' */
+.icon-thermometer:before {
+  content: '\e823';
+}
+
+/* '' */
+.icon-down-open-big:before {
+  content: '\e824';
+}
+
+/* '' */
+.icon-tools:before {
+  content: '\e825';
+}
+
+/* '' */
+.icon-cog-1:before {
+  content: '\e826';
+}
+
+/* '' */
+.icon-compass:before {
+  content: '\e827';
+}
+
+/* '' */
+.icon-hourglass:before {
+  content: '\e828';
+}
+
+/* '' */
+.icon-menu:before {
+  content: '\e829';
+}
+
+/* '' */
+.icon-dot-3:before {
+  content: '\e82a';
+}
+
+/* '' */
+.icon-camera-outline:before {
+  content: '\e82b';
+}
+
+/* '' */
+.icon-book-open:before {
+  content: '\e82c';
+}
+
+/* '' */
+.icon-compass-1:before {
+  content: '\e82d';
+}
+
+/* '' */
+.icon-tint:before {
+  content: '\e82e';
+}
+
+/* '' */
+.icon-block-1:before {
+  content: '\e82f';
+}
+
+/* '' */
+.icon-search-2:before {
+  content: '\e830';
+}
+
+/* '' */
+.icon-open-book-o:before {
+  content: '\e831';
+}
+
+/* '' */
+.icon-create-video:before {
+  content: '\e832';
+}
+
+/* '' */
+.icon-mosque:before {
+  content: '\e833';
+}
+
+/* '' */
+.icon-paint-brush:before {
+  content: '\e834';
+}
+
+/* '' */
+.icon-flask:before {
+  content: '\e835';
+}
+
+/* '' */
+.icon-test:before {
+  content: '\e836';
+}
+
+/* '' */
+.icon-digital-library:before {
+  content: '\e837';
+}
+
+/* '' */
+.icon-settings-o:before {
+  content: '\e838';
+}
+
+/* '' */
+.icon-live-streaming:before {
+  content: '\e839';
+}
+
+/* '' */
+.icon-entertainment:before {
+  content: '\e83a';
+}
+
+/* '' */
+.icon-suitcase:before {
+  content: '\e83b';
+}
+
+/* '' */
+.icon-handshake:before {
+  content: '\e83c';
+}
+
+/* '' */
+.icon-flask-1:before {
+  content: '\e83d';
+}
+
+/* '' */
+.icon-paint-brush-1:before {
+  content: '\e83e';
+}
+
+/* '' */
+.icon-adjust:before {
+  content: '\e83f';
+}
+
+/* '' */
+.icon-clipboard:before {
+  content: '\e840';
+}
+
+/* '' */
+.icon-location:before {
+  content: '\e841';
+}
+
+/* '' */
+.icon-paper-plane:before {
+  content: '\e842';
+}
+
+/* '' */
+.icon-shop:before {
+  content: '\e843';
+}
+
+/* '' */
+.icon-wallet:before {
+  content: '\e844';
+}
+
+/* '' */
+.icon-clock-3:before {
+  content: '\e845';
+}
+
+/* '' */
+.icon-tag:before {
+  content: '\e846';
+}
+
+/* '' */
+.icon-comment:before {
+  content: '\e847';
+}
+
+/* '' */
+.icon-trash:before {
+  content: '\e848';
+}
+
+/* '' */
+.icon-camera:before {
+  content: '\e849';
+}
+
+/* '' */
+.icon-mail:before {
+  content: '\e84a';
+}
+
+/* '' */
+.icon-doc:before {
+  content: '\e84b';
+}
+
+/* '' */
+.icon-photo:before {
+  content: '\e84c';
+}
+
+/* '' */
+.icon-note:before {
+  content: '\e84d';
+}
+
+/* '' */
+.icon-attach:before {
+  content: '\e84e';
+}
+
+/* '' */
+.icon-money:before {
+  content: '\e84f';
+}
+
+/* '' */
+.icon-mobile:before {
+  content: '\e850';
+}
+
+/* '' */
+.icon-hearing-impaired:before {
+  content: '\e851';
+}
+
+/* '' */
+.icon-gift:before {
+  content: '\e852';
+}
+
+/* '' */
+.icon-bookmark-empty:before {
+  content: '\e853';
+}
+
+/* '' */
+.icon-bicycle:before {
+  content: '\e854';
+}
+
+/* '' */
+.icon-mobile-1:before {
+  content: '\e855';
+}
+
+/* '' */
+.icon-bullhorn:before {
+  content: '\e856';
+}
+
+/* '' */
+.icon-zoom-in:before {
+  content: '\e857';
+}
+
+/* '' */
+.icon-zoom-out:before {
+  content: '\e858';
+}
+
+/* '' */
+.icon-thumbs-up-1:before {
+  content: '\e859';
+}
+
+/* '' */
+.icon-thumbs-down:before {
+  content: '\e85a';
+}
+
+/* '' */
+.icon-cc:before {
+  content: '\e85b';
+}
+
+/* '' */
+.icon-list-add:before {
+  content: '\e85c';
+}
+
+/* '' */
+.icon-up-open-big:before {
+  content: '\e85d';
+}
+
+/* '' */
+.icon-up-open-mini:before {
+  content: '\e85e';
+}
+
+/* '' */
+.icon-right-open-mini:before {
+  content: '\e85f';
+}
+
+/* '' */
+.icon-left-open-mini:before {
+  content: '\e860';
+}
+
+/* '' */
+.icon-light-up:before {
+  content: '\e861';
+}
+
+/* '' */
+.icon-credit-card:before {
+  content: '\e862';
+}
+
+/* '' */
+.icon-headphones:before {
+  content: '\e863';
+}
+
+/* '' */
+.icon-calendar-1:before {
+  content: '\e864';
+}
+
+/* '' */
+.icon-thumbs-up-2:before {
+  content: '\e865';
+}
+
+/* '' */
+.icon-thumbs-down-1:before {
+  content: '\e866';
+}
+
+/* '' */
+.icon-subscription:before {
+  content: '\e867';
+}
+
+/* '' */
+.icon-comment-empty:before {
+  content: '\f0e5';
+}
+
+/* '' */
+.icon-chat-empty:before {
+  content: '\f0e6';
+}
+
+/* '' */
+.icon-lightbulb-1:before {
+  content: '\f0eb';
+}
+
+/* '' */
+.icon-flag-empty:before {
+  content: '\f11d';
+}
+
+/* '' */
+.icon-ticket:before {
+  content: '\f145';
+}
+
+/* '' */
+.icon-moon:before {
+  content: '\f186';
+}
+
+/* '' */
+.icon-language:before {
+  content: '\f1ab';
+}
+
+/* '' */
+.icon-paper-plane-empty:before {
+  content: '\f1d9';
+}
+
+/* '' */
+.icon-bell-off-empty:before {
+  content: '\f1f7';
+}
+
+/* '' */
+.icon-toggle-off:before {
+  content: '\f204';
+}
+
+/* '' */
+.icon-toggle-on:before {
+  content: '\f205';
+}
+
+/* '' */
+.icon-balance-scale:before {
+  content: '\f24e';
+}
+
+/* '' */
+.icon-question-circle-o:before {
+  content: '\f29c';
+}
+
+/* '' */
+.custom-icon {
+  font-family: "imran_iconfont";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  /* opacity: .8; */
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  /* font-size: 120%; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.menu-icon .custom-icon {
+  font-size: 2.4rem;
 }
 
 .slick-slider {
@@ -1966,6 +2617,7 @@ a.option-link .material-icons {
 .popup .show {
   visibility: visible;
   animation: fadeIn 1s;
+  overflow: inherit;
 }
 
 /* Add animation (fade in the popup) */
@@ -1977,6 +2629,29 @@ a.option-link .material-icons {
   to {
     opacity: 1;
   }
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #606060 transparent;
+}
+
+.popup .show::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 95%;
+  z-index: 10;
+  margin-left: -15px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
 }
 
 /* The Modal (background) */
@@ -2046,6 +2721,8 @@ span.modal-close-btn {
   font-size: 20px;
   font-weight: 400;
   color: #fff;
+  position: absolute;
+  right: 15px;
 }
 
 #search-modal span.modal-close-btn:hover,
@@ -2065,7 +2742,7 @@ span.modal-close-btn {
   width: 100%;
   height: 70px;
   padding: 0 30px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -2077,6 +2754,7 @@ input#search-main {
   width: 50vw;
   color: #fff;
   font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .backto-home-defaluta {
@@ -2167,6 +2845,119 @@ button#main-search-icon-legacy {
   font-weight: 400;
   line-height: 2rem;
   height: auto !important;
+}
+
+/* The Modal (background) */
+.modalBottom {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1010;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  /* Modal Content */
+}
+
+.modalBottom .modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 40%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  border-radius: 10px 10px 0 0;
+  padding: 15px;
+}
+
+.link-option.mobile-menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #030303;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.link-option.mobile-menu .material-icons {
+  background: #ccc;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* The Close Button */
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+}
+
+.userAccountModal .modal-content {
+  height: 100vh;
+}
+
+/* Add Animation */
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #content {
@@ -3620,6 +4411,15 @@ span.publishing-date {
   .search-opt {
     cursor: pointer;
   }
+  .search-input {
+    margin-left: 3rem;
+  }
+  .search-modal-header {
+    justify-content: flex-start;
+  }
+  input#search-main {
+    width: 60vw;
+  }
   #search-modal span.modal-close-btn {
     line-height: 25px;
   }
@@ -3708,8 +4508,13 @@ span.publishing-date {
   #content .video-thub-img-row .video-thub-img {
     margin-right: 0;
   }
+  #content .single-video-content .option-icon {
+    display: block;
+  }
+  #content .single-video-content .video-attributes,
   #content .video-attributes {
-    flex-flow: column;
+    flex-flow: row;
+    align-items: center;
   }
   #content .single-video-content .video-watch-info,
   .video-watch-info {
@@ -3812,6 +4617,9 @@ span.publishing-date {
   }
   .comments-section {
     padding: 0 15px;
+  }
+  a.option-link {
+    gap: 24px;
   }
 }
 

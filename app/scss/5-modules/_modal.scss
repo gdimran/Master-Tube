@@ -53,6 +53,8 @@
     font-size: 20px;
     font-weight: 400;
     color: $light-color;
+    position: absolute;
+    right: 15px;
 }
 #search-modal span.modal-close-btn:hover,
 #search-modal span.modal-close-btn:focus, 
@@ -73,7 +75,7 @@
     width: 100%;
     height: 70px;
     padding: 0 30px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -84,6 +86,7 @@ input#search-main {
     width: 50vw;
     color: $light-color;
     font-size: $navbar-title-font-size;
+    font-weight: $navbar-title-font-weight;
 }
 .backto-home-defaluta {
   color: $primary-color;
@@ -157,4 +160,117 @@ button#main-search-icon-legacy {
   font-weight: 400;
   line-height: $subheadline-line-height;
   height: auto !important;
+}
+
+//mobile menu modal form buttom
+/* The Modal (background) */
+.modalBottom {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1010; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  
+  /* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: $light-color;
+  width: 100%;
+  height:40%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  border-radius: 10px 10px 0 0;
+  padding: 15px;
+}
+}
+.link-option.mobile-menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: $primary-color;
+  font-size: $link-font-size;
+  font-weight: $link-font-weight;
+  margin-bottom: 20px;
+  .material-icons {
+    background: $option-icon-bg;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+  }
+}
+
+
+
+/* The Close Button */
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  font-size: $subheadline-font-size;
+  font-weight: $subheadline-font-weight;
+  // background-color: #5cb85c;
+  // color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  // background-color: #5cb85c;
+  // color: white;
+}
+
+//mobile modal
+.userAccountModal{
+  .modal-content{
+    height: 100vh;
+  }
+}
+
+
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
 }

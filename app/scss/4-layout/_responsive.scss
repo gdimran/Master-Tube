@@ -53,6 +53,15 @@
     .search-opt{
         cursor: pointer;
     }
+    .search-input {
+        margin-left: 3rem;
+    }
+    .search-modal-header {
+        justify-content: flex-start;
+    }
+    input#search-main {
+        width: 60vw;
+    }
     #search-modal span.modal-close-btn {
         line-height: 25px;
     }
@@ -143,8 +152,13 @@
     #content .video-thub-img-row .video-thub-img {
         margin-right: 0;
     }
+    #content .single-video-content .option-icon {
+        display: block;
+    }
+    #content .single-video-content .video-attributes,
     #content .video-attributes {
-        flex-flow: column;
+        flex-flow: row;
+        align-items: center;
     }
     #content .single-video-content .video-watch-info,
     .video-watch-info {
@@ -248,6 +262,9 @@
     }
     .comments-section {
         padding: 0 15px;
+    }
+    a.option-link {
+        gap: 24px;
     }
  }
 
