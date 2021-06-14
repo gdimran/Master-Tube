@@ -37,7 +37,7 @@
     padding: 20px 0;
     cursor: pointer;
     span.icons-cat {
-        font-size: 50px;
+        font-size: 5rem;
     }
     span.cat-name {
         font-size:$user-comment-font-size;
@@ -72,7 +72,7 @@
         span.icons-cat {
             font-size: 25px;
             margin-right:15px;
-            color: $icon-font-color;
+            color: $primary-color;
         }
         span.cat-name {
             font-size:$link-font-size;

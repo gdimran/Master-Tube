@@ -138,24 +138,18 @@
         <div id="overSidepanel">
             <div class="sideBar-header-content">
                 <span class="menu-icon openbtn" onclick="closeOverlaySidebar()">
-                    <i class="fas fa-bars"></i></span>
-                <div id="logo-dark" class="logo">
+                    <i class="custom-icon
+                        icon-menu"></i></span>
+                <div class="logo">
                     <a href="">
-                        <img src="images/mLogo-W-01.svg">
+                        <img src="images/logo.png">
                     </a>
-
-                </div>
-                <div id="logo-light" class="logo">
-                    <a href="">
-                        <img src="images/mLogo-L-01-01.svg">
-                    </a>
-
                 </div>
             </div>
             <div class="sidebar-expand sidepanel">
                 <ul class="my-1">
                     <li>
-                        <a class="py-1" href="">
+                        <a class="py-1 active" href="index.html">
                             <span class="menu-icon expand-side-bar">
                                 <span class="material-icons">
                                     home
@@ -164,46 +158,43 @@
                         </a>
                     </li>
                     <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    explore
-                                </span></span>
+                        <a class="py-1" href="#">
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-compass-1"></i></span>
                             <span class="menu-text-expand">Explore</span>
                         </a>
                     </li>
                     <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    menu_book
-                                </span>
+                        <a class="py-1" href="read-book.html">
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-open-book-o"></i>
                             </span>
                             <span class="menu-text-expand">Read Book</span>
                         </a>
                     </li>
                     <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    subscriptions
-                                </span>
+                        <a class="py-1" href="#">
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-subscription"></i>
                             </span>
                             <span class="menu-text-expand">Subscriptions</span>
                         </a>
                     </li>
                     <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon expand-side-bar"><span
+                        <a class="py-1" href="#">
+                            <span class="menu-icon expand-side-bar">
+                                <!-- <span
                                     class="material-icons">
                                     video_library
-                                </span>
+                                </span> -->
+                                <i
+                                    class="custom-icon icon-digital-library"></i>
                             </span>
                             <span class="menu-text-expand">Library</span>
                         </a>
                     </li>
                     <li>
-                        <a class="py-1" href="">
+                        <a class="py-1" href="#">
                             <span class="menu-icon expand-side-bar"><span
                                     class="material-icons">
                                     history
@@ -221,48 +212,44 @@
 
                 <div class="sidebar-live">
                     <span class="sec-desc">Live streaming on</span>
-                    <a href="" class="live"> <img src="images/live.png" alt="">
-                        Live now</a>
+                    <a href="#" class="live">
+                        <span class="menu-icon expand-side-bar"><i
+                                class="custom-icon icon-live-streaming"></i>
+                        </span>
+                        <span class="menu-text-expand">Live Now</span>
+                    </a>
                 </div>
                 <ul class="my-1">
                     <li>
                         <a class="py-1" href="">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    settings
-                                </span></span>
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-cog"></i></span>
                             <span class="menu-text-expand">Settings</span>
                         </a>
                     </li>
                     <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    flag
-                                </span></span>
+                        <a class="py-1" href="#">
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-flag-empty"></i></span>
                             <span class="menu-text-expand">Report history</span>
                         </a>
                     </li>
                     <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    help
-                                </span></span>
+                        <a class="py-1" href="#">
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-question-circle-o"></i></span>
                             <span class="menu-text-expand">Help</span>
                         </a>
                     </li>
                     <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    feedback
-                                </span></span>
+                        <a class="py-1" href="#">
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-paper-plane-empty"></i></span>
                             <span class="menu-text-expand">Send feedback</span>
                         </a>
                     </li>
                 </ul>
-                <div class="terms mb-7">
+                <div class="terms my-7">
                     Terms Privacy Policy & Safety
                     How Master-Academy works
                     Test new features
@@ -318,25 +305,27 @@
             </div>
             <div class="user-access-section">
                 <div class="create-option popup" onclick="createOption()"><i
-                        class="fas fa-video"></i>
+                        class="custom-icon icon-videocam"></i>
                     <div class="create-option-content card"
                         id="createOptionPopup">
                         <a href="" class="option-link"><img class="mr-1"
                                 src="images/upload-video.png" alt="">Upload
                             Video</a>
-                        <a href="" class="option-link"><img class="mr-1"
-                                src="images/live.png" alt="">Go Live</a>
+                        <a href="" class="option-link"><i
+                                class="custom-icon icon-live-streaming mr-3"></i>Go
+                            Live</a>
                     </div>
                 </div>
                 <div class="notification-option popup"
-                    onclick="notificationFunc()"><i class="fas fa-bell"></i>
+                    onclick="notificationFunc()"><i class="custom-icon
+                        icon-bell"></i>
                     <div class="notification-content card"
                         id="notificationPopup">
                         <div class="card-header">
                             <div class="header-with-right-icon">
                                 <div class="subtitle">Notification</div>
-                                <span class="setting-icon"><i class="fas
-                                        fa-cog"></i></span>
+                                <span class="setting-icon"><i class="custom-icon
+                                        icon-cog"></i></span>
                             </div>
                         </div>
 
@@ -346,37 +335,10 @@
                                 <img src="images/play-btn.png" alt=""
                                     class="play-btn"
                                     onclick="playVideo('videos/vid2.mp4')">
-                                <!-- <div class="vide-share-options">
-                                    <span class="love"><a href=""><i
-                                                class="far fa-heart"></i></a></span>
-                                    <span class="share"><a href=""><i
-                                                class="fas fa-share-alt"></i></a></span>
-                                    <span class="add"><a href=""><i
-                                                class="fas fa-plus"></i></a></span>
-                                </div> -->
-                                <div class="video-time"><span
-                                        class="video-length">10:25</span></div>
-                                <div class="option-overlay">
-                                    <div class="watch-later"><i class="fas
-                                            fa-clock"></i>
-                                        <span class="watch-later-que
-                                            hover-option-text">Watch
-                                            later</span>
-                                    </div>
-                                    <div class="play-list-add">
-                                        <span class="material-icons">
-                                            playlist_play
-                                        </span>
-                                        <span class="add-to-que
-                                            hover-option-text">Add to
-                                            queue</span>
-                                    </div>
-                                </div>
                             </div>
                             <div class="small-video-details">
                                 <div class="video-title">
-                                    <h3 class="title-text">Master-Academy
-                                        Live</h3>
+                                    <h3 class="title-text">Master-Academy Live</h3>
                                     <span class="option-icon"><i class="fas
                                             fa-ellipsis-v"></i></span>
                                 </div>
@@ -385,8 +347,7 @@
                                     <div class="video-watch-info">
                                         <span class="waching-now">5,248,704
                                             views | </span>
-                                        <span class="started-on">Feb 21,
-                                            2021</span>
+                                        <span class="started-on">Feb 21, 2021</span>
                                     </div>
                                 </div>
                             </div>
@@ -394,33 +355,14 @@
                         </div>
                         <div class="video-thub-img-row">
                             <div class="video-thub-img">
-                                <img src="images/pic3.png" alt="">
+                                <img src="images/pic2.png" alt="">
                                 <img src="images/play-btn.png" alt=""
                                     class="play-btn"
-                                    onclick="playVideo('videos/vid3.mp4')">
-                                <div class="video-time"><span
-                                        class="video-length">10:25</span></div>
-                                <div class="option-overlay">
-                                    <div class="watch-later"><i class="fas
-                                            fa-clock"></i>
-                                        <span class="watch-later-que
-                                            hover-option-text">Watch
-                                            later</span>
-                                    </div>
-                                    <div class="play-list-add">
-                                        <span class="material-icons">
-                                            playlist_play
-                                        </span>
-                                        <span class="add-to-que
-                                            hover-option-text">Add to
-                                            queue</span>
-                                    </div>
-                                </div>
+                                    onclick="playVideo('videos/vid2.mp4')">
                             </div>
                             <div class="small-video-details">
                                 <div class="video-title">
-                                    <h3 class="title-text">Master-Academy
-                                        Live</h3>
+                                    <h3 class="title-text">Master-Academy Live</h3>
                                     <span class="option-icon"><i class="fas
                                             fa-ellipsis-v"></i></span>
                                 </div>
@@ -429,41 +371,22 @@
                                     <div class="video-watch-info">
                                         <span class="waching-now">5,248,704
                                             views | </span>
-                                        <span class="started-on">Feb 21,
-                                            2021</span>
+                                        <span class="started-on">Feb 21, 2021</span>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <div class="video-thub-img-row">
                             <div class="video-thub-img">
-                                <img src="images/pic4.png" alt="">
+                                <img src="images/pic2.png" alt="">
                                 <img src="images/play-btn.png" alt=""
                                     class="play-btn"
-                                    onclick="playVideo('videos/vid4.mp4')">
-                                <div class="video-time"><span
-                                        class="video-length">10:25</span></div>
-                                <div class="option-overlay">
-                                    <div class="watch-later"><i class="fas
-                                            fa-clock"></i>
-                                        <span class="watch-later-que
-                                            hover-option-text">Watch
-                                            later</span>
-                                    </div>
-                                    <div class="play-list-add">
-                                        <span class="material-icons">
-                                            playlist_play
-                                        </span>
-                                        <span class="add-to-que
-                                            hover-option-text">Add to
-                                            queue</span>
-                                    </div>
-                                </div>
+                                    onclick="playVideo('videos/vid2.mp4')">
                             </div>
                             <div class="small-video-details">
                                 <div class="video-title">
-                                    <h3 class="title-text">Master-Academy
-                                        Live</h3>
+                                    <h3 class="title-text">Master-Academy Live</h3>
                                     <span class="option-icon"><i class="fas
                                             fa-ellipsis-v"></i></span>
                                 </div>
@@ -472,97 +395,11 @@
                                     <div class="video-watch-info">
                                         <span class="waching-now">5,248,704
                                             views | </span>
-                                        <span class="started-on">Feb 21,
-                                            2021</span>
+                                        <span class="started-on">Feb 21, 2021</span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="video-thub-img-row">
-                            <div class="video-thub-img">
-                                <img src="images/pic1.png" alt="">
-                                <img src="images/play-btn.png" alt=""
-                                    class="play-btn"
-                                    onclick="playVideo('videos/video.mp4')">
-                                <div class="video-time"><span
-                                        class="video-length">10:25</span></div>
-                                <div class="option-overlay">
-                                    <div class="watch-later"><i class="fas
-                                            fa-clock"></i>
-                                        <span class="watch-later-que
-                                            hover-option-text">Watch
-                                            later</span>
-                                    </div>
-                                    <div class="play-list-add">
-                                        <span class="material-icons">
-                                            playlist_play
-                                        </span>
-                                        <span class="add-to-que
-                                            hover-option-text">Add to
-                                            queue</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="small-video-details">
-                                <div class="video-title">
-                                    <h3 class="title-text">Master-Academy
-                                        Live</h3>
-                                    <span class="option-icon"><i class="fas
-                                            fa-ellipsis-v"></i></span>
-                                </div>
-                                <div class="video-attributes">
-                                    <div class="channel-name">Master-Academy</div>
-                                    <div class="video-watch-info">
-                                        <span class="waching-now">5,248,704
-                                            views | </span>
-                                        <span class="started-on">Feb 21,
-                                            2021</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="video-thub-img-row">
-                            <div class="video-thub-img">
-                                <img src="images/pic1.png" alt="">
-                                <img src="images/play-btn.png" alt=""
-                                    class="play-btn"
-                                    onclick="playVideo('videos/video.mp4')">
-                                <div class="video-time"><span
-                                        class="video-length">10:25</span></div>
-                                <div class="option-overlay">
-                                    <div class="watch-later"><i class="fas
-                                            fa-clock"></i>
-                                        <span class="watch-later-que
-                                            hover-option-text">Watch
-                                            later</span>
-                                    </div>
-                                    <div class="play-list-add">
-                                        <span class="material-icons">
-                                            playlist_play
-                                        </span>
-                                        <span class="add-to-que
-                                            hover-option-text">Add to
-                                            queue</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="small-video-details">
-                                <div class="video-title">
-                                    <h3 class="title-text">Master-Academy
-                                        Live</h3>
-                                    <span class="option-icon"><i class="fas
-                                            fa-ellipsis-v"></i></span>
-                                </div>
-                                <div class="video-attributes">
-                                    <div class="channel-name">Master-Academy</div>
-                                    <div class="video-watch-info">
-                                        <span class="waching-now">5,248,704
-                                            views | </span>
-                                        <span class="started-on">Feb 21,
-                                            2021</span>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -821,24 +658,26 @@
                                         single-content-att">
                                         <div class="video-watch-info">
                                             <span class="waching-now"><i
-                                                    class="fas fa-eye"></i>
+                                                    class="custom-icon
+                                                    icon-eye"></i>
                                                 5,248,704 views | </span>
                                             <span class="started-on">Feb 21,
                                                 2021</span>
                                         </div>
                                         <div class="like-share-opt">
                                             <div class="like"><a href=""><i
-                                                        class="fas
-                                                        fa-thumbs-up"></i><span
+                                                        class="custom-icon
+                                                        icon-thumbs-up-1"></i><span
                                                         class="like count">435k</span></a>
                                             </div>
                                             <div class="dislike"><a
-                                                    href=""><i class="fas
-                                                        fa-thumbs-down"></i><span
+                                                    href=""><i
+                                                        class="custom-icon
+                                                        icon-thumbs-down"></i><span
                                                         class="dislike count">435k</span></a></div>
                                             <div class="share"><a href=""><i
-                                                        class="fas
-                                                        fa-share-alt"></i><span
+                                                        class="custom-icon
+                                                        icon-forward-outline"></i><span
                                                         class="share count">Share</span></a></div>
                                             <div class="save"><a href="">
                                                     <span

@@ -838,6 +838,14 @@ $responsive-breakpoint: $size-xs !default;
   font-size: 2.4rem;
 }
 
+.custom-icon.icon-handshake {
+  font-size: 6rem;
+}
+
+.signle-small-cat .custom-icon.icon-handshake {
+  font-size: 3.56rem;
+}
+
 .slick-slider {
   position: relative;
   display: block;
@@ -2012,6 +2020,10 @@ hr.horizontal-line {
   display: none;
 }
 
+.link-icon > .custom-icon {
+  font-size: 2.2rem;
+}
+
 .sidebar-small {
   width: 75px;
   height: 100vh;
@@ -2227,7 +2239,7 @@ hr.horizontal-line {
 }
 
 .signle-big-cat span.icons-cat {
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 .signle-big-cat span.cat-name {
@@ -2267,7 +2279,7 @@ hr.horizontal-line {
 .signle-small-cat a span.icons-cat {
   font-size: 25px;
   margin-right: 15px;
-  color: #909090;
+  color: #030303;
 }
 
 .signle-small-cat a span.cat-name {
@@ -2334,6 +2346,10 @@ hr.horizontal-line {
   line-height: 1;
   border-radius: 5px;
   width: max-content;
+}
+
+div.option > .tooltip {
+  left: -32px;
 }
 
 /* Popup container - can be anything you want */
@@ -2482,6 +2498,12 @@ a.option-link .material-icons {
 }
 
 /*user-account options-----------*/
+.option-link i.custom-icon.icon-right-open-mini {
+  position: absolute;
+  right: 20px;
+  margin-right: 0 !important;
+}
+
 .user-option {
   position: relative;
 }
@@ -2492,7 +2514,7 @@ a.option-link .material-icons {
   position: absolute;
   z-index: 10;
   top: 56px;
-  right: 0;
+  right: -13px;
 }
 
 .popup .gustSett-content .card-header {
@@ -2510,12 +2532,12 @@ a.option-link .material-icons {
 
 .popup .gustSett-content a.option-link img {
   width: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .popup .gustSett-content a.option-link i {
   font-size: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .popup .gustSett-content a.option-link {

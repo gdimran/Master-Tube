@@ -20,7 +20,9 @@
   border-radius: 5px;
   width: max-content;
 }
-
+div.option > .tooltip {
+	left: -32px;
+}
 /* Popup container - can be anything you want */
 .popup {
     position: relative;
@@ -157,6 +159,11 @@ a.option-link .material-icons {
 
 
 /*user-account options-----------*/
+.option-link i.custom-icon.icon-right-open-mini {
+  position: absolute;
+  right: 20px;
+  margin-right: 0 !important;
+}
 .user-option {
 	position: relative;
 }
@@ -166,11 +173,13 @@ a.option-link .material-icons {
   position: absolute;
   z-index: 10;
   top: 56px;
-  right: 0;
+  right: -13px;
   .card-header {
     border-bottom: 1px solid $color_light-gray;
     padding-bottom: 15px;
   }
+  
+  
   .fas.fa-chevron-right.icon-right {
     text-align: right;
     margin-right: 0;
@@ -180,11 +189,11 @@ a.option-link .material-icons {
   }
   a.option-link img {
     width: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   a.option-link i {
     font-size: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   a.option-link {
     color: $primary-color;
