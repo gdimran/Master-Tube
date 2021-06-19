@@ -68,7 +68,7 @@
         font-weight: $navbar-title-font-weight;
         line-height: $navbar-title-line-height;
         display: flex;
-        justify-content: space-between;
+        gap: 2.5rem;
         align-items: center;
     }
     .video-attributes {
@@ -109,7 +109,6 @@
        }
        .small-video-details{
         .video-title {
-           
             .title-text{
                 font-size: $subheadline-font-size;
                 margin-top: 0;
@@ -252,6 +251,7 @@
             font-size: $subheadline-link-font-size;
             font-weight: $subheadline-link-font-weight;
             line-height: $subheadline-link-line-height;
+            justify-content: space-between;
            
         }
         .video-attributes{
@@ -284,6 +284,12 @@
 }
 .video-feature-row:hover .option-overlay{
     display: block;
+}
+.video-feature-row{
+    .video-title {
+        justify-content: space-between;
+       
+    }
 }
 .option-overlay{
     display: none;

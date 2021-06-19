@@ -57,6 +57,10 @@ $special-link:$color-blue;
 .special-link{
     color: $special-link !important;
 }
+.active{
+    color: $light-color;
+    background: $secondary-color;
+}
 
 // Other colors
 $code-color: #d73e48 !default;

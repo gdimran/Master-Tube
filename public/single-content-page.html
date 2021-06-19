@@ -266,18 +266,14 @@
         <section id="header">
             <div class="header-content-left">
                 <span class="menu-icon openbtn" onclick="openOverlaySidebar()">
-                    <i class="fas fa-bars"></i></span>
-                <div id="logo-dark" class="logo">
+                    <!-- <span class="menu-icon openbtn" onclick="showExpandsideBar()"> -->
+                    <i class="custom-icon
+                        icon-menu"></i></span>
+                <div class="logo">
                     <a href="">
-                        <img src="images/mLogo-W-01.svg">
+                        <img src="images/logo.png">
+                        <!-- <span class="logo-text">Master-Academy</span> -->
                     </a>
-
-                </div>
-                <div id="logo-light" class="logo">
-                    <a href="">
-                        <img src="images/mLogo-L-01-01.svg">
-                    </a>
-
                 </div>
             </div>
 
@@ -427,40 +423,45 @@
                         <div class="basic-user-settings">
                             <a href="" class="option-link"><i class="fas
                                     fa-user-circle"></i>Your channel</a>
-                            <a href="" class="option-link"><i class="fas
-                                    fa-credit-card"></i>Purchases and
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-credit-card"></i>Purchases and
                                 memberships</a>
-                            <a href="" class="option-link"><img
-                                    src="images/studio.svg" alt="">Academic
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-music"></i>Academic
                                 Studio</a>
                             <a href="" class="option-link"><i class="fas
                                     fa-power-off"></i>Sign Out</a>
                         </div>
                         <div class="additional-settings">
                             <a id="dark-mode-toggle" href="" class="option-link
-                                dark-mode-toggle"><i class="fas
-                                    fa-adjust"></i> Appearance: Dark Mode
+                                dark-mode-toggle"><i
+                                    class="custom-icon icon-light-up"></i>
+                                Appearance: Light
                             </a>
-                            <a href="" class="option-link"><img
-                                    src="images/language.svg" alt="">Language:
-                                English <i class="fas fa-chevron-right
-                                    icon-right"></i></a>
-                            <a href="" class="option-link"><i class="fas
-                                    fa-map-marker-alt"></i> Location:
+                            <a id="dark-mode-toggle" href="" class="option-link
+                                light-mode-toggle"><i
+                                    class="custom-icon icon-moon"></i>
+                                Appearance: Dark
+                            </a>
+                            <a href="" class="option-link"><i
+                                    class="custom-icon icon-language"></i>Language:
+                                English &nbsp;&nbsp;<i class="custom-icon
+                                    icon-right-open-mini"></i></a>
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-location"></i> Location:
                                 Bangladesh
-                                <i class="fas fa-chevron-right icon-right"></i></a>
-                            <a href="" class="option-link"><i class="fas
-                                    fa-cog"></i> Location:
-                                Bangladesh
+                                <i class="custom-icon icon-right-open-mini"></i></a>
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-cog"></i> Settings
                             </a>
-                            <a href="" class="option-link"><i class="fas
-                                    fa-database"></i>Your data security
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-database"></i>Your data security
                             </a>
-                            <a href="" class="option-link"><i class="fas
-                                    fa-question-circle"></i>Help
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-question-circle-o"></i>Help
                             </a>
-                            <a href="" class="option-link"><i class="fas
-                                    fa-comment-alt"></i>Send Feedback
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-paper-plane-empty"></i>Send Feedback
                             </a>
                         </div>
                     </div>
@@ -767,14 +768,12 @@
                                 <div class="desc-tabContent">
                                     <div id="Overview" class="tabcontent
                                         active">
-                                        <b>About this course</b>
                                         <p>Learn how to become an elite ethical
                                             hacker and easily hack networks,
                                             computer
                                             systems, web apps and so much
                                             more....</p>
 
-                                        <b>Description</b>
                                         <p>Welcome to - Learn Ethical Hacking
                                             From A-Z: Beginner To Expert Course!
                                             This practical, hands-on course was
@@ -819,14 +818,12 @@
                                             jump right into hacking.</p>
                                     </div>
                                     <div id="Announcements" class="tabcontent">
-                                        <span class="subtitle">Announcements</span>
                                         <p>Learn how to become an elite ethical
                                             hacker and easily hack networks,
                                             computer
                                             systems, web apps and so much
                                             more....</p>
 
-                                        <span class="subtitle">Description</span>
                                         <p>Welcome to - Learn Ethical Hacking
                                             From A-Z: Beginner To Expert Course!
                                             This practical, hands-on course was
@@ -871,14 +868,14 @@
                                             jump right into hacking.</p>
                                     </div>
                                     <div id="Notes" class="tabcontent">
-                                        <span class="subtitle">Notes</span>
+
                                         <p>Learn how to become an elite ethical
                                             hacker and easily hack networks,
                                             computer
                                             systems, web apps and so much
                                             more....</p>
 
-                                        <span class="subtitle">Description</span>
+
                                         <p>Welcome to - Learn Ethical Hacking
                                             From A-Z: Beginner To Expert Course!
                                             This practical, hands-on course was
@@ -923,11 +920,8 @@
                                             jump right into hacking.</p>
                                     </div>
                                     <div id="Certificates" class="tabcontent">
-                                        <span class="subtitle">Certificates</span>
                                         <p>Certificate is Avaiable after
                                             complete the full course.</p>
-
-                                        <span class="subtitle">Get Certified</span>
                                         <div class="btn-outline">Apply for
                                             Certificate</div>
                                     </div>
@@ -989,13 +983,14 @@
                                             education.</p>
                                         <div class="comments-att">
                                             <div class="like mx-c"><a href=""><i
-                                                        class="fas
-                                                        fa-thumbs-up"></i><span
+                                                        class="custom-icon
+                                                        icon-thumbs-up-1"></i><span
                                                         class="like count">435k</span></a>
                                             </div>
                                             <div class="dislike mx-c"><a
-                                                    href=""><i class="fas
-                                                        fa-thumbs-down"></i><span
+                                                    href=""><i
+                                                        class="custom-icon
+                                                        icon-thumbs-down"></i><span
                                                         class="dislike count">435k</span></a></div>
                                             <div class="reply mx-c"><a
                                                     href="javascript:void(0)"
@@ -1050,15 +1045,18 @@
                                             education.</p>
                                         <div class="comments-att">
                                             <div class="like mx-c"><a href=""><i
-                                                        class="fas
-                                                        fa-thumbs-up"></i><span
+                                                        class="custom-icon
+                                                        icon-thumbs-up-1"></i><span
                                                         class="like count">435k</span></a>
                                             </div>
                                             <div class="dislike mx-c"><a
-                                                    href=""><i class="fas
-                                                        fa-thumbs-down"></i><span
+                                                    href=""><i
+                                                        class="custom-icon
+                                                        icon-thumbs-down"></i><span
                                                         class="dislike count">435k</span></a></div>
-                                            <div class="reply mx-c"><a href="">Reply</a></div>
+                                            <div class="reply mx-c"><a
+                                                    href="javascript:void(0)"
+                                                    onclick="replyComment()">Reply</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1077,15 +1075,18 @@
                                             education.</p>
                                         <div class="comments-att">
                                             <div class="like mx-c"><a href=""><i
-                                                        class="fas
-                                                        fa-thumbs-up"></i><span
+                                                        class="custom-icon
+                                                        icon-thumbs-up-1"></i><span
                                                         class="like count">435k</span></a>
                                             </div>
                                             <div class="dislike mx-c"><a
-                                                    href=""><i class="fas
-                                                        fa-thumbs-down"></i><span
+                                                    href=""><i
+                                                        class="custom-icon
+                                                        icon-thumbs-down"></i><span
                                                         class="dislike count">435k</span></a></div>
-                                            <div class="reply mx-c"><a href="">Reply</a></div>
+                                            <div class="reply mx-c"><a
+                                                    href="javascript:void(0)"
+                                                    onclick="replyComment()">Reply</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1103,15 +1104,18 @@
                                             education.</p>
                                         <div class="comments-att">
                                             <div class="like mx-c"><a href=""><i
-                                                        class="fas
-                                                        fa-thumbs-up"></i><span
+                                                        class="custom-icon
+                                                        icon-thumbs-up-1"></i><span
                                                         class="like count">435k</span></a>
                                             </div>
                                             <div class="dislike mx-c"><a
-                                                    href=""><i class="fas
-                                                        fa-thumbs-down"></i><span
+                                                    href=""><i
+                                                        class="custom-icon
+                                                        icon-thumbs-down"></i><span
                                                         class="dislike count">435k</span></a></div>
-                                            <div class="reply mx-c"><a href="">Reply</a></div>
+                                            <div class="reply mx-c"><a
+                                                    href="javascript:void(0)"
+                                                    onclick="replyComment()">Reply</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1129,15 +1133,18 @@
                                             education.</p>
                                         <div class="comments-att">
                                             <div class="like mx-c"><a href=""><i
-                                                        class="fas
-                                                        fa-thumbs-up"></i><span
+                                                        class="custom-icon
+                                                        icon-thumbs-up-1"></i><span
                                                         class="like count">435k</span></a>
                                             </div>
                                             <div class="dislike mx-c"><a
-                                                    href=""><i class="fas
-                                                        fa-thumbs-down"></i><span
+                                                    href=""><i
+                                                        class="custom-icon
+                                                        icon-thumbs-down"></i><span
                                                         class="dislike count">435k</span></a></div>
-                                            <div class="reply mx-c"><a href="">Reply</a></div>
+                                            <div class="reply mx-c"><a
+                                                    href="javascript:void(0)"
+                                                    onclick="replyComment()">Reply</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1155,15 +1162,18 @@
                                             education.</p>
                                         <div class="comments-att">
                                             <div class="like mx-c"><a href=""><i
-                                                        class="fas
-                                                        fa-thumbs-up"></i><span
+                                                        class="custom-icon
+                                                        icon-thumbs-up-1"></i><span
                                                         class="like count">435k</span></a>
                                             </div>
                                             <div class="dislike mx-c"><a
-                                                    href=""><i class="fas
-                                                        fa-thumbs-down"></i><span
+                                                    href=""><i
+                                                        class="custom-icon
+                                                        icon-thumbs-down"></i><span
                                                         class="dislike count">435k</span></a></div>
-                                            <div class="reply mx-c"><a href="">Reply</a></div>
+                                            <div class="reply mx-c"><a
+                                                    href="javascript:void(0)"
+                                                    onclick="replyComment()">Reply</a></div>
                                         </div>
                                     </div>
                                 </div>

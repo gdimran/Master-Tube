@@ -180,23 +180,45 @@ const disableDarkMode = () => {
 if (darkMode === 'enabled') {
   enableDarkMode();
 }
+document.querySelectorAll('#dark-mode-toggle').forEach(item => {
+  item.addEventListener('click', () => {
+    // get their darkMode setting
+    darkMode = localStorage.getItem('darkMode');
 
+    // if it not current enabled, enable it
+    if (darkMode !== 'enabled') {
+      enableDarkMode();
+      document.getElementById("logo-dark").style.display = "block";
+      document.getElementById("logo-light").style.display = "none";
+
+      // if it has been enabled, turn it off  
+    } else {
+      disableDarkMode();
+      document.getElementById("logo-dark").style.display = "none";
+      document.getElementById("logo-light").style.display = "block";
+
+    }
+  });
+})
+
+document.getElementsByClassName("dark-mode-toggle").addClass("active");
+document.getElementsByClassName("light-mode-toggle").addClass("active");
 // When someone clicks the button
-darkModeToggle.addEventListener('click', () => {
-  // get their darkMode setting
-  darkMode = localStorage.getItem('darkMode');
+// darkModeToggle.addEventListener('click', () => {
+//   // get their darkMode setting
+//   darkMode = localStorage.getItem('darkMode');
 
-  // if it not current enabled, enable it
-  if (darkMode !== 'enabled') {
-    enableDarkMode();
-    document.getElementById("logo-dark").style.display = "block";
-    document.getElementById("logo-light").style.display = "none";
-    // if it has been enabled, turn it off  
-  } else {
-    disableDarkMode();
-    document.getElementById("logo-dark").style.display = "none";
-    document.getElementById("logo-light").style.display = "block";
-  }
-});
+//   // if it not current enabled, enable it
+//   if (darkMode !== 'enabled') {
+//     enableDarkMode();
+//     document.getElementById("logo-dark").style.display = "block";
+//     document.getElementById("logo-light").style.display = "none";
+//     // if it has been enabled, turn it off  
+//   } else {
+//     disableDarkMode();
+//     document.getElementById("logo-dark").style.display = "none";
+//     document.getElementById("logo-light").style.display = "block";
+//   }
+// });
 
 

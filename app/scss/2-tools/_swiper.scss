@@ -139,12 +139,20 @@
     }
     .swiper-button-prev::after{
         content: 'next';
-        rotate: -90deg;
-    }
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+}
     .swiper-button-next::after{
         content: 'next';
-        rotate: 90deg;
-    }
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+}
     .swiper-button-prev, .swiper-button-next {
         cursor: pointer;
         display: flex;

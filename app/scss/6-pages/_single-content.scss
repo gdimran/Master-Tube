@@ -29,6 +29,7 @@
 .video-watch-info {
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 .single-video-content{
     .channel-name{
@@ -52,6 +53,7 @@
 .like-share-opt {
     display: flex;
     align-items: center;
+    gap: 20px;
     .material-icons{
         font-size: 24px;
         color: $icon-font-color !important;
@@ -195,7 +197,7 @@
     font-size: 14px;
     border: 0;
     background: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $option-icon-bg;
     outline: none;
     border-radius: 0;
     -webkit-appearance: none;
@@ -211,7 +213,7 @@
     left: 0;
     height: 30px;
     line-height: 30px;
-    color: #ccc;
+    color: $option-icon-bg;
     cursor: text;
     transition: all 200ms ease-out;
     z-index: 10;
@@ -252,6 +254,10 @@ span.comment-time {
         font-size: $thumbnail-attribution-font-size;
         font-weight: $thumbnail-attribution-font-weight;
         line-height: $thumbnail-attribution-line-height;
+        .custom-icon{
+            font-size: 1.6rem;
+            margin-right: 5px;
+        }
         &:hover{
             color: $secondary-color;
         }

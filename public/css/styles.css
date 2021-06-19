@@ -43,6 +43,11 @@ $responsive-breakpoint: $size-xs !default;
   color: #2196F3 !important;
 }
 
+.active {
+  color: #fff;
+  background: #ff7c38;
+}
+
 /* Colors */
 .bg-white {
   background-color: #fff;
@@ -1004,12 +1009,20 @@ $responsive-breakpoint: $size-xs !default;
 
 .liveSwiper .swiper-button-prev::after {
   content: 'next';
-  rotate: -90deg;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
 }
 
 .liveSwiper .swiper-button-next::after {
   content: 'next';
-  rotate: 90deg;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 
 .liveSwiper .swiper-button-prev, .liveSwiper .swiper-button-next {
@@ -1122,7 +1135,6 @@ menu,
 nav,
 section {
   display: block;
-  overflow: hidden;
 }
 
 summary {
@@ -2484,8 +2496,8 @@ a.option-link .material-icons {
   width: 200px;
   position: absolute;
   z-index: 10;
-  top: 28px;
-  margin-left: -200px;
+  top: 30px;
+  margin-left: -182px;
 }
 
 .popup .single-video-option-content {
@@ -2493,7 +2505,7 @@ a.option-link .material-icons {
   width: 240px;
   position: absolute;
   z-index: 10;
-  top: -310px;
+  top: 25px;
   margin-left: -214px;
 }
 
@@ -2513,7 +2525,7 @@ a.option-link .material-icons {
   width: 220px;
   position: absolute;
   z-index: 10;
-  top: 56px;
+  top: 35px;
   right: -13px;
 }
 
@@ -3060,7 +3072,7 @@ button#main-search-icon-legacy {
   font-weight: 400;
   line-height: 2.4rem;
   display: flex;
-  justify-content: space-between;
+  gap: 2.5rem;
   align-items: center;
 }
 
@@ -3254,6 +3266,7 @@ button#main-search-icon-legacy {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2rem;
+  justify-content: space-between;
 }
 
 #content .single-video-content .video-attributes {
@@ -3288,6 +3301,10 @@ button#main-search-icon-legacy {
 
 .video-feature-row:hover .option-overlay {
   display: block;
+}
+
+.video-feature-row .video-title {
+  justify-content: space-between;
 }
 
 .option-overlay {
@@ -3452,6 +3469,7 @@ button#main-search-icon-legacy {
 .video-watch-info {
   display: flex;
   align-items: center;
+  gap: 2rem;
 }
 
 .single-video-content .channel-name {
@@ -3477,6 +3495,7 @@ button#main-search-icon-legacy {
 .like-share-opt {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .like-share-opt .material-icons {
@@ -3701,6 +3720,11 @@ span.comment-time {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.8rem;
+}
+
+.comments-att a .custom-icon {
+  font-size: 1.6rem;
+  margin-right: 5px;
 }
 
 .comments-att a:hover {
