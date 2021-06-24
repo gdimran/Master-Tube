@@ -433,15 +433,20 @@
                                     fa-power-off"></i>Sign Out</a>
                         </div>
                         <div class="additional-settings">
-                            <a id="dark-mode-toggle" href="" class="option-link
-                                dark-mode-toggle"><i
+                            <a href="" class="option-link
+                                light-mode-toggle theme-mode-toggle"><i
                                     class="custom-icon icon-light-up"></i>
                                 Appearance: Light
                             </a>
-                            <a id="dark-mode-toggle" href="" class="option-link
-                                light-mode-toggle"><i
+                            <a href="" class="option-link
+                                dark-mode-toggle theme-mode-toggle"><i
                                     class="custom-icon icon-moon"></i>
                                 Appearance: Dark
+                            </a>
+                            <a href="" class="option-link
+                                system-mode-toggle"><i
+                                    class="custom-icon icon-adjust"></i>
+                                Appearance: Device theme
                             </a>
                             <a href="" class="option-link"><i
                                     class="custom-icon icon-language"></i>Language:
@@ -499,13 +504,14 @@
 
                 </div>
                 <div class="user-option">
-                    <div class="user-profile-pic">
+                    <div id="userAccountModalShow" class="user-profile-pic">
                         <img src="images/pic1.png" alt="">
                     </div>
                 </div>
             </div>
 
         </section>
+
 
         <div id="guestSetting-content" class="modal">
             <div class="modal-header">
@@ -514,101 +520,45 @@
 
             </div>
             <div class="additional-settings">
-                <a id="dark-mode-toggle" href="" class="option-link
-                    dark-mode-toggle"><i class="fas
-                        fa-adjust"></i> Appearance: Dark Mode
+                <a href="" class="option-link
+                    light-mode-toggle theme-mode-toggle"><i
+                        class="custom-icon icon-light-up"></i>
+                    Appearance: Light
                 </a>
-                <a href="" class="option-link"><img
-                        src="images/language.svg" alt="">Language:
-                    English <i class="fas fa-chevron-right
-                        icon-right"></i></a>
-                <a href="" class="option-link"><i class="fas
-                        fa-map-marker-alt"></i> Location:
+                <a href="" class="option-link
+                    dark-mode-toggle theme-mode-toggle"><i
+                        class="custom-icon icon-moon"></i>
+                    Appearance: Dark
+                </a>
+                <a href="" class="option-link
+                    system-mode-toggle"><i
+                        class="custom-icon icon-adjust"></i>
+                    Appearance: Device theme
+                </a>
+                <a href="" class="option-link"><i
+                        class="custom-icon icon-language"></i>Language:
+                    English &nbsp;&nbsp;<i class="custom-icon
+                        icon-right-open-mini"></i></a>
+                <a href="" class="option-link"><i class="custom-icon
+                        icon-location"></i> Location:
                     Bangladesh
-                    <i class="fas fa-chevron-right icon-right"></i></a>
-                <a href="" class="option-link"><i class="fas
-                        fa-cog"></i> Location:
-                    Bangladesh
+                    <i class="custom-icon icon-right-open-mini"></i></a>
+                <a href="" class="option-link"><i class="custom-icon
+                        icon-cog"></i> Settings
                 </a>
-                <a href="" class="option-link"><i class="fas
-                        fa-database"></i>Your data security
+                <a href="" class="option-link"><i class="custom-icon
+                        icon-database"></i>Your data security
                 </a>
-                <a href="" class="option-link"><i class="fas
-                        fa-question-circle"></i>Help
+                <a href="" class="option-link"><i class="custom-icon
+                        icon-question-circle-o"></i>Help
                 </a>
-                <a href="" class="option-link"><i class="fas
-                        fa-comment-alt"></i>Send Feedback
+                <a href="" class="option-link"><i class="custom-icon
+                        icon-paper-plane-empty"></i>Send Feedback
                 </a>
             </div>
         </div>
         <!-- Mobile deivce header end -->
 
-
-        <!-- Side-bar section start -->
-        <!-- <section id="side-bar">
-            <div class="sidebar-small">
-                <ul class="my-1">
-                    <li>
-                        <a class="py-1 active" href="">
-                            <span class="menu-icon small-side-bar"><span
-                                    class="material-icons">
-                                    home
-                                </span></span>
-                            <span class="menu-text-small">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon small-side-bar"><span
-                                    class="material-icons">
-                                    explore
-                                </span></span>
-                            <span class="menu-text-small">Explore</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon small-side-bar"><span
-                                    class="material-icons">
-                                    menu_book
-                                </span>
-                            </span>
-                            <span class="menu-text-small">Read Book</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon small-side-bar"><span
-                                    class="material-icons">
-                                    subscriptions
-                                </span>
-                            </span>
-                            <span class="menu-text-small">Subscriptions</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon small-side-bar"><span
-                                    class="material-icons">
-                                    video_library
-                                </span>
-                            </span>
-                            <span class="menu-text-small">Library</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="py-1" href="">
-                            <span class="menu-icon small-side-bar"><span
-                                    class="material-icons">
-                                    history
-                                </span></span>
-                            <span class="menu-text-small">History</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section> -->
-        <!-- side-bar section end -->
         <div id="content">
             <section class="single-content-play">
                 <div class="container-full">
@@ -1882,6 +1832,7 @@
         <script type="text/javascript" src="js/custom.js"></script>
         <script type="text/javascript" src="js/sliders.js"></script>
         <script type="text/javascript" src="js/modal.js"></script>
+        <script type="text/javascript" src="js/dark.js"></script>
     </body>
 
 </html>

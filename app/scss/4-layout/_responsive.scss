@@ -157,8 +157,8 @@
     }
     #content .single-video-content .video-attributes,
     #content .video-attributes {
-        flex-flow: row;
-        align-items: center;
+        flex-flow: column;
+        align-items: flex-start;
     }
     #content .single-video-content .video-watch-info,
     .video-watch-info {

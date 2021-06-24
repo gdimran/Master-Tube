@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light dark" />
         <title>Master-Academy | An educational platform in Bangladesh.</title>
         <link rel="stylesheet" href="css/swiper-bundle.css" />
         <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -14,7 +15,7 @@
 
     </head>
 
-    <body class="home">
+    <body class="home light">
         <div id="exSidepanel">
             <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
             <div class="sidebar-expand sidepanel">
@@ -181,15 +182,20 @@
                         id="gustSettPopup">
 
                         <div class="additional-settings">
-                            <a id="dark-mode-toggle" href="" class="option-link
-                                dark-mode-toggle"><i
+                            <a href="#" class="option-link
+                                light-mode-toggle theme-mode-toggle"><i
                                     class="custom-icon icon-light-up"></i>
                                 Appearance: Light
                             </a>
-                            <a id="light-mode-toggle" href="" class="option-link
-                                light-mode-toggle"><i
+                            <a href="#" class="option-link
+                                dark-mode-toggle theme-mode-toggle"><i
                                     class="custom-icon icon-moon"></i>
                                 Appearance: Dark
+                            </a>
+                            <a href="#" class="option-link
+                                system-mode-toggle"><i
+                                    class="custom-icon icon-adjust"></i>
+                                Appearance: Device theme
                             </a>
                             <a href="" class="option-link"><i
                                     class="custom-icon icon-language"></i>Language:
@@ -315,9 +321,20 @@
 
             </div>
             <div class="additional-settings">
-                <a id="dark-mode-toggle" href="" class="option-link
-                    dark-mode-toggle"><i class="fas
-                        fa-adjust"></i> Appearance: Dark Mode
+                <a href="#" class="option-link
+                    light-mode-toggle theme-mode-toggle"><i
+                        class="custom-icon icon-light-up"></i>
+                    Appearance: Light
+                </a>
+                <a href="#" class="option-link
+                    dark-mode-toggle theme-mode-toggle"><i
+                        class="custom-icon icon-moon"></i>
+                    Appearance: Dark
+                </a>
+                <a href="#" class="option-link
+                    system-mode-toggle"><i
+                        class="custom-icon icon-adjust"></i>
+                    Appearance: Device theme
                 </a>
                 <a href="" class="option-link"><img
                         src="images/language.svg" alt="">Language:
@@ -2796,6 +2813,8 @@
             src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
         <script type="text/javascript" src="js/sliders.js"></script>
         <script type="text/javascript" src="js/modal.js"></script>
+        <script type="text/javascript" src="js/theme-mode.js"></script>
+        <script type="text/javascript" src="js/dark.js"></script>
     </body>
 
 </html>

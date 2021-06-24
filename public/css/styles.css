@@ -43,9 +43,8 @@ $responsive-breakpoint: $size-xs !default;
   color: #2196F3 !important;
 }
 
-.active {
-  color: #fff;
-  background: #ff7c38;
+.account-detail-link {
+  color: #ff7c38 !important;
 }
 
 /* Colors */
@@ -2305,6 +2304,10 @@ hr.horizontal-line {
   border: 1px solid #ff7c38;
 }
 
+.cat-name {
+  color: #030303;
+}
+
 .card {
   width: 100%;
   background: #fff;
@@ -2553,7 +2556,6 @@ a.option-link .material-icons {
 }
 
 .popup .gustSett-content a.option-link {
-  color: #030303;
   font-size: 1.4rem;
   display: flex;
   align-items: center;
@@ -4559,8 +4561,8 @@ span.publishing-date {
   }
   #content .single-video-content .video-attributes,
   #content .video-attributes {
-    flex-flow: row;
-    align-items: center;
+    flex-flow: column;
+    align-items: flex-start;
   }
   #content .single-video-content .video-watch-info,
   .video-watch-info {
@@ -4875,94 +4877,168 @@ span.publishing-date {
   .popup .userSetting-content a.option-link {
     color: #fff;
   }
+  .popup .show::before {
+    border-color: transparent transparent #202020 transparent;
+  }
+  .modal-header,
+  .modal-content {
+    color: #fff !important;
+    background-color: #181818 !important;
+  }
+  span.modal-close-btn {
+    border: 2px solid #aaaaaa;
+    color: #aaaaaa;
+  }
+  .cat-content ul li a {
+    color: #aaaaaa;
+  }
+  .cat-name {
+    color: #aaaaaa;
+  }
 }
 
+body.dark,
 .darkmode {
   color: #fff !important;
   background-color: #181818 !important;
 }
 
+body.dark .modal-header,
+body.dark .modal-content,
+.darkmode .modal-header,
+.darkmode .modal-content {
+  color: #fff !important;
+  background-color: #181818 !important;
+}
+
+body.dark #header,
 .darkmode #header {
   background-color: #202020;
   color: #fff !important;
 }
 
+body.dark span.modal-close-btn,
+.darkmode span.modal-close-btn {
+  border: 2px solid #aaaaaa;
+  color: #aaaaaa;
+}
+
+body.dark .video-attributes,
 .darkmode .video-attributes {
   color: #aaaaaa !important;
 }
 
+body.dark .video-attributes .channel-name,
 .darkmode .video-attributes .channel-name {
   color: #aaaaaa;
 }
 
+body.dark .cat-name,
+.darkmode .cat-name {
+  color: #aaaaaa;
+}
+
+body.dark .tablinks,
+body.dark .subscribers,
 .darkmode .tablinks,
 .darkmode .subscribers {
   color: #aaaaaa;
 }
 
+body.dark .btn-outline,
 .darkmode .btn-outline {
   background: transparent;
   color: #aaaaaa;
   border: 1px solid #aaaaaa;
 }
 
+body.dark #header .search-section #search-form input#search,
 .darkmode #header .search-section #search-form input#search {
   border: 1px solid #313131;
   background: #121212;
   color: #aaaaaa;
 }
 
+body.dark input,
 .darkmode input {
   color: #aaaaaa;
 }
 
+body.dark #header .search-section #search-form #search-icon-legacy,
 .darkmode #header .search-section #search-form #search-icon-legacy {
   color: #aaaaaa;
   border: 1px solid #313131;
   background: #313131;
 }
 
+body.dark .card,
 .darkmode .card {
   background-color: #202020;
 }
 
+body.dark a.option-link:hover,
 .darkmode a.option-link:hover {
   background: #575757 !important;
 }
 
+body.dark a.option-link,
+body.dark .like-share-opt a,
 .darkmode a.option-link,
 .darkmode .like-share-opt a {
   color: #fff;
 }
 
+body.dark .cat-content ul li a,
+.darkmode .cat-content ul li a {
+  color: #aaaaaa;
+}
+
+body.dark .sidepanel,
+body.dark #overSidepanel,
 .darkmode .sidepanel,
 .darkmode #overSidepanel {
   background-color: #202020;
   color: #fff;
 }
 
+body.dark i,
+body.dark .material-icons,
+body.dark .menu-icon,
 .darkmode i,
 .darkmode .material-icons,
 .darkmode .menu-icon {
   color: #aaaaaa !important;
 }
 
+body.dark .sidepanel a,
 .darkmode .sidepanel a {
   color: #fff;
 }
 
-.darkmode .btn-primary, .darkmode .btn-outline, .darkmode .btn-normal, .darkmode .btn-action {
+body.dark .btn-primary, body.dark .btn-outline, body.dark .btn-normal, body.dark .btn-action,
+.darkmode .btn-primary,
+.darkmode .btn-outline,
+.darkmode .btn-normal,
+.darkmode .btn-action {
   color: #fff;
 }
 
+body.dark #logo-light,
 .darkmode #logo-light {
   display: none;
 }
 
+body.dark #logo-dark,
 .darkmode #logo-dark {
   display: block;
 }
 
+body.dark .popup .userSetting-content a.option-link,
 .darkmode .popup .userSetting-content a.option-link {
   color: #fff;
+}
+
+body.dark .popup .show::before,
+.darkmode .popup .show::before {
+  border-color: transparent transparent #202020 transparent;
 }

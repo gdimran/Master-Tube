@@ -30,6 +30,12 @@ inputSearch.onfocus = function () {
 // span.onclick = function () {
 //   modal.style.display = "none";
 // }
+var tlen = document.querySelectorAll(".modal-close-btn").length;
+for (var i = 0; i < tlen; i++) {
+  document.querySelectorAll(".modal-close-btn")[i].addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+}
 
 span.onclick = function () {
   modal.style.display = "none";

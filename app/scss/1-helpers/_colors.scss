@@ -57,9 +57,8 @@ $special-link:$color-blue;
 .special-link{
     color: $special-link !important;
 }
-.active{
-    color: $light-color;
-    background: $secondary-color;
+.account-detail-link {
+	color: $higlighted-link !important;
 }
 
 // Other colors
