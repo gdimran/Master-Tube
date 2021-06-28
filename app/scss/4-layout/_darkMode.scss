@@ -91,6 +91,12 @@
     .cat-name {
         color: $dark-spec-secondary-color;
     }
+    .mostPopulerSwiper .slider-navigator .divder-vertical {
+        background: $light-color;
+    }
+    .mostPopulerSwiper .swiper-button-prev::after, .mostPopulerSwiper .swiper-button-next::after {
+        color: $light-color;
+    }
 }
 
 body.dark,
@@ -182,5 +188,11 @@ body.dark,
     }
     .popup .show::before {
         border-color: transparent transparent #202020 transparent;
+    }
+    .mostPopulerSwiper .slider-navigator .divder-vertical {
+        background: $light-color;
+    }
+    .mostPopulerSwiper .swiper-button-prev::after, .mostPopulerSwiper .swiper-button-next::after {
+        color: $light-color;
     }
 }

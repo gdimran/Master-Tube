@@ -12,9 +12,9 @@
     </head>
 
     <body>
-        <div id="exSidepanel" class="sidepanel">
+        <div id="exSidepanel">
             <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
-            <div class="sidebar-expand">
+            <div class="sidebar-expand sidepanel">
                 <ul class="my-1">
                     <li>
                         <a class="py-1 active" href="index.html">
@@ -27,39 +27,36 @@
                     </li>
                     <li>
                         <a class="py-1" href="#">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    explore
-                                </span></span>
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-compass-1"></i></span>
                             <span class="menu-text-expand">Explore</span>
                         </a>
                     </li>
                     <li>
                         <a class="py-1" href="read-book.html">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    menu_book
-                                </span>
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-open-book-o"></i>
                             </span>
                             <span class="menu-text-expand">Read Book</span>
                         </a>
                     </li>
                     <li>
                         <a class="py-1" href="#">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    subscriptions
-                                </span>
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-subscription"></i>
                             </span>
                             <span class="menu-text-expand">Subscriptions</span>
                         </a>
                     </li>
                     <li>
                         <a class="py-1" href="#">
-                            <span class="menu-icon expand-side-bar"><span
+                            <span class="menu-icon expand-side-bar">
+                                <!-- <span
                                     class="material-icons">
                                     video_library
-                                </span>
+                                </span> -->
+                                <i
+                                    class="custom-icon icon-digital-library"></i>
                             </span>
                             <span class="menu-text-expand">Library</span>
                         </a>
@@ -83,43 +80,39 @@
 
                 <div class="sidebar-live">
                     <span class="sec-desc">Live streaming on</span>
-                    <a href="" class="live"> <img src="images/live.png" alt="">
-                        Live now</a>
+                    <a href="#" class="live">
+                        <span class="menu-icon expand-side-bar"><i
+                                class="custom-icon icon-live-streaming"></i>
+                        </span>
+                        <span class="menu-text-expand">Live Now</span>
+                    </a>
                 </div>
                 <ul class="my-1">
                     <li>
-                        <a class="py-1" href="#">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    settings
-                                </span></span>
+                        <a class="py-1" href="">
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-cog"></i></span>
                             <span class="menu-text-expand">Settings</span>
                         </a>
                     </li>
                     <li>
                         <a class="py-1" href="#">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    flag
-                                </span></span>
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-flag-empty"></i></span>
                             <span class="menu-text-expand">Report history</span>
                         </a>
                     </li>
                     <li>
                         <a class="py-1" href="#">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    help
-                                </span></span>
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-question-circle-o"></i></span>
                             <span class="menu-text-expand">Help</span>
                         </a>
                     </li>
                     <li>
                         <a class="py-1" href="#">
-                            <span class="menu-icon expand-side-bar"><span
-                                    class="material-icons">
-                                    feedback
-                                </span></span>
+                            <span class="menu-icon expand-side-bar"><i
+                                    class="custom-icon icon-paper-plane-empty"></i></span>
                             <span class="menu-text-expand">Send feedback</span>
                         </a>
                     </li>
@@ -136,21 +129,27 @@
         <!-- Header section start -->
         <section id="header">
             <div class="header-content-left">
-                <!-- <span class="menu-icon openbtn" onclick="openNav()"> -->
                 <span class="menu-icon openbtn" onclick="showExpandsideBar()">
-                    <i class="fas fa-bars"></i></span>
-                <div class="logo">
+                    <i class="custom-icon
+                        icon-menu"></i></span>
+                <div id="logo-dark" class="logo">
                     <a href="">
-                        <img src="images/logo.png">
-                        <!-- <span class="logo-text">Master-Academy</span> -->
+                        <img src="images/mLogo-W-01.svg">
+                    </a>
+                </div>
+                <div id="logo-light" class="logo">
+                    <a href="">
+                        <img src="images/mLogo-L-01-01.svg">
                     </a>
                 </div>
             </div>
 
             <div class="search-section">
-                <div id="explore-opener" class="explor btn-outline">Explore <i
-                        class="fas
-                        fa-chevron-down"></i>
+                <div id="explore-opener" class="explor btn-outline
+                    tooltip-container">Explore <i
+                        class="custom-icon
+                        icon-down-open-big"></i>
+                    <div class="tooltip">Explore what you want</div>
                 </div>
                 <div class="search-field">
                     <form action="" id="search-form">
@@ -162,14 +161,61 @@
                             aria-haspopup="false" role="combobox"
                             aria-autocomplete="list" dir="ltr" style="outline:
                             none;">
-                        <button id="search-icon-legacy" class="searchbox btn"
+                        <button id="search-icon-legacy" class="searchbox btn
+                            tooltip-container"
                             aria-label="Search">
                             <i class="fas fa-search"></i>
+                            <div class="tooltip">Search</div>
                         </button>
                     </form>
                 </div>
             </div>
             <div class="user-login-section">
+                <div class="option tooltip-container popup">
+                    <i onclick="gustSettFunc()" class="fas fa-ellipsis-v"></i>
+                    <div class="tooltip">Settings</div>
+                    <div class="gustSett-content card"
+                        id="gustSettPopup">
+
+                        <div class="additional-settings">
+                            <a href="#" class="option-link
+                                light-mode-toggle theme-mode-toggle"><i
+                                    class="custom-icon icon-light-up"></i>
+                                Appearance: Light
+                            </a>
+                            <a href="#" class="option-link
+                                dark-mode-toggle theme-mode-toggle"><i
+                                    class="custom-icon icon-moon"></i>
+                                Appearance: Dark
+                            </a>
+                            <a href="#" class="option-link
+                                system-mode-toggle"><i
+                                    class="custom-icon icon-adjust"></i>
+                                Appearance: Device theme
+                            </a>
+                            <a href="" class="option-link"><i
+                                    class="custom-icon icon-language"></i>Language:
+                                English &nbsp;&nbsp;<i class="custom-icon
+                                    icon-right-open-mini"></i></a>
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-location"></i> Location:
+                                Bangladesh
+                                <i class="custom-icon icon-right-open-mini"></i></a>
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-cog"></i> Settings
+                            </a>
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-database"></i>Your data security
+                            </a>
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-question-circle-o"></i>Help
+                            </a>
+                            <a href="" class="option-link"><i class="custom-icon
+                                    icon-paper-plane-empty"></i>Send Feedback
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <a href="login.html" class="login btn-normal">Log in</a>
                 <a href="signup.html" class="signup btn-outline">Join for
                     Free</a>
@@ -192,39 +238,31 @@
                     </li>
                     <li>
                         <a class="py-1" href="">
-                            <span class="menu-icon small-side-bar"><span
-                                    class="material-icons">
-                                    explore
-                                </span></span>
+                            <span class="menu-icon small-side-bar">
+                                <i class="custom-icon icon-compass-1"></i></span>
                             <span class="menu-text-small">Explore</span>
                         </a>
                     </li>
                     <li>
                         <a class="py-1" href="">
-                            <span class="menu-icon small-side-bar"><span
-                                    class="material-icons">
-                                    menu_book
-                                </span>
+                            <span class="menu-icon small-side-bar">
+                                <i class="custom-icon icon-open-book-o"></i>
                             </span>
                             <span class="menu-text-small">Read Book</span>
                         </a>
                     </li>
                     <li>
                         <a class="py-1" href="">
-                            <span class="menu-icon small-side-bar"><span
-                                    class="material-icons">
-                                    subscriptions
-                                </span>
+                            <span class="menu-icon small-side-bar">
+                                <i class="custom-icon icon-subscription"></i>
                             </span>
                             <span class="menu-text-small">Subscriptions</span>
                         </a>
                     </li>
                     <li>
                         <a class="py-1" href="">
-                            <span class="menu-icon small-side-bar"><span
-                                    class="material-icons">
-                                    video_library
-                                </span>
+                            <span class="menu-icon small-side-bar">
+                                <i class="custom-icon icon-digital-library"></i>
                             </span>
                             <span class="menu-text-small">Library</span>
                         </a>
@@ -243,23 +281,97 @@
         </section>
         <!-- side-bar section end -->
 
+        <!-- Mobile deivce header start -->
+        <section id="mobile-header-guest" class="mobile-header">
+            <div id="logo-dark" class="logo">
+                <a href="index.html">
+                    <img src="images/mLogo-W-01.svg">
+                </a>
+            </div>
+            <div id="logo-light" class="logo">
+                <a href="index.html">
+                    <img src="images/mLogo-L-01-01.svg">
+                </a>
+            </div>
+
+            <div class="header-right-sec">
+                <div id="mobileSearch" class="search-opt">
+                    <span class="material-icons">
+                        search
+                    </span>
+                </div>
+                <div id="guestSetting" class="option">
+                    <i class="fas fa-ellipsis-v"></i>
+
+                </div>
+                <a href="signup.html" class="signup btn-outline">
+                    Join for Free
+                </a>
+            </div>
+        </section>
+
+        <div id="guestSetting-content" class="modal">
+            <div class="modal-header">
+                <div class="modal-title-text">Settings</div>
+                <span class="modal-close-btn">&times;</span>
+
+            </div>
+            <div class="additional-settings">
+                <a href="#" class="option-link
+                    light-mode-toggle theme-mode-toggle"><i
+                        class="custom-icon icon-light-up"></i>
+                    Appearance: Light
+                </a>
+                <a href="#" class="option-link
+                    dark-mode-toggle theme-mode-toggle"><i
+                        class="custom-icon icon-moon"></i>
+                    Appearance: Dark
+                </a>
+                <a href="#" class="option-link
+                    system-mode-toggle"><i
+                        class="custom-icon icon-adjust"></i>
+                    Appearance: Device theme
+                </a>
+                <a href="" class="option-link"><img
+                        src="images/language.svg" alt="">Language:
+                    English <i class="fas fa-chevron-right
+                        icon-right"></i></a>
+                <a href="" class="option-link"><i class="fas
+                        fa-map-marker-alt"></i> Location:
+                    Bangladesh
+                    <i class="fas fa-chevron-right icon-right"></i></a>
+                <a href="" class="option-link"><i class="fas
+                        fa-cog"></i> Location:
+                    Bangladesh
+                </a>
+                <a href="" class="option-link"><i class="fas
+                        fa-database"></i>Your data security
+                </a>
+                <a href="" class="option-link"><i class="fas
+                        fa-question-circle"></i>Help
+                </a>
+                <a href="" class="option-link"><i class="fas
+                        fa-comment-alt"></i>Send Feedback
+                </a>
+            </div>
+        </div>
+        <!-- Mobile deivce header end -->
+
         <!-- Body content section start -->
         <div id="content">
             <!-- category section -->
+            <!-- category section -->
+            <div class="section-title-read-book">What are you interested in
+                learning?</div>
             <div class="all-category container-full">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <div class="page-title my-2">
-                            <h1 class="page-title-text">What are you interested
-                                in learning?</h1>
-                        </div>
-                    </div>
                     <div class="swiper-container homeCatSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-graduation-cap"></i>
+                                        <i class="custom-icon
+                                            icon-graduation-cap"></i>
                                     </span>
                                     <span class="cat-name">Education</span>
                                 </div>
@@ -267,7 +379,7 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-briefcase"></i>
+                                        <i class="custom-icon icon-suitcase"></i>
                                     </span>
                                     <span class="cat-name">Professional
                                         skills</span>
@@ -276,7 +388,7 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-flask"></i>
+                                        <i class="custom-icon icon-flask"></i>
                                     </span>
                                     <span class="cat-name">Science</span>
                                 </div>
@@ -284,7 +396,7 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-mosque"></i>
+                                        <i class="custom-icon icon-mosque"></i>
                                     </span>
                                     <span class="cat-name">Religious</span>
                                 </div>
@@ -292,7 +404,8 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-film"></i>
+                                        <i class="custom-icon
+                                            icon-entertainment"></i>
                                     </span>
                                     <span class="cat-name">Entertainment</span>
                                 </div>
@@ -300,7 +413,7 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-palette"></i>
+                                        <i class="custom-icon icon-paint-brush"></i>
                                     </span>
                                     <span class="cat-name">Arts & Culture</span>
                                 </div>
@@ -308,7 +421,7 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-handshake"></i>
+                                        <i class="custom-icon icon-handshake"></i>
                                     </span>
                                     <span class="cat-name">Business</span>
                                 </div>
@@ -316,7 +429,8 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-graduation-cap"></i>
+                                        <i class="custom-icon
+                                            icon-graduation-cap"></i>
                                     </span>
                                     <span class="cat-name">Education</span>
                                 </div>
@@ -324,7 +438,7 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-briefcase"></i>
+                                        <i class="custom-icon icon-suitcase"></i>
                                     </span>
                                     <span class="cat-name">Professional
                                         skills</span>
@@ -333,7 +447,7 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-flask"></i>
+                                        <i class="custom-icon icon-flask"></i>
                                     </span>
                                     <span class="cat-name">Science</span>
                                 </div>
@@ -341,7 +455,7 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-mosque"></i>
+                                        <i class="custom-icon icon-mosque"></i>
                                     </span>
                                     <span class="cat-name">Religious</span>
                                 </div>
@@ -349,7 +463,8 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-film"></i>
+                                        <i class="custom-icon
+                                            icon-entertainment"></i>
                                     </span>
                                     <span class="cat-name">Entertainment</span>
                                 </div>
@@ -357,7 +472,7 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-palette"></i>
+                                        <i class="custom-icon icon-paint-brush"></i>
                                     </span>
                                     <span class="cat-name">Arts & Culture</span>
                                 </div>
@@ -365,16 +480,150 @@
                             <div class="swiper-slide">
                                 <div class="signle-big-cat">
                                     <span class="icons-cat">
-                                        <i class="fas fa-handshake"></i>
+                                        <i class="custom-icon icon-handshake"></i>
                                     </span>
                                     <span class="cat-name">Business</span>
                                 </div>
                             </div>
+
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
 
+                </div>
+            </div>
+
+            <div class="all-category-mobile">
+                <div class="swiper-container logedinCatSwiper mb-1">
+                    <div class="small-cat-style swiper-wrapper pb-1">
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="cat-name">All</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-graduation-cap"></i>
+                                </span>
+                                <span class="cat-name">Education</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-suitcase"></i>
+                                </span>
+                                <span class="cat-name">Professional
+                                    skills</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-flask"></i>
+                                </span>
+                                <span class="cat-name">Science</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-mosque"></i>
+                                </span>
+                                <span class="cat-name">Religious</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-entertainment"></i>
+                                </span>
+                                <span class="cat-name">Entertainment</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-paint-brush"></i>
+                                </span>
+                                <span class="cat-name">Arts & Culture</span>
+                            </a>
+
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-handshake"></i>
+                                </span>
+                                <span class="cat-name">Business</span>
+                            </a>
+
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-graduation-cap"></i>
+                                </span>
+                                <span class="cat-name">Education</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-suitcase"></i>
+                                </span>
+                                <span class="cat-name">Professional
+                                    skills</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-flask"></i>
+                                </span>
+                                <span class="cat-name">Science</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-mosque"></i>
+                                </span>
+                                <span class="cat-name">Religious</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-entertainment"></i>
+                                </span>
+                                <span class="cat-name">Entertainment</span>
+                            </a>
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-paint-brush"></i>
+                                </span>
+                                <span class="cat-name">Arts & Culture</span>
+                            </a>
+
+                        </div>
+                        <div class="signle-small-cat swiper-slide">
+                            <a href="">
+                                <span class="icons-cat">
+                                    <i class="custom-icon icon-handshake"></i>
+                                </span>
+                                <span class="cat-name">Business</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
 
@@ -1194,7 +1443,31 @@
 
         </div>
 
-
+        <!-- Footer mobile version -->
+        <section id="mobile-footer-guest" class="mobile-footer">
+            <div class="home"><a href="" class="link-icon">
+                    <span class="menu-icon footer-bar"><span
+                            class="material-icons">
+                            home
+                        </span></span>
+                    <span class="footer-text-small">Home</span>
+                </a>
+            </div>
+            <div class="terending">
+                <a href="" class="link-icon">
+                    <i class="custom-icon icon-fire"></i>
+                    <span class="footer-text-small">Trending</span>
+                </a>
+            </div>
+            <div class="library">
+                <a href="" class="link-icon">
+                    <span class="menu-icon footer-bar">
+                        <i class="custom-icon icon-digital-library"></i>
+                    </span>
+                    <span class="footer-text-small">Library</span>
+                </a>
+            </div>
+        </section>
 
         <!-- modal for search start -->
         <!-- The Modal -->
@@ -1498,6 +1771,7 @@
             src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
         <script type="text/javascript" src="js/sliders.js"></script>
         <script type="text/javascript" src="js/modal.js"></script>
+        <script type="text/javascript" src="js/dark.js"></script>
     </body>
 
 </html>

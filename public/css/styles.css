@@ -2304,10 +2304,6 @@ hr.horizontal-line {
   border: 1px solid #ff7c38;
 }
 
-.cat-name {
-  color: #030303;
-}
-
 .card {
   width: 100%;
   background: #fff;
@@ -3791,6 +3787,13 @@ span.publishing-date {
   font-weight: 400;
 }
 
+.section-title-read-book {
+  font-family: Roboto,sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
 /* Uncomment and set these variables to customize the grid. */
 .container-fluid {
   margin-right: auto;
@@ -4419,6 +4422,29 @@ span.publishing-date {
 }
 
 @media (max-width: 767.98px) {
+  .user-login-content {
+    width: 90vw;
+  }
+  .login-content a.forgot-pass {
+    right: 11%;
+    bottom: 44%;
+  }
+  .liveSwiper .swiper-button-next::after {
+    content: 'next';
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  .liveSwiper .swiper-button-prev::after {
+    content: 'next';
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
   #overSidepanel #exSidepanel,
   .all-category,
   #side-bar,
@@ -4431,6 +4457,21 @@ span.publishing-date {
   #content {
     left: 0;
     padding: 0;
+  }
+  .mobile-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #aaaaaa;
+    align-items: center;
+    background: white;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    padding: 0 10px;
+    overflow-y: hidden;
+    max-width: 100vw;
   }
   .mobile-header {
     width: 100%;
@@ -4589,6 +4630,16 @@ span.publishing-date {
     z-index: 1000;
     position: fixed;
     bottom: 0;
+    padding: 0 10px;
+    overflow-y: hidden;
+    max-width: 100vw;
+  }
+  .circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 2.5rem;
   }
   .link-icon {
     display: flex;
@@ -4895,6 +4946,12 @@ span.publishing-date {
   .cat-name {
     color: #aaaaaa;
   }
+  .mostPopulerSwiper .slider-navigator .divder-vertical {
+    background: #fff;
+  }
+  .mostPopulerSwiper .swiper-button-prev::after, .mostPopulerSwiper .swiper-button-next::after {
+    color: #fff;
+  }
 }
 
 body.dark,
@@ -5041,4 +5098,15 @@ body.dark .popup .userSetting-content a.option-link,
 body.dark .popup .show::before,
 .darkmode .popup .show::before {
   border-color: transparent transparent #202020 transparent;
+}
+
+body.dark .mostPopulerSwiper .slider-navigator .divder-vertical,
+.darkmode .mostPopulerSwiper .slider-navigator .divder-vertical {
+  background: #fff;
+}
+
+body.dark .mostPopulerSwiper .swiper-button-prev::after, body.dark .mostPopulerSwiper .swiper-button-next::after,
+.darkmode .mostPopulerSwiper .swiper-button-prev::after,
+.darkmode .mostPopulerSwiper .swiper-button-next::after {
+  color: #fff;
 }
